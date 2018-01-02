@@ -20,9 +20,11 @@ app.use('/app/wpk/', webpackDevMiddleware(compiler, {}));
 
 const urls = ['clients', 'ux', 'web', 'contact', '1234'];
 ['en', 'fr'].forEach(lang => {
-	const array = urls.map(n => `/app/${lang}/${n}`);
-	app.use(array, (req, res, next) => {
-		res.sendFile(`./app/${lang}/index.html`, { root: __dirname });
+	['app', 'dist'].forEach(dir => {
+		const array = urls.map(n => `/${dir}/${lang}/${n}`);
+		app.use(array, (req, res, next) => {
+			res.sendFile(`./${dir}/${lang}/index.html`, { root: __dirname });
+		});
 	});
 });
 
