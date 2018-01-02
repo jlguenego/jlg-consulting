@@ -1,5 +1,4 @@
 const replace = require('gulp-replace');
-const rename = require('gulp-rename');
 const webpack = require('webpack');
 const webpackConfig = require('../webpack.config.js');
 const runSequence = require('run-sequence');
@@ -29,7 +28,6 @@ module.exports = function(gulp, pathConfig) {
 
 	gulp.task('build:htaccess', function() {
 		return gulp.src(pathConfig.htaccess, { base: pathConfig.base })
-			.pipe(rename('.htaccess'))
 			.pipe(gulp.dest(pathConfig.dist));
 	});
 

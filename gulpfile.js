@@ -6,10 +6,10 @@ const pathConfig = {
 	zip: 'dist.zip',
 	wpk: 'app/wpk',
 	indexHtml: 'app/**/index.html',
-	htaccess: ['app/.htaccess'],
+	htaccess: ['app/**/.htaccess'],
 	resources: ['app/img/**/*', 'app/wpk/**/*'],
-	// ftp: ['dist/**/**', 'dist/**/.htaccess'],
-	ftp: ['dist/**/index.html', 'dist/.htaccess'],
+	ftp: ['dist/**/**', 'dist/**/.htaccess'],
+	// ftp: ['dist/**/index.html', 'dist/.htaccess'],
 };
 
 require('./gulp/eslint.js')(gulp);
