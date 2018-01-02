@@ -6,10 +6,6 @@ module.exports = function(gulp, pathConfig) {
 		return del([pathConfig.dist]);
 	});
 
-	gulp.task('clean:zip', function() {
-		return del([pathConfig.zip]);
-	});
-
 	gulp.task('clean:wpk', function() {
 		return del([pathConfig.wpk]);
 	});

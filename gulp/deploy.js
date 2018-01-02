@@ -1,4 +1,5 @@
 const runSequence = require('run-sequence');
+const replace = require('gulp-replace');
 const fs = require('fs');
 const Promise = require('bluebird');
 Promise.promisifyAll(fs);
@@ -10,6 +11,12 @@ const cfgUtils = require('../cfg/utils.js');
 module.exports = function(gulp, pathConfig) {
 
 	gulp.task('deploy:config', function(cb) {
+		const deployEnv = cfgUtils.getEnv('deploy');
+		console.log(deployEnv.base);		
+		return gulp.src(pathConfig.indexHtml, { base: pathConfig.base })
+			.pipe(replace(/\/app\//, `/${deployEnv.base}/`))
+			.pipe(gulp.dest(pathConfig.dist));
+
 	});
 
 	gulp.task('deploy:ftp', function() {
@@ -19,7 +26,7 @@ module.exports = function(gulp, pathConfig) {
 			.pipe(gutil.noop());
 	});
 
-	gulp.task('deploy', ['clean:zip'], function() {
+	gulp.task('deploy', [], function() {
 		runSequence('deploy:config', 'deploy:ftp');
 	});
 };

@@ -3,12 +3,13 @@ const gulp = require('gulp');
 const pathConfig = {
 	base: 'app',
 	dist: 'dist',
-	zipSrc: ['dist/**/*', 'dist/.htaccess'],
 	zip: 'dist.zip',
 	wpk: 'app/wpk',
 	indexHtml: 'app/**/index.html',
-	htaccess: ['app/.htaccess.tmpl'],
+	htaccess: ['app/.htaccess'],
 	resources: ['app/img/**/*', 'app/wpk/**/*'],
+	// ftp: ['dist/**/**', 'dist/**/.htaccess'],
+	ftp: ['dist/**/index.html', 'dist/.htaccess'],
 };
 
 require('./gulp/eslint.js')(gulp);
