@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import './variables.scss';
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+header {
+    background-color: $color;
+}
+
+.menu {
+    font-weight: bold;
+}
+
+.menu-item:hover {
+    text-decoration: underline;
+}
+
+.menu-item.active {
+    position: relative;
+    &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: hsla(0, 0%, 0%, 0.05);
+    }
+}
+
+
+
+main {
+    color: black;
+}
+
+main.home {
+    color: $color;
+}
+
+footer {
+    background-color: hsl(60, 0%, 10%);
+}
+
+button,
+.button {
+    border-color: $color;
+}
+
+a {
+    text-decoration: underline;
+    color: $linkColor;
+}
+
+header a {
+    text-decoration: none;
+    color: black;
+}
+
+article {
+    border: 1px solid hsla(0, 0%, 0%, 0.02);
+    border-top: 0;
+    border-bottom: 0;
+    background-color: hsla(0, 0%, 100%, 0.8);
+}
+
+.ux section:nth-child(even) {
+    background-color: hsla(0, 100%, 80%, 0.2);
+}
+
+.ux section:nth-child(odd) {
+    background-color: hsla(0, 100%, 98%, 0.2);
+}
+
+.web section:nth-child(even) {
+    background-color: hsla(120, 100%, 80%, 0.2);
+}
+
+.web section:nth-child(odd) {
+    background-color: hsla(120, 100%, 98%, 0.2);
+}
+
+.contact section:nth-child(even) {
+    background-color: hsl(240, 100%, 95%);
+}
+
+.home section {
+    background-color: transparent;
+}
+
+@media only screen and (max-width: 768px) {
+    article {
+        background-color: hsla(0, 0%, 100%, 0.5);
+    }
+}
+
+.clients header {
+    background-color: hsl(300, 100%, 95%);
+}
+
+.ux header {
+    background-color: hsl(0, 100%, 95%);
+}
+
+.web header {
+    background-color: hsl(120, 100%, 95%);
+}
+
+.contact header {
+    background-color: hsl(240, 100%, 97%);
+}
+
+footer {
+    color: hsl(60, 100%, 30%);
+}
+
+.clients footer {
+    color: hsl(300, 100%, 80%);
+}
+
+.ux footer {
+    color: hsl(0, 100%, 80%);
+}
+
+.web footer {
+    color: hsl(120, 100%, 80%);
+}
+
+.contact footer {
+    color: hsl(240, 100%, 90%);
+}
+
+@media only screen and (max-width: 768px) {
+    .ux .menu-item {
+        background-color: hsl(0, 100%, 98%);
+        &:hover {
+            background-color: hsl(0, 100%, 97%);
+        }
+        &:active, &.active {
+            background-color: hsl(0, 100%, 96%);
+        }
+    }
+    .web .menu-item {
+        background-color: hsl(120, 100%, 99%);
+        &:hover {
+            background-color: hsl(120, 100%, 97%);
+        }
+        &:active, &.active {
+            background-color: hsl(120, 100%, 96%);
+        }
+    }
+    .contact .menu-item {
+        background-color: hsl(240, 100%, 99%);
+        &:hover {
+            background-color: hsl(240, 100%, 97%);
+        }
+        &:active, &.active {
+            background-color: hsl(240, 100%, 96%);
+        }
+    }
+}
+
+[ng-click] {
+    cursor: pointer;
+}
+
+.jlg-hamburger-on {
+    overflow: scroll;
+}
+
+.home.jlg-hamburger-on {
+    overflow: hidden;
+}
+
+.clients jlg-parallax {
+    
+    height: 350px;
+}

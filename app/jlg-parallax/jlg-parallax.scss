@@ -1,0 +1,22 @@
+jlg-parallax {
+    display: block;
+    position: relative;
+    left: -1em;
+    max-width: 60rem;
+    width: calc(100% + 2em);
+    height: 250px;
+    padding: 0;
+    margin: 0 0 1em;
+    overflow: hidden;
+    >img {
+        display: block;
+        margin: 0 auto 1em;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    jlg-parallax {
+        height: 200px;
+    }
+}

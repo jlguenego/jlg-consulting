@@ -1,0 +1,45 @@
+button,
+.button {
+    display: inline-block;
+    margin: 0 1em 0.5em;
+    padding: 0.5em 1em;
+    border: 1px solid black;
+    background-color: transparent;
+    color: inherit;
+    text-decoration: none;
+    text-align: center;
+    &:hover {
+        background-color: hsla(60, 100%, 50%, 0.2)
+    }
+}
+
+.jumbo {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.jumbo-title {
+    margin: 0;
+    padding: 0.5em;
+    font-size: 1.3em;
+}
+
+@media only screen and (max-width: 768px) {
+    .jumbo-title {
+        display: block;
+        margin: 0;
+        padding: 0.1em;
+        font-size: 1em;
+    }
+    .jumbo {
+        font-size: 1.2em;
+        padding: 1.8em;
+        button,
+        .button {
+            display: block;
+            text-align: center;
+            width: 100%;
+            margin: 0.5em 0;
+        }
+    }
+}

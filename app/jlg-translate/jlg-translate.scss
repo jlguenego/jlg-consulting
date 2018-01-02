@@ -1,0 +1,36 @@
+@import '../css/variables.scss';
+jlg-translate {
+    display: block;
+    float: right;
+    width: 6rem;
+    height: 3rem;
+    font-size: 1.8rem;
+    >item {
+        display: inline-block;
+        position: relative;
+        top: 0.2rem;
+        line-height: 1.8rem;
+        margin-left: 0.3rem;
+        div {
+            background-color: white;
+            span {
+                opacity: 0.3;
+            }
+        }
+    }
+    >item.active {
+        border: 2px solid white;
+        div {
+            span {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    jlg-translate {
+        position: relative;
+        z-index: 1000;
+    }
+}

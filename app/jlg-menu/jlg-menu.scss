@@ -1,0 +1,74 @@
+@import '../css/variables.scss';
+.site-id {
+    float: left;
+    height: 100%;
+}
+
+.jlg-hamburger-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    float: right;
+    min-width: 24rem;
+    width: 50%;
+    height: 3em;
+}
+
+.menu-item {
+    flex-grow: 0.1;
+    text-align: center;
+    height: 100%;
+    line-height: 3rem;
+    font-size: 1.2em;
+}
+
+jlg-hamburger {
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    jlg-hamburger {
+        display: block;
+        padding: 0 1rem;
+        float: right;
+        line-height: 3rem;
+        font-size: 2em;
+        cursor: pointer;
+    }
+    /* For mobile phones: */
+    .jlg-hamburger-menu {
+        display: none;
+        position: fixed;
+        z-index: 1000;
+        float: none;
+        width: 100%;
+        height: auto;
+        top: 3em;
+    }
+    .menu-item {
+        display: block;
+        float: none;
+        width: 100%;
+        margin: 0;
+        padding: 0.5em 0;
+        background-color: lighten($color, 40%);
+        &:hover {
+            background-color: lighten($color, 35%);
+        }
+        &:active {
+            background-color: lighten($color, 35%);
+        }
+        &.active {
+            background-color: lighten($color, 30%);
+        }
+    }
+    .jlg-hamburger-on {
+        display: block;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        .jlg-hamburger-menu {
+            display: block;
+        }
+    }
+}

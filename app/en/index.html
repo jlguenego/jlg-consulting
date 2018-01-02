@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="main" ng-csp ng-strict-di>
+
+<head>
+	<base href="/app/en/">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>JLG Consulting - Making software... for people!</title>
+	<link rel="icon" type="image/png" href="../img/jlg-favicon.png">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/2.9.0/css/flag-icon.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular-csp.css" /> -->
+	<link rel="stylesheet" href="../wpk/vendors.css" />
+	<link rel="stylesheet" href="../wpk/routes-en.css" />
+	<link rel="stylesheet" href="../wpk/bundle.css" />
+</head>
+
+<body ng-cloak>
+	<header>
+		<a href="index.html" class="site-id">
+			<img src="../img/jlg-consulting.svg">
+		</a>
+		<jlg-hamburger></jlg-hamburger>
+		<jlg-translate></jlg-translate>
+		<nav class="jlg-hamburger-menu">
+			<a ui-sref="home" class="menu-item" ui-sref-active="active">Home</a>
+			<a ui-sref="clients" class="menu-item" ui-sref-active="active">Clients</a>
+			<a ui-sref="ux" class="menu-item" ui-sref-active="active">UX</a>
+			<a ui-sref="web" class="menu-item" ui-sref-active="active">Web</a>
+			<a ui-sref="contact" class="menu-item" ui-sref-active="active">Contact</a>
+		</nav>
+
+	</header>
+	<ui-view></ui-view>
+	<footer>
+		<p class="copyright">
+			©2001-2017 - JLG Consulting
+		</p>
+		
+			
+	</footer>
+	<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/88/three.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.min.js"></script> -->
+	<script src="../wpk/vendors.js"></script>
+	<script src="../wpk/routes-en.js"></script>
+	<script src="../wpk/bundle.js"></script>
+</body>
+
+</html>

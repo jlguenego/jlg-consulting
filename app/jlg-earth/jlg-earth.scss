@@ -1,0 +1,78 @@
+jlg-earth {
+    display: block;
+    position: absolute;
+    z-index: -1000;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    overflow: hidden;
+    stars {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 200%;
+        overflow: hidden;
+    }
+    earth {
+        display: block;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 200%;
+        overflow: hidden;
+    }
+}
+
+@keyframes sky-move {
+    from {
+        transform: rotate(10deg);
+    }
+    to {
+        transform: rotate(-10deg);
+    }
+}
+
+// stars {
+//     // background-image: url('../img/stars.jpg');
+//     // background-size: cover;
+//     // background-color: black;
+//     // animation: sky-move 60s linear 0s infinite alternate;
+// }
+
+stars>svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.earth-loaded earth, .earth-loaded stars {
+    top: -60%;
+}
+
+.transition earth, .transition stars {
+    transition: top 10s ease-in-out 1s;
+}
+
+@keyframes fade-in {
+    from {
+        background-color: black;
+    }
+    to {
+        background-color: transparent;
+    }
+}
+
+.fade-in::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    animation: fade-in 2s;
+}
