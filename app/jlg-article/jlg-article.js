@@ -17,7 +17,8 @@ app.component('jlgArticleToc', {
 		}
 
 		function makeId(s) {
-			return s.replace(/ /g, '-').replace(/[^a-zA-Z0-9-]/g, '').toLowerCase();
+			return s.normalize("NFD").replace(/[\u0300-\u036f]/g, "")
+				.replace(/ /g, '-').replace(/[^a-zA-Z0-9-]/g, '').toLowerCase();
 		}
 
 		this.$onInit = () => {
