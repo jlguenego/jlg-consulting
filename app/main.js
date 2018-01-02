@@ -17,29 +17,29 @@ app.run(($rootScope) => {
 
 	$rootScope.bubble = {
 		clients: {
-			density: 100,
-			radius: 1,
+			density: 10,
+			radius: 10,
 			colors: ['purple'],
 			opacity: 0.05,
 			height: 12400,
 		},
 		ux: {
-			density: 100,
-			radius: 1,
+			density: 10,
+			radius: 10,
 			colors: ['red'],
 			opacity: 0.05,
 			height: 12400,
 		},
 		web: {
-			density: 100,
-			radius: 1,
+			density: 10,
+			radius: 10,
 			colors: ['green'],
 			opacity: 0.05,
 			height: 12400,
 		},
 		contact: {
-			density: 100,
-			radius: 1,
+			density: 10,
+			radius: 10,
 			colors: ['blue'],
 			opacity: 0.05,
 			height: 12400,
