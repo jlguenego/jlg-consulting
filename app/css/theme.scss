@@ -138,6 +138,15 @@ footer {
 }
 
 @media only screen and (max-width: 768px) {
+    .clients .menu-item {
+        background-color: hsl(300, 100%, 98%);
+        &:hover {
+            background-color: hsl(300, 100%, 97%);
+        }
+        &:active, &.active {
+            background-color: hsl(300, 100%, 96%);
+        }
+    }
     .ux .menu-item {
         background-color: hsl(0, 100%, 98%);
         &:hover {
