@@ -1,7 +1,7 @@
 function generateStars(elt) {
 	const width = elt.clientWidth;
 	const height = elt.clientHeight;
-	const density = 0.003;
+	const density = 0.001;
 	const count = width * height * density;
 	const array = [];
 	for (let i = 0; i < count; i++) {
@@ -11,6 +11,7 @@ function generateStars(elt) {
 			r: Math.ceil(Math.random() * 1.5),
 			luminosity: Math.ceil(Math.random() * 10) + 90,
 			opacity: Math.random() * 0.5,
+			duration: Math.random() * 1 + 1,
 		});
 	}
 	return array;
@@ -20,13 +21,10 @@ function toSVG(a) {
 	let html = '';
 	for (let i = 0; i < a.length; i++) {
 		const e = a[i];
-		html += `<circle cx="${e.x}" cy="${e.y}" r="${e.r}" 
-			stroke-width="0" fill="hsl(60, 100%, ${e.luminosity}%)" opacity="${e.opacity}" >
-			<animate attributeType="auto" attributeName="opacity" 
-			from="${e.opacity - 0.1}" to="${e.opacity + 0.2}" dur="${e.opacity*15 + 5}s" repeatCount="indefinite" />
-
-			
-			</circle>`;
+		html += `
+<circle cx="${e.x}" cy="${e.y}" r="${e.r}" 
+	stroke-width="0" fill="hsl(60, 100%, ${e.luminosity}%)" opacity="${e.opacity}" >
+</circle>`;
 	}
 	return html;
 }
