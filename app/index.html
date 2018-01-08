@@ -7,7 +7,12 @@
 
 <body>
 	<script>
-		window.location = './' + navigator.language.substr(0, 2).toLowerCase();
+		var lang = navigator.language.substr(0, 2).toLowerCase();
+		if (lang === 'fr') {
+			window.location = './fr';
+		} else {
+			window.location = './en';
+		}
 
 	</script>
 </body>
