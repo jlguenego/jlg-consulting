@@ -71,9 +71,10 @@ img.center {
 
 @media only screen and (max-width: 768px) {
     img.center {
-        display: block;
-        margin: 0 auto 1em;
-        width: 100%;
+        position: relative;
+        // left = -1em do a small white border...
+        left: -1.1em;
+        width: calc(100% + 2.2em);
         height: auto;
     }
 
