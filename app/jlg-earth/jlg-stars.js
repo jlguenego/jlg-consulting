@@ -21,7 +21,12 @@ function toSVG(a) {
 	for (let i = 0; i < a.length; i++) {
 		const e = a[i];
 		html += `<circle cx="${e.x}" cy="${e.y}" r="${e.r}" 
-            stroke-width="0" fill="hsla(60, 100%, ${e.luminosity}%, ${e.opacity})" />`;
+			stroke-width="0" fill="hsl(60, 100%, ${e.luminosity}%)" opacity="${e.opacity}" >
+			<animate attributeType="auto" attributeName="opacity" 
+			from="${e.opacity - 0.1}" to="${e.opacity + 0.2}" dur="${e.opacity*15 + 5}s" repeatCount="indefinite" />
+
+			
+			</circle>`;
 	}
 	return html;
 }

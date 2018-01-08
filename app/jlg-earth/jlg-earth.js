@@ -88,11 +88,11 @@ app.component('jlgEarth', {
 					// on fait tourner le cube sur ses axes x et y
 					// sphere.rotation.x += 0.01;
 					const speed = 0.0004;
-					const angle = speed * i;
+					const angle = speed * i + 4.5;
 					// sphere.rotation.x = angle;
 					sphere.rotation.y = angle;
-					let x = 4000 * Math.cos(angle);
-					let z = 4000 * Math.sin(angle);
+					let x = 4000 * Math.cos(1);
+					let z = 4000 * Math.sin(1);
 					lumiere.position.set(x, 0, z);
 
 					// on bouge la camera

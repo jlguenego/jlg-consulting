@@ -56,5 +56,5 @@ app.run(($transitions) => {
 
 app.run((jlgParallax) => {
 	// you will set this according the smartphone that shows saccades...
-	jlgParallax.secureMode = false;
+	jlgParallax.secureMode = true;
 });
