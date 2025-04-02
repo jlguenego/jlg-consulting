@@ -1,9 +1,54 @@
----
-const year = new Date().getFullYear();
----
+<footer class="bg-gray-900 text-white py-12 text-sm">
+  <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+    
+    <!-- À propos rapide -->
+    <div>
+      <h3 class="text-lg font-semibold mb-4">JLG Consulting</h3>
+      <p class="text-gray-300">
+        Accompagnement en développement logiciel, architecture web et transformation digitale.
+      </p>
+    </div>
 
-<footer class="bg-gray-100 text-sm text-gray-500 mt-10">
-  <div class="container mx-auto px-4 py-6 text-center">
-    © {year} Jean-Louis Guénégo. Tous droits réservés.
+    <!-- Coordonnées -->
+    <div>
+      <h4 class="text-md font-semibold mb-4">Coordonnées</h4>
+      <ul class="space-y-2 text-gray-400">
+        <li>
+          <a href="mailto:jlg@jlg-consulting.com" class="hover:text-white">jlg@jlg-consulting.com</a>
+        </li>
+        <li>Basé en France</li>
+      </ul>
+    </div>
+
+    <!-- Réseaux sociaux -->
+    <div>
+      <h4 class="text-md font-semibold mb-4">Réseaux</h4>
+      <ul class="space-y-2 text-gray-400">
+        <li>
+          <a href="https://www.linkedin.com/in/guenego" target="_blank" rel="noopener noreferrer" class="hover:text-white">
+            LinkedIn
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/jlguenego" target="_blank" rel="noopener noreferrer" class="hover:text-white">
+            GitHub
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Liens légaux -->
+    <div>
+      <h4 class="text-md font-semibold mb-4">Informations</h4>
+      <ul class="space-y-2 text-gray-400">
+        <li><a href="/mentions-legales" class="hover:text-white">Mentions légales</a></li>
+        <li><a href="/accessibilite" class="hover:text-white">Accessibilité</a></li>
+        <li><a href="/confidentialite" class="hover:text-white">Confidentialité</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="mt-12 border-t border-gray-700 pt-6 text-center text-gray-500">
+    © {new Date().getFullYear()} Jean-Louis Guénégo — Tous droits réservés.
   </div>
 </footer>
