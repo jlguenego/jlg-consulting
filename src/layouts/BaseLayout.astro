@@ -1,17 +1,38 @@
 ---
-// src/layouts/BaseLayout.astro
 import NavBar from '../components/NavBar.astro';
 import Footer from '../components/Footer.astro';
-import './src/styles/global.css'
+import '../styles/global.css'
 
+const {
+  title = "JLG Consulting – Jean-Louis Guénégo, consultant formateur en informatique",
+  description = "Consultant formateur en informatique basé à Torcy. Accompagnement, développement web, formation, conseil. Expertise fullstack TypeScript.",
+} = Astro.props;
 ---
+
 
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>JLG Consulting</title>
+    <title>{title}</title>
+    <meta name="description" content={description} />
+  
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  
+    <!-- Open Graph pour réseaux sociaux -->
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/bureau.jpg" />
+    <meta property="og:url" content="https://www.jlg-consulting.com/" />
+  
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
   </head>
+  
   <body class="flex flex-col min-h-screen bg-white text-gray-800">
     <NavBar />
     <main class="flex-grow container mx-auto p-4">

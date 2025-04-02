@@ -1,8 +1,11 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+
+const title = "A propos – JLG Consulting";
+const description = "Qui est Jean-Louis Guénégo, consultant formateur en informatique ? Découvrez son parcours, ses compétences et sa passion pour le code.";
 ---
 
-<BaseLayout>
+<BaseLayout {title} {description}>
   <section class="py-16 px-4 bg-white">
     <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-8 items-center">
       

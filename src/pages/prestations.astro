@@ -1,8 +1,11 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+
+const title = "Prestations – JLG Consulting";
+const description = "Accompagnement, développement et formation en informatique. Découvrez les services de Jean-Louis Guénégo.";
 ---
 
-<BaseLayout>
+<BaseLayout {title} {description}>
   <!-- Titre principal -->
   <section class="py-16 px-4 text-center bg-gray-50">
     <h1 class="text-4xl font-bold text-blue-700 mb-4">Prestations</h1>
