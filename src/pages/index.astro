@@ -1,5 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import Testimonials from "../components/Testimonials.astro";
+
 
 const title = "Accueil – JLG Consulting";
 const description = "Bienvenue sur le site de Jean-Louis Guénégo, consultant formateur en informatique. Découvrez ses services.";
@@ -72,23 +74,20 @@ const description = "Bienvenue sur le site de Jean-Louis Guénégo, consultant f
   <section id="missions" class="py-16 px-4 bg-white">
     <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-8 items-center">
       
-      
-
       <!-- Texte -->
       <div>
-        <h1 class="text-3xl font-bold text-blue-700 mb-4">Plus de 400 missions réalisées...</h1>
+        <h1 class="text-3xl font-bold text-blue-700 mb-4">Une histoire de {new Date().getFullYear() - 2001} ans, avec plus de 400 missions réalisées.</h1>
         <p class="text-gray-700 mb-4">
-          En 20 ans, j'ai eu l'opportunité de travailler sur plus de 400 missions variées, allant du développement d'applications web à la formation de développeurs sur les dernières technologies JavaScript.
+          Missions de quelques jours ou de plusieurs années, recommandé par mes partenaires, j'ai accompagné une centaine d'entreprise dans des domaines variés.
         </p>
         <p class="text-gray-700 mb-4">
           J'ai collaboré avec des entreprises de toutes tailles, des startups aux grandes entreprises, en passant par le secteur public. Chaque mission est une nouvelle aventure, un nouveau défi à relever.
         </p>
       </div>
 
-
       <!-- Image -->
       <div class="flex justify-center">
-        <a href="missions.html">
+        <a href="missions">
           <img 
           src="missions.jpg" 
           alt="Carte de France de mes missions" 
@@ -99,6 +98,9 @@ const description = "Bienvenue sur le site de Jean-Louis Guénégo, consultant f
       </div>
     </div>
   </section>
+
+  <Testimonials />
+
 
   <section id="contact" class="py-16 px-4 bg-white">
     <div class="max-w-3xl mx-auto text-center">

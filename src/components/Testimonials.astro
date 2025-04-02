@@ -1,0 +1,31 @@
+---
+const testimonials = [
+  {
+    text: "Jean-Louis a su parfaitement comprendre nos besoins techniques tout en restant à l’écoute de nos enjeux métiers.",
+    author: "Claire Dupont",
+    company: "Directrice de projet, TechInnov"
+  },
+  {
+    text: "Une collaboration fluide, efficace, et toujours dans la bonne humeur.",
+    author: "Marc Lefèvre",
+    company: "CTO, StartUpX"
+  },
+  {
+    text: "Un expert fiable et compétent, avec un vrai sens du service.",
+    author: "Sophie Bernard",
+    company: "Consultante indépendante"
+  }
+];
+---
+
+<section class="bg-gray-100 py-12 px-4 sm:px-6 lg:px-8 rounded-lg mt-8">
+  <h2 class="text-3xl font-semibold text-center text-gray-800 mb-8">Témoignages</h2>
+  <ul class="space-y-6 max-w-4xl mx-auto">
+    {testimonials.map(t => (
+      <li class="bg-white p-6 rounded-lg shadow">
+        <blockquote class="text-gray-700 italic mb-4">“{t.text}”</blockquote>
+        <p class="text-gray-900 font-medium">{t.author}, <span class="text-gray-600">{t.company}</span></p>
+      </li>
+    ))}
+  </ul>
+</section>
