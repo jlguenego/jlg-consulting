@@ -39,4 +39,91 @@ const description = "Bienvenue sur le site de Jean-Louis Guénégo, consultant f
       </div>
     </div>
   </section>
+
+  <section id="a-propos" class="py-16 px-4 bg-white">
+    <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-8 items-center">
+      
+      <!-- Image -->
+      <div class="flex justify-center">
+        <img 
+          src="portrait.jpg" 
+          alt="Jean-Louis Guénégo" 
+          class="w-64 h-64 object-cover rounded-full shadow-lg border-4 border-blue-100"
+        />
+
+      </div>
+
+      <!-- Texte -->
+      <div>
+        <h1 class="text-3xl font-bold text-blue-700 mb-4">À propos de moi</h1>
+        <p class="text-gray-700 mb-4">
+          Je m'appelle <strong>Jean-Louis Guénégo</strong>. Je suis consultant formateur en informatique, passionné par le code, l'architecture logicielle, la pédagogie et la transmission du savoir.
+        </p>
+        <p class="text-gray-700 mb-4">
+          Ancien élève de l’ENS de Cachan, j’ai accumulé plus de 20 ans d'expérience dans le développement web, les technologies JavaScript modernes (Node.js, Vue, React, etc.), et la formation auprès de publics techniques.
+        </p>
+        <p class="text-gray-700 mb-4">
+          Mon approche est centrée sur la qualité, la simplicité et l'efficacité. Je m'efforce toujours d'apporter des solutions compréhensibles, évolutives et robustes à mes clients.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="py-16 px-4 bg-white">
+    <div class="max-w-3xl mx-auto text-center">
+      <h1 class="text-3xl font-bold text-blue-700 mb-6">Me contacter</h1>
+      <p class="text-gray-700 text-lg mb-8">
+        Voici toutes les informations pour me joindre ou venir me rencontrer.
+      </p>
+
+      <div class="space-y-6 text-left text-gray-700 text-md">
+        <!-- Adresse -->
+        <div class="flex items-start gap-3">
+          <svg class="w-6 h-6 text-blue-600 mt-1 shrink-0" fill="none" stroke="currentColor" stroke-width="2"
+            viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M12 11c1.656 0 3-1.343 3-3s-1.344-3-3-3-3 1.343-3 3 1.344 3 3 3z" />
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M19.5 11c0 7-7.5 11-7.5 11S4.5 18 4.5 11a7.5 7.5 0 0115 0z" />
+          </svg>
+          <p>
+            <strong>Adresse :</strong><br />
+            99 rue de Paris<br />
+            77200 Torcy<br />
+            Bâtiment A, 1<sup>er</sup> étage
+          </p>
+        </div>
+
+        <!-- Téléphone -->
+        <div class="flex items-center gap-3">
+          <svg class="w-6 h-6 text-blue-600 shrink-0" fill="none" stroke="currentColor" stroke-width="2"
+            viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M3 5a2 2 0 012-2h2.6a1 1 0 01.92.606L10 6l-2 2c1.5 3.5 4.5 6.5 8 8l2-2 2.394.479a1 1 0 01.606.921V19a2 2 0 01-2 2h-1C9.163 21 3 14.837 3 7V5z" />
+          </svg>
+          <p>
+            <strong>Téléphone :</strong><br />
+            <a href="tel:+33160179262" class="text-blue-600 hover:underline">+33 1 60 17 92 62</a>
+          </p>
+        </div>
+
+        <!-- Email -->
+        <div class="flex items-center gap-3">
+          <svg class="w-6 h-6 text-blue-600 shrink-0" fill="none" stroke="currentColor" stroke-width="2"
+            viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8m-18 8h18a2 2 0 002-2V6a2 2 0 00-2-2H3a2 2 0 00-2 2v8a2 2 0 002 2z" />
+          </svg>
+          <p>
+            <strong>Email :</strong><br />
+            <a href="mailto:jlg@jlg-consulting.com" class="text-blue-600 hover:underline">jlg@jlg-consulting.com</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
 </BaseLayout>
