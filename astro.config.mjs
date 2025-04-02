@@ -2,6 +2,7 @@
 import { defineConfig } from "astro/config";
 import sitemap from "@astrojs/sitemap";
 import tailwindcss from "@tailwindcss/vite";
+import icon from "astro-icon";
 
 // https://astro.build/config
 export default defineConfig({
@@ -10,5 +11,5 @@ export default defineConfig({
   },
   site: "https://www.jlg-consulting.com",
   base: "/nouveau-site/",
-  integrations: [sitemap()],
+  integrations: [sitemap(), icon()],
 });
