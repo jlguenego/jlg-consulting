@@ -1,0 +1,1502 @@
+[
+  {
+    "latitude": 48.89256445,
+    "longitude": 2.2358742155740754,
+    "label": "FANP1 2014-11-17"
+  },
+  {
+    "latitude": 47.229718,
+    "longitude": -1.6333556,
+    "label": "AILN1 2014-11-20"
+  },
+  {
+    "latitude": 48.89256445,
+    "longitude": 2.2358742155740754,
+    "label": "AILP1 2014-11-27"
+  },
+  {
+    "latitude": 48.89256445,
+    "longitude": 2.2358742155740754,
+    "label": "AILP1 2015-01-08"
+  },
+  {
+    "latitude": 47.78283871962035,
+    "longitude": 7.387885775770923,
+    "label": "FANS1 2015-01-21"
+  },
+  {
+    "latitude": 45.84180323840161,
+    "longitude": 1.23003396926496,
+    "label": "FANZ1 2015-01-28"
+  },
+  {
+    "latitude": 47.64204027337096,
+    "longitude": 6.862177338848502,
+    "label": "FANS1 2015-03-09"
+  },
+  {
+    "latitude": 47.23992150045759,
+    "longitude": 5.988528592084338,
+    "label": "AILZ1 2015-03-23"
+  },
+  {
+    "latitude": 48.8553387966545,
+    "longitude": 2.331704692895816,
+    "label": "FANZ1 2015-04-20"
+  },
+  {
+    "latitude": 48.82384182376459,
+    "longitude": 2.396035176776368,
+    "label": "FANZ1 2015-04-30"
+  },
+  {
+    "latitude": 48.89256445,
+    "longitude": 2.2358742155740754,
+    "label": "FANP1 2015-05-18"
+  },
+  {
+    "latitude": 43.53325886492475,
+    "longitude": 1.486203258040759,
+    "label": "FANZ1 2015-05-28"
+  },
+  {
+    "latitude": 48.89256445,
+    "longitude": 2.2358742155740754,
+    "label": "IHMP1 2015-06-01"
+  },
+  {
+    "latitude": 48.89256445,
+    "longitude": 2.2358742155740754,
+    "label": "AILP1 2015-06-04"
+  },
+  {
+    "latitude": 48.89256445,
+    "longitude": 2.2358742155740754,
+    "label": "EGOP1 2015-06-08"
+  },
+  {
+    "latitude": 45.7632119,
+    "longitude": 4.8580036,
+    "label": "IHML1 2015-06-22"
+  },
+  {
+    "latitude": 43.6109967,
+    "longitude": 1.4359936,
+    "label": "AILT1 2015-06-25"
+  },
+  {
+    "latitude": 47.229718,
+    "longitude": -1.6333556,
+    "label": "IHMN1 2015-06-29"
+  },
+  {
+    "latitude": 48.89256445,
+    "longitude": 2.2358742155740754,
+    "label": "AILP1 2015-07-02"
+  },
+  {
+    "latitude": 48.89256445,
+    "longitude": 2.2358742155740754,
+    "label": "EGOP1 2015-09-03"
+  },
+  {
+    "latitude": 48.89256445,
+    "longitude": 2.2358742155740754,
+    "label": "FANP1 2015-09-07"
+  },
+  {
+    "latitude": 43.6109967,
+    "longitude": 1.4359936,
+    "label": "IHMT1 2015-09-14"
+  },
+  {
+    "latitude": 48.762606411035904,
+    "longitude": 2.0791215803822936,
+    "label": "EGOZ1 2015-09-17"
+  },
+  {
+    "latitude": 48.89256445,
+    "longitude": 2.2358742155740754,
+    "label": "IHMP1 2015-09-28"
+  },
+  {
+    "latitude": 45.84179044591542,
+    "longitude": 1.2299519586848628,
+    "label": "FANZ1 2015-10-05"
+  },
+  {
+    "latitude": 48.89256445,
+    "longitude": 2.2358742155740754,
+    "label": "FANP1 2015-10-12"
+  },
+  {
+    "latitude": 48.89256445,
+    "longitude": 2.2358742155740754,
+    "label": "AILP1 2015-10-15"
+  },
+  {
+    "latitude": 48.08781348976037,
+    "longitude": -1.6218649901110882,
+    "label": "IHMR1 2015-11-23"
+  },
+  {
+    "latitude": 48.89256445,
+    "longitude": 2.2358742155740754,
+    "label": "AILP1 2015-11-26"
+  },
+  {
+    "latitude": 50.64036011359741,
+    "longitude": 3.075422423882564,
+    "label": "IHME1 2015-11-30"
+  },
+  {
+    "latitude": 45.761301933675824,
+    "longitude": 4.859333811819128,
+    "label": "AILL1 2015-12-03"
+  },
+  {
+    "latitude": 48.89256445,
+    "longitude": 2.2358742155740754,
+    "label": "FANP1 2015-12-07"
+  },
+  {
+    "latitude": 44.84307982082879,
+    "longitude": -0.5742816613048644,
+    "label": "AILO1 2015-12-10"
+  },
+  {
+    "latitude": 45.84179044591542,
+    "longitude": 1.2299519586848628,
+    "label": "IHMZ1 2015-12-14"
+  },
+  {
+    "latitude": 46.19040673683554,
+    "longitude": 6.131245162920021,
+    "label": "FANZ1 2016-01-11"
+  },
+  {
+    "latitude": 48.89256445,
+    "longitude": 2.2358742155740754,
+    "label": "EGOP1 2016-01-21"
+  },
+  {
+    "latitude": 48.89256445,
+    "longitude": 2.2358742155740754,
+    "label": "EGOP1 2016-01-28"
+  },
+  {
+    "latitude": 48.89256445,
+    "longitude": 2.2358742155740754,
+    "label": "FANP2 2016-02-15"
+  },
+  {
+    "latitude": 43.62035225497876,
+    "longitude": 7.036406579399168,
+    "label": "FANH1 2016-02-22"
+  },
+  {
+    "latitude": 48.89256445,
+    "longitude": 2.2358742155740754,
+    "label": "AILP1 2016-03-03"
+  },
+  {
+    "latitude": 48.89256445,
+    "longitude": 2.2358742155740754,
+    "label": "FANP2 2016-03-21"
+  },
+  {
+    "latitude": 47.51530349035538,
+    "longitude": 6.831064242788019,
+    "label": "FANS2 2016-04-18 PSA PCA"
+  },
+  {
+    "latitude": 48.26343672603425,
+    "longitude": 7.23029682541119,
+    "label": "AILZ1 2016-04-25"
+  },
+  {
+    "latitude": 48.89256445,
+    "longitude": 2.2358742155740754,
+    "label": "IHMP1 2016-05-02 INSTITUT 4.10"
+  },
+  {
+    "latitude": 43.47981897743879,
+    "longitude": 5.373083913495282,
+    "label": "IHMX1 2016-05-11"
+  },
+  {
+    "latitude": 48.89256445,
+    "longitude": 2.2358742155740754,
+    "label": "FANP1 2016-05-17"
+  },
+  {
+    "latitude": 43.6109967,
+    "longitude": 1.4359936,
+    "label": "IHMT1 2016-05-23"
+  },
+  {
+    "latitude": 48.89256445,
+    "longitude": 2.2358742155740754,
+    "label": "IHMP1 2016-05-30"
+  },
+  {
+    "latitude": 48.89256445,
+    "longitude": 2.2358742155740754,
+    "label": "AILP1 2016-06-02"
+  },
+  {
+    "latitude": 43.47981897743879,
+    "longitude": 5.373083913495282,
+    "label": "AILX1 2016-06-16"
+  },
+  {
+    "latitude": 45.7632119,
+    "longitude": 4.8580036,
+    "label": "FANL1 2016-06-20"
+  },
+  {
+    "latitude": 48.89256445,
+    "longitude": 2.2358742155740754,
+    "label": "EGOP1 2016-06-23"
+  },
+  {
+    "latitude": 44.84359712801428,
+    "longitude": -0.5734370036345633,
+    "label": "FANO1 2016-06-27"
+  },
+  {
+    "latitude": 48.89256445,
+    "longitude": 2.2358742155740754,
+    "label": "IHMP1 2016-07-11 INSTITUT 4.10"
+  },
+  {
+    "latitude": 48.89256445,
+    "longitude": 2.2358742155740754,
+    "label": "FANP1 2016-07-18"
+  },
+  {
+    "latitude": 48.89256445,
+    "longitude": 2.2358742155740754,
+    "label": "EGOP1 2016-09-01"
+  },
+  {
+    "latitude": 48.89256445,
+    "longitude": 2.2358742155740754,
+    "label": "AILP1 2016-09-08"
+  },
+  {
+    "latitude": 47.229718,
+    "longitude": -1.6333556,
+    "label": "AILN1 2016-09-12"
+  },
+  {
+    "latitude": 48.82513148237491,
+    "longitude": 2.3374104315318456,
+    "label": "IHMZ1 2016-09-14"
+  },
+  {
+    "latitude": 48.89256445,
+    "longitude": 2.2358742155740754,
+    "label": "IHMP1 2016-09-26"
+  },
+  {
+    "latitude": 48.89256445,
+    "longitude": 2.2358742155740754,
+    "label": "AILP1 2016-09-29 THALES GLOBAL SERVICES SAS"
+  },
+  {
+    "latitude": 48.89256445,
+    "longitude": 2.2358742155740754,
+    "label": "EGOP1 2016-10-03 RENAULT SAS"
+  },
+  {
+    "latitude": 48.6656981352317,
+    "longitude": 2.2369647291411288,
+    "label": "AILZ1 2016-10-06 GROUPE CIMES"
+  },
+  {
+    "latitude": 48.89256445,
+    "longitude": 2.2358742155740754,
+    "label": "FANP2 2016-10-10"
+  },
+  {
+    "latitude": 48.89256445,
+    "longitude": 2.2358742155740754,
+    "label": "EGOP1 2016-11-03"
+  },
+  {
+    "latitude": 48.4106205161096,
+    "longitude": -4.462034034396975,
+    "label": "AILZ1 2016-11-07"
+  },
+  {
+    "latitude": 48.89256445,
+    "longitude": 2.2358742155740754,
+    "label": "FANP1 2016-11-14"
+  },
+  {
+    "latitude": 48.89256445,
+    "longitude": 2.2358742155740754,
+    "label": "IHMP1 2016-11-21"
+  },
+  {
+    "latitude": 48.89256445,
+    "longitude": 2.2358742155740754,
+    "label": "AILP1 2016-11-24"
+  },
+  {
+    "latitude": 48.585849662045824,
+    "longitude": 7.741627656709324,
+    "label": "FANS1 2016-11-28"
+  },
+  {
+    "latitude": 48.89256445,
+    "longitude": 2.2358742155740754,
+    "label": "EGOP1 2016-12-06 SOGETI"
+  },
+  {
+    "latitude": 48.89256445,
+    "longitude": 2.2358742155740754,
+    "label": "GULP1 2016-12-15"
+  },
+  {
+    "latitude": 47.2318282304886,
+    "longitude": -1.626167350254912,
+    "label": "GULZ1 2016-12-19 INFOTEL OUEST"
+  },
+  {
+    "latitude": 48.89256445,
+    "longitude": 2.2358742155740754,
+    "label": "IHMP1 2017-01-09 ALTRAN-IT-ITS"
+  },
+  {
+    "latitude": 48.89256445,
+    "longitude": 2.2358742155740754,
+    "label": "EGOP1 2017-01-19 RENAULT SAS"
+  },
+  {
+    "latitude": 48.89256445,
+    "longitude": 2.2358742155740754,
+    "label": "FANP2 2017-02-20 TRANSAT FRANCE"
+  },
+  {
+    "latitude": 47.229718,
+    "longitude": -1.6333556,
+    "label": "AILN1 2017-02-23"
+  },
+  {
+    "latitude": 48.89256445,
+    "longitude": 2.2358742155740754,
+    "label": "EGOP1 2017-03-02"
+  },
+  {
+    "latitude": 48.08781348976037,
+    "longitude": -1.6218649901110882,
+    "label": "FANR1 2017-03-06 INSTITUT 4.10"
+  },
+  {
+    "latitude": 47.63938510022965,
+    "longitude": 7.492898031464503,
+    "label": "AILB1 2017-03-09"
+  },
+  {
+    "latitude": 48.89256445,
+    "longitude": 2.2358742155740754,
+    "label": "FANP1 2017-03-20"
+  },
+  {
+    "latitude": 43.6109967,
+    "longitude": 1.4359936,
+    "label": "FANT1 2017-04-18"
+  },
+  {
+    "latitude": 48.85087717585816,
+    "longitude": 2.416868552447353,
+    "label": "IHMZ1 2017-04-24 INSTITUT 4.10"
+  },
+  {
+    "latitude": 43.47981897743879,
+    "longitude": 5.373083913495282,
+    "label": "AILX1 2017-04-27"
+  },
+  {
+    "latitude": 43.62035225497876,
+    "longitude": 7.036406579399168,
+    "label": "FANH1 2017-05-03"
+  },
+  {
+    "latitude": 48.89256445,
+    "longitude": 2.2358742155740754,
+    "label": "FANP2 2017-05-15"
+  },
+  {
+    "latitude": 47.47453781337167,
+    "longitude": -0.6122088957421481,
+    "label": "FANZ1 2017-05-22 TELELOGOS"
+  },
+  {
+    "latitude": 48.89256445,
+    "longitude": 2.2358742155740754,
+    "label": "IHMP1 2017-05-29"
+  },
+  {
+    "latitude": 48.89256445,
+    "longitude": 2.2358742155740754,
+    "label": "GULP1 2017-06-01"
+  },
+  {
+    "latitude": 47.63938510022965,
+    "longitude": 7.492898031464503,
+    "label": "AILB1 2017-06-12"
+  },
+  {
+    "latitude": 43.6109967,
+    "longitude": 1.4359936,
+    "label": "FANT1 2017-06-19"
+  },
+  {
+    "latitude": 50.6408154,
+    "longitude": 3.0688212,
+    "label": "AILE1 2017-06-22"
+  },
+  {
+    "latitude": 47.229718,
+    "longitude": -1.6333556,
+    "label": "FANN1 2017-06-26"
+  },
+  {
+    "latitude": 48.63740266925642,
+    "longitude": -0.9578373658421532,
+    "label": "AILZ1 2017-06-29 ACOME"
+  },
+  {
+    "latitude": 43.31048596264896,
+    "longitude": 5.366398515374165,
+    "label": "FANZ1 2017-07-03 BUSINESS & DECISION UNIVERSITY"
+  },
+  {
+    "latitude": 48.89256445,
+    "longitude": 2.2358742155740754,
+    "label": "FANP2 2017-07-17"
+  },
+  {
+    "latitude": 43.62609043854897,
+    "longitude": 1.4890595666788702,
+    "label": "FANZ1 2017-07-24 GEOSYS"
+  },
+  {
+    "latitude": 48.89256445,
+    "longitude": 2.2358742155740754,
+    "label": "FANP1 2017-09-05 CIPAV GROUPE BERRI"
+  },
+  {
+    "latitude": 48.89256445,
+    "longitude": 2.2358742155740754,
+    "label": "EGOP1 2017-09-14"
+  },
+  {
+    "latitude": 48.89256445,
+    "longitude": 2.2358742155740754,
+    "label": "FANP1 2017-09-18"
+  },
+  {
+    "latitude": 47.91392281849006,
+    "longitude": 1.8827058397609244,
+    "label": "AILZ1 2017-09-21 BRANDT FRANCE"
+  },
+  {
+    "latitude": 47.229718,
+    "longitude": -1.6333556,
+    "label": "GULN1 2017-09-26 INFOTEL OUEST"
+  },
+  {
+    "latitude": 46.52137404048027,
+    "longitude": -1.785263126585886,
+    "label": "IHMZ1 2017-10-02 37 DEUX"
+  },
+  {
+    "latitude": 45.14932763747201,
+    "longitude": 5.725236231327624,
+    "label": "FANZ1 2017-10-09 CRITEO"
+  },
+  {
+    "latitude": 43.26412600906882,
+    "longitude": 5.379953272850286,
+    "label": "GULZ1 2017-10-17 ENOVACOM"
+  },
+  {
+    "latitude": 43.47981897743879,
+    "longitude": 5.373083913495282,
+    "label": "FANX1 2017-10-23"
+  },
+  {
+    "latitude": 48.89256445,
+    "longitude": 2.2358742155740754,
+    "label": "EGOP1 2017-11-09"
+  },
+  {
+    "latitude": 45.1880448,
+    "longitude": 5.704608,
+    "label": "IHMI1 2017-11-13"
+  },
+  {
+    "latitude": 48.89256445,
+    "longitude": 2.2358742155740754,
+    "label": "IHMP1 2017-11-20"
+  },
+  {
+    "latitude": 48.89256445,
+    "longitude": 2.2358742155740754,
+    "label": "AILP1 2017-11-23"
+  },
+  {
+    "latitude": 48.89543724175957,
+    "longitude": 2.224229533911952,
+    "label": "IHMZ1 2017-11-27 CFPB"
+  },
+  {
+    "latitude": 47.229718,
+    "longitude": -1.6333556,
+    "label": "IHMN1 2017-12-04"
+  },
+  {
+    "latitude": 48.89256445,
+    "longitude": 2.2358742155740754,
+    "label": "GULP1 2017-12-14"
+  },
+  {
+    "latitude": 45.21074454677336,
+    "longitude": 5.7787210458291,
+    "label": "AILZ1 2017-12-18 ROCHE DIAGNOSTICS FRANCE"
+  },
+  {
+    "latitude": 45.188758637018914,
+    "longitude": 5.716025946753553,
+    "label": "FANZ1 2018-01-03 ECONOCOM OSIATIS INGENIERIE"
+  },
+  {
+    "latitude": 43.636261880170096,
+    "longitude": 3.828391182022275,
+    "label": "IHMZ1 2018-01-22 ABES"
+  },
+  {
+    "latitude": 48.08781348976037,
+    "longitude": -1.6218649901110882,
+    "label": "AILR1 2018-02-22"
+  },
+  {
+    "latitude": 43.6109967,
+    "longitude": 1.4359936,
+    "label": "AILT1 2018-04-05"
+  },
+  {
+    "latitude": 48.76179631987421,
+    "longitude": 2.081629686932496,
+    "label": "EGOZ1 2018-04-19 RENAULT SAS"
+  },
+  {
+    "latitude": 47.78075631039047,
+    "longitude": -3.4183500806213947,
+    "label": "NJSZ1 2018-05-15 PHARMAGEST INTERACTIVE"
+  },
+  {
+    "latitude": 47.23030221258328,
+    "longitude": -1.6306533590709755,
+    "label": "FANZ1 2018-05-22 ASR INFORMATIQUE"
+  },
+  {
+    "latitude": 48.89256445,
+    "longitude": 2.2358742155740754,
+    "label": "IHMP1 2018-05-28"
+  },
+  {
+    "latitude": 48.89256445,
+    "longitude": 2.2358742155740754,
+    "label": "AILP1 2018-05-31"
+  },
+  {
+    "latitude": 48.89256445,
+    "longitude": 2.2358742155740754,
+    "label": "JAOP1 2018-06-04"
+  },
+  {
+    "latitude": 48.89256445,
+    "longitude": 2.2358742155740754,
+    "label": "EGOP1 2018-06-07"
+  },
+  {
+    "latitude": 44.84359712801428,
+    "longitude": -0.5734370036345633,
+    "label": "NJSO1 2018-06-12"
+  },
+  {
+    "latitude": 43.81684160253367,
+    "longitude": 5.044694371409123,
+    "label": "NJSZ1 2018-06-18 NEOPOST SHIPPING"
+  },
+  {
+    "latitude": 50.844393573239394,
+    "longitude": 4.353834600314224,
+    "label": "EGOZ1 2018-06-25 MUTUALITE SOCIALISTE"
+  },
+  {
+    "latitude": 48.89256445,
+    "longitude": 2.2358742155740754,
+    "label": "BOAP1 2018-06-28 SNCF"
+  },
+  {
+    "latitude": 43.81684160253367,
+    "longitude": 5.044694371409123,
+    "label": "NJSZ1 2018-07-02"
+  },
+  {
+    "latitude": 48.89256445,
+    "longitude": 2.2358742155740754,
+    "label": "AILPA1 2018-07-05 RESKILLING IDF"
+  },
+  {
+    "latitude": 46.32992082021974,
+    "longitude": -0.4854705826435856,
+    "label": "BOAZ1 2018-07-09 PARNASSE MAIF"
+  },
+  {
+    "latitude": 48.89256445,
+    "longitude": 2.2358742155740754,
+    "label": "IHMP2 2018-07-23"
+  },
+  {
+    "latitude": 44.84359712801428,
+    "longitude": -0.5734370036345633,
+    "label": "IHMO1 2018-09-03"
+  },
+  {
+    "latitude": 48.76316111910837,
+    "longitude": 2.3083712319392684,
+    "label": "IHMZ1 2018-09-10 GROUPE MONITEUR"
+  },
+  {
+    "latitude": 48.08781348976037,
+    "longitude": -1.6218649901110882,
+    "label": "AILR1 2018-09-13"
+  },
+  {
+    "latitude": 47.63938510022965,
+    "longitude": 7.492898031464503,
+    "label": "IHMZ1 2018-09-17 BIHR"
+  },
+  {
+    "latitude": 48.80499501248777,
+    "longitude": 2.3304184788411444,
+    "label": "BOAZ1 2018-09-20 INFORMATIQUE CDC"
+  },
+  {
+    "latitude": 48.89256445,
+    "longitude": 2.2358742155740754,
+    "label": "IHMP1 2018-09-24"
+  },
+  {
+    "latitude": 48.89256445,
+    "longitude": 2.2358742155740754,
+    "label": "AGUP1 2018-10-02"
+  },
+  {
+    "latitude": 48.89256445,
+    "longitude": 2.2358742155740754,
+    "label": "FANP1 2018-10-08"
+  },
+  {
+    "latitude": 48.77425051102693,
+    "longitude": 2.248105819148769,
+    "label": "EGOZ1 2018-10-11 RENAULT SAS"
+  },
+  {
+    "latitude": 48.90457572802345,
+    "longitude": 2.261884933382392,
+    "label": "IHMZ1 2018-10-15 INPI"
+  },
+  {
+    "latitude": 50.84631177919207,
+    "longitude": 4.369418467971789,
+    "label": "EGOZ1 2018-10-18 CIRB-CIBG"
+  },
+  {
+    "latitude": 48.90457572802345,
+    "longitude": 2.261884933382392,
+    "label": "IHMZ1 2018-10-22"
+  },
+  {
+    "latitude": 48.12728387379873,
+    "longitude": -1.708822141543059,
+    "label": "AGUZ1 2018-10-23 CNAF"
+  },
+  {
+    "latitude": 48.89256445,
+    "longitude": 2.2358742155740754,
+    "label": "EGOP1 2018-11-08"
+  },
+  {
+    "latitude": 48.89256445,
+    "longitude": 2.2358742155740754,
+    "label": "BOAP1 2018-11-12 IT-CE"
+  },
+  {
+    "latitude": 47.2329301,
+    "longitude": -1.6288389,
+    "label": "IHMN1 2018-11-19"
+  },
+  {
+    "latitude": 48.89256445,
+    "longitude": 2.2358742155740754,
+    "label": "AILP1 2018-11-22"
+  },
+  {
+    "latitude": 43.64148019975528,
+    "longitude": 3.838420408147193,
+    "label": "AGUZ1 2018-11-26 LA POSTE COURRIER DSIC"
+  },
+  {
+    "latitude": 48.89256445,
+    "longitude": 2.2358742155740754,
+    "label": "JAOP1 2018-12-03"
+  },
+  {
+    "latitude": 43.6109967,
+    "longitude": 1.4359936,
+    "label": "IHMT1 2018-12-12"
+  },
+  {
+    "latitude": 43.62332351075306,
+    "longitude": 7.039211079189303,
+    "label": "AGUZ1 2018-12-17 CNAF"
+  },
+  {
+    "latitude": 46.3440715539277,
+    "longitude": -0.3687886790514803,
+    "label": "IHMZ1 2019-01-14 GFI INFORMATIQUE/CENTRE"
+  },
+  {
+    "latitude": 47.3250755312393,
+    "longitude": 5.14429914599486,
+    "label": "AILZ1 2019-01-24 BIOSYSTEMES"
+  },
+  {
+    "latitude": 47.3250755312393,
+    "longitude": 5.14429914599486,
+    "label": "AILZZ1 2019-02-04"
+  },
+  {
+    "latitude": 48.89256445,
+    "longitude": 2.2358742155740754,
+    "label": "FUJPA1 2019-02-12"
+  },
+  {
+    "latitude": 43.61934223288732,
+    "longitude": 3.9133345521252063,
+    "label": "IHMMO1 2019-02-19"
+  },
+  {
+    "latitude": 47.2329301,
+    "longitude": -1.6288389,
+    "label": "IHMNA1 2019-02-25"
+  },
+  {
+    "latitude": 48.89256445,
+    "longitude": 2.2358742155740754,
+    "label": "EGOPA1 2019-03-11"
+  },
+  {
+    "latitude": 48.89256445,
+    "longitude": 2.2358742155740754,
+    "label": "DHMPA1 2019-03-18"
+  },
+  {
+    "latitude": 48.89256445,
+    "longitude": 2.2358742155740754,
+    "label": "IHMPA1 2019-03-25 GE CORPORATE"
+  },
+  {
+    "latitude": 48.83563019579351,
+    "longitude": 2.3727685683296778,
+    "label": "BOAZZ1 2019-03-28 IT-CE"
+  },
+  {
+    "latitude": 48.89256445,
+    "longitude": 2.2358742155740754,
+    "label": "AGUPA1 2019-04-09"
+  },
+  {
+    "latitude": 48.89256445,
+    "longitude": 2.2358742155740754,
+    "label": "IHMPA1 2019-04-23"
+  },
+  {
+    "latitude": 48.58587416347199,
+    "longitude": 7.7417265076016735,
+    "label": "AGUST1 2019-05-14"
+  },
+  {
+    "latitude": 47.46876459775375,
+    "longitude": -0.5581392630071407,
+    "label": "AGUAN1 2019-05-21"
+  },
+  {
+    "latitude": 48.89256445,
+    "longitude": 2.2358742155740754,
+    "label": "AILPA1 2019-06-03 MINDEF"
+  },
+  {
+    "latitude": 48.89256445,
+    "longitude": 2.2358742155740754,
+    "label": "EGOPA1 2019-06-06"
+  },
+  {
+    "latitude": 48.89256445,
+    "longitude": 2.2358742155740754,
+    "label": "AGUPA1 2019-06-11"
+  },
+  {
+    "latitude": 49.09252956366271,
+    "longitude": 6.235685530191079,
+    "label": "FANZZ1 2019-06-18 GFI INFORMATIQUE/EST"
+  },
+  {
+    "latitude": 48.89256445,
+    "longitude": 2.2358742155740754,
+    "label": "IHMPA1 2019-06-24"
+  },
+  {
+    "latitude": 48.89256445,
+    "longitude": 2.2358742155740754,
+    "label": "AILPA1 2019-06-27"
+  },
+  {
+    "latitude": 45.65243223552334,
+    "longitude": 4.920976443655213,
+    "label": "EGOZZ1 2019-07-04 PROSOL GESTION"
+  },
+  {
+    "latitude": 43.62035225497876,
+    "longitude": 7.036406579399168,
+    "label": "AGUSA1 2019-07-16"
+  },
+  {
+    "latitude": 48.89256445,
+    "longitude": 2.2358742155740754,
+    "label": "DTVPA1 2019-07-23"
+  },
+  {
+    "latitude": 48.65648660716644,
+    "longitude": 6.133414004532994,
+    "label": "BOAZZ1 2019-08-27 WELCOOP"
+  },
+  {
+    "latitude": 45.19076771198721,
+    "longitude": 5.713084419171205,
+    "label": "IHMGR1 2019-09-02 THALES ALENIA SPACE"
+  },
+  {
+    "latitude": 48.77581788155019,
+    "longitude": 2.248374915058598,
+    "label": "EGOZZ1 2019-09-09 RENAULT SAS"
+  },
+  {
+    "latitude": 50.71242381938271,
+    "longitude": 1.6053255660149397,
+    "label": "AGUZZ1 2019-09-17 ALLIADIS"
+  },
+  {
+    "latitude": 48.89256445,
+    "longitude": 2.2358742155740754,
+    "label": "DHMPA1 2019-09-23"
+  },
+  {
+    "latitude": 49.25772555445091,
+    "longitude": 4.020938560815648,
+    "label": "DHMZZ1 2019-09-30 MEDIAROM"
+  },
+  {
+    "latitude": 48.7437019,
+    "longitude": 7.370856936941491,
+    "label": "BOAZZ1 2019-10-03 EPELFI"
+  },
+  {
+    "latitude": 48.89256445,
+    "longitude": 2.2358742155740754,
+    "label": "JAOPA1 2019-10-07"
+  },
+  {
+    "latitude": 49.25772555445091,
+    "longitude": 4.020938560815648,
+    "label": "DHMZZ1 2019-10-10"
+  },
+  {
+    "latitude": 44.8211396,
+    "longitude": -0.5536011,
+    "label": "IHMBO1 2019-10-14"
+  },
+  {
+    "latitude": 48.08508544622189,
+    "longitude": -0.7413104981450829,
+    "label": "FUJZZ1 2019-10-28 VILLE DE LAVAL"
+  },
+  {
+    "latitude": 48.89256445,
+    "longitude": 2.2358742155740754,
+    "label": "AGUPA1 2019-11-05"
+  },
+  {
+    "latitude": 47.23988365529636,
+    "longitude": 5.988461109226445,
+    "label": "FUJZZ1 2019-11-12 FLOWBIRD"
+  },
+  {
+    "latitude": 47.65858099428513,
+    "longitude": 7.270154797606404,
+    "label": "EGOZZ1 2019-11-18 SOPHEOS"
+  },
+  {
+    "latitude": 48.89256445,
+    "longitude": 2.2358742155740754,
+    "label": "AILPA1 2019-11-21"
+  },
+  {
+    "latitude": 48.89256445,
+    "longitude": 2.2358742155740754,
+    "label": "DTVPA1 2019-11-26"
+  },
+  {
+    "latitude": 47.945716411166494,
+    "longitude": 1.86541220437101,
+    "label": "IHMZZ1 2019-12-02 SITTI"
+  },
+  {
+    "latitude": 48.89256445,
+    "longitude": 2.2358742155740754,
+    "label": "SPTPA1 2019-12-09"
+  },
+  {
+    "latitude": 48.97148744703129,
+    "longitude": 4.345381267250027,
+    "label": "EGOZZ1 2019-12-18 JVS MAIRISTEM"
+  },
+  {
+    "latitude": 48.89256445,
+    "longitude": 2.2358742155740754,
+    "label": "EGOPA1 2020-01-13"
+  },
+  {
+    "latitude": 48.89256445,
+    "longitude": 2.2358742155740754,
+    "label": "AGUPA1 2020-01-27 BNP PARIBAS PERSONAL FINANCE"
+  },
+  {
+    "latitude": 48.89256445,
+    "longitude": 2.2358742155740754,
+    "label": "AGUPA1 2020-02-18"
+  },
+  {
+    "latitude": 48.77581788155019,
+    "longitude": 2.248374915058598,
+    "label": "IHMZZ1 2020-02-24 RENAULT SAS"
+  },
+  {
+    "latitude": 47.2329301,
+    "longitude": -1.6288389,
+    "label": "DHMNA1 2020-03-02"
+  },
+  {
+    "latitude": 48.89256445,
+    "longitude": 2.2358742155740754,
+    "label": "NJSZZ1 2020-03-10 OCAPIAT FAFSEA"
+  },
+  {
+    "latitude": 48.89256445,
+    "longitude": 2.2358742155740754,
+    "label": "DHMPA1 2020-03-16"
+  },
+  {
+    "latitude": 48.8494664,
+    "longitude": 2.6437587,
+    "label": "FUJCV1 2020-04-29 ALTRAN SUD OUEST"
+  },
+  {
+    "latitude": 48.8494664,
+    "longitude": 2.6437587,
+    "label": "FUJCV1 2020-05-07 ALTRAN SUD OUEST"
+  },
+  {
+    "latitude": 48.8494664,
+    "longitude": 2.6437587,
+    "label": "EGOCV2 2020-05-19"
+  },
+  {
+    "latitude": 48.8494664,
+    "longitude": 2.6437587,
+    "label": "AGUCV1 2020-05-26"
+  },
+  {
+    "latitude": 48.8494664,
+    "longitude": 2.6437587,
+    "label": "AGUCV2 2020-06-02 GENAPI"
+  },
+  {
+    "latitude": 48.8494664,
+    "longitude": 2.6437587,
+    "label": "TJSCV1 2020-06-08"
+  },
+  {
+    "latitude": 48.8494664,
+    "longitude": 2.6437587,
+    "label": "EGOCV1 2020-06-11"
+  },
+  {
+    "latitude": 48.8494664,
+    "longitude": 2.6437587,
+    "label": "NJSCV1 2020-06-15"
+  },
+  {
+    "latitude": 48.8494664,
+    "longitude": 2.6437587,
+    "label": "AILCV1 2020-06-22"
+  },
+  {
+    "latitude": 48.8494664,
+    "longitude": 2.6437587,
+    "label": "GULCV1 2020-06-25"
+  },
+  {
+    "latitude": 48.8494664,
+    "longitude": 2.6437587,
+    "label": "AGUCV1 2020-06-30"
+  },
+  {
+    "latitude": 48.89256445,
+    "longitude": 2.2358742155740754,
+    "label": "AGUPA1 2020-07-07"
+  },
+  {
+    "latitude": 48.8494664,
+    "longitude": 2.6437587,
+    "label": "AGUCV2 2020-07-20 MALAKOFF HUMANIS"
+  },
+  {
+    "latitude": 48.8494664,
+    "longitude": 2.6437587,
+    "label": "IHMCV1 2020-08-19"
+  },
+  {
+    "latitude": 43.62035225497876,
+    "longitude": 7.036406579399168,
+    "label": "BOASA1 2020-09-03"
+  },
+  {
+    "latitude": 48.89256445,
+    "longitude": 2.2358742155740754,
+    "label": "IHMPA1 2020-09-07"
+  },
+  {
+    "latitude": 48.89256445,
+    "longitude": 2.2358742155740754,
+    "label": "BOAPA1 2020-09-10"
+  },
+  {
+    "latitude": 48.89256445,
+    "longitude": 2.2358742155740754,
+    "label": "DHMPA1 2020-09-21"
+  },
+  {
+    "latitude": 48.8494664,
+    "longitude": 2.6437587,
+    "label": "IHMCV8 2020-09-28 ARVAL"
+  },
+  {
+    "latitude": 43.51634330975939,
+    "longitude": 4.951753793898945,
+    "label": "BOAZZ1 2020-10-01 DASSAULT AVIATION"
+  },
+  {
+    "latitude": 48.89256445,
+    "longitude": 2.2358742155740754,
+    "label": "AGUPA1 2020-10-06"
+  },
+  {
+    "latitude": 50.863982295083325,
+    "longitude": 4.3592890080672015,
+    "label": "DHMZZ1 2020-10-12 ETNIC"
+  },
+  {
+    "latitude": 48.8494664,
+    "longitude": 2.6437587,
+    "label": "AGUCV1 2020-10-19 GIE LA MONDIALE GROUPE"
+  },
+  {
+    "latitude": 48.65594501918073,
+    "longitude": 6.155441563255926,
+    "label": "DTVZZ1 2020-10-26 CNRS"
+  },
+  {
+    "latitude": 48.8494664,
+    "longitude": 2.6437587,
+    "label": "NJSCV1 2020-10-29"
+  },
+  {
+    "latitude": 48.81302329575094,
+    "longitude": 2.303731519949419,
+    "label": "TJSZZ1 2020-11-09 LEFEBVRE SARRUT SERVICES"
+  },
+  {
+    "latitude": 48.8494664,
+    "longitude": 2.6437587,
+    "label": "TJSCV1 2020-11-12"
+  },
+  {
+    "latitude": 48.8494664,
+    "longitude": 2.6437587,
+    "label": "IHMCV2 2020-11-23"
+  },
+  {
+    "latitude": 48.8494664,
+    "longitude": 2.6437587,
+    "label": "BOACV1 2020-12-07"
+  },
+  {
+    "latitude": 48.8494664,
+    "longitude": 2.6437587,
+    "label": "NJSCV1 2020-12-14 SIDEL END OF LINE SOLUTIONS"
+  },
+  {
+    "latitude": 48.8494664,
+    "longitude": 2.6437587,
+    "label": "NJSCV1 2020-12-18"
+  },
+  {
+    "latitude": 48.8494664,
+    "longitude": 2.6437587,
+    "label": "FANCV2 2020-12-21"
+  },
+  {
+    "latitude": 48.8494664,
+    "longitude": 2.6437587,
+    "label": "NJSCV1 2021-01-05"
+  },
+  {
+    "latitude": 43.62003980630615,
+    "longitude": 3.9095074111873087,
+    "label": "AGUZZ2 2021-01-25 GE GRID SOLUTIONS"
+  },
+  {
+    "latitude": 48.8494664,
+    "longitude": 2.6437587,
+    "label": "IHMCV1 2021-02-24"
+  },
+  {
+    "latitude": 48.8494664,
+    "longitude": 2.6437587,
+    "label": "IHMCV1 2021-03-03"
+  },
+  {
+    "latitude": 48.8494664,
+    "longitude": 2.6437587,
+    "label": "FANCV1 2021-03-08"
+  },
+  {
+    "latitude": 48.8494664,
+    "longitude": 2.6437587,
+    "label": "NJSCV1 2021-03-17"
+  },
+  {
+    "latitude": 48.8494664,
+    "longitude": 2.6437587,
+    "label": "NJSCV1 2021-03-23"
+  },
+  {
+    "latitude": 48.8494664,
+    "longitude": 2.6437587,
+    "label": "IHMCV1 2021-04-12 GE MEDICAL SYSTEMS"
+  },
+  {
+    "latitude": 48.8494664,
+    "longitude": 2.6437587,
+    "label": "IHMCV1 2021-04-21"
+  },
+  {
+    "latitude": 48.8494664,
+    "longitude": 2.6437587,
+    "label": "IHMCV1 2021-04-26"
+  },
+  {
+    "latitude": 48.8494664,
+    "longitude": 2.6437587,
+    "label": "AGUCV1 2021-04-28"
+  },
+  {
+    "latitude": 48.8494664,
+    "longitude": 2.6437587,
+    "label": "AGUCV1 2021-05-04"
+  },
+  {
+    "latitude": 48.8494664,
+    "longitude": 2.6437587,
+    "label": "JAOCV1 2021-05-11"
+  },
+  {
+    "latitude": 48.8494664,
+    "longitude": 2.6437587,
+    "label": "JAOCV1 2021-05-17"
+  },
+  {
+    "latitude": 48.8494664,
+    "longitude": 2.6437587,
+    "label": "IHMCV2 2021-05-19"
+  },
+  {
+    "latitude": 48.8494664,
+    "longitude": 2.6437587,
+    "label": "IHMCV2 2021-05-26"
+  },
+  {
+    "latitude": 48.89256445,
+    "longitude": 2.2358742155740754,
+    "label": "DTVPH1 2021-06-01"
+  },
+  {
+    "latitude": 48.8494664,
+    "longitude": 2.6437587,
+    "label": "AGUCV2 2021-06-14 VISEO BI"
+  },
+  {
+    "latitude": 48.89256445,
+    "longitude": 2.2358742155740754,
+    "label": "FUJPH1 2021-06-17"
+  },
+  {
+    "latitude": 48.89256445,
+    "longitude": 2.2358742155740754,
+    "label": "FUJPH1 2021-06-22"
+  },
+  {
+    "latitude": 48.8494664,
+    "longitude": 2.6437587,
+    "label": "BOACV1 2021-06-29"
+  },
+  {
+    "latitude": 48.8494664,
+    "longitude": 2.6437587,
+    "label": "TSRCV1 2021-07-01 MUTUALITE SOCIALISTE"
+  },
+  {
+    "latitude": 48.89256445,
+    "longitude": 2.2358742155740754,
+    "label": "IHMPA1 2021-07-07"
+  },
+  {
+    "latitude": 48.8494664,
+    "longitude": 2.6437587,
+    "label": "IHMCV1 2021-07-19 BEIJAFLORE"
+  },
+  {
+    "latitude": 48.8494664,
+    "longitude": 2.6437587,
+    "label": "SPTCV1 2021-09-06"
+  },
+  {
+    "latitude": 48.8494664,
+    "longitude": 2.6437587,
+    "label": "TJSCV1 2021-09-13"
+  },
+  {
+    "latitude": 48.89256445,
+    "longitude": 2.2358742155740754,
+    "label": "EGOPA1 2021-09-16"
+  },
+  {
+    "latitude": 48.89256445,
+    "longitude": 2.2358742155740754,
+    "label": "AGUPA1 2021-09-21"
+  },
+  {
+    "latitude": 48.89256445,
+    "longitude": 2.2358742155740754,
+    "label": "DHMPA1 2021-09-27"
+  },
+  {
+    "latitude": 48.8494664,
+    "longitude": 2.6437587,
+    "label": "NJSCV1 2021-09-29"
+  },
+  {
+    "latitude": 48.8494664,
+    "longitude": 2.6437587,
+    "label": "NJSCV1 2021-10-05"
+  },
+  {
+    "latitude": 48.8494664,
+    "longitude": 2.6437587,
+    "label": "NCHCV1 2021-10-11"
+  },
+  {
+    "latitude": 48.8494664,
+    "longitude": 2.6437587,
+    "label": "FUJCV1 2021-10-13"
+  },
+  {
+    "latitude": 48.8494664,
+    "longitude": 2.6437587,
+    "label": "FUJCV1 2021-10-19"
+  },
+  {
+    "latitude": 48.8494664,
+    "longitude": 2.6437587,
+    "label": "IHMCV1 2021-11-08"
+  },
+  {
+    "latitude": 43.61876022046304,
+    "longitude": 3.9142085895535392,
+    "label": "AGUZZ1 2021-11-15 NUMALIS"
+  },
+  {
+    "latitude": 48.89256445,
+    "longitude": 2.2358742155740754,
+    "label": "AILPH1 2021-11-22"
+  },
+  {
+    "latitude": 48.8494664,
+    "longitude": 2.6437587,
+    "label": "TSRCV1 2021-11-24 ORANGE OF"
+  },
+  {
+    "latitude": 48.8494664,
+    "longitude": 2.6437587,
+    "label": "TJSCV2 2021-11-25"
+  },
+  {
+    "latitude": 48.8494664,
+    "longitude": 2.6437587,
+    "label": "TJSCV2 2021-11-29"
+  },
+  {
+    "latitude": 48.8494664,
+    "longitude": 2.6437587,
+    "label": "TSRCV1 2021-12-13"
+  },
+  {
+    "latitude": 48.8494664,
+    "longitude": 2.6437587,
+    "label": "BOACV1 2021-12-20"
+  },
+  {
+    "latitude": 48.8494664,
+    "longitude": 2.6437587,
+    "label": "DHMCV1 2022-01-24 IT LINK FRANCE"
+  },
+  {
+    "latitude": 48.8494664,
+    "longitude": 2.6437587,
+    "label": "FRNCV1 2022-03-07"
+  },
+  {
+    "latitude": 48.8494664,
+    "longitude": 2.6437587,
+    "label": "BOACV2 2022-03-17 LES GRANDS CHAIS DE FRANCE"
+  },
+  {
+    "latitude": 43.1116379,
+    "longitude": 5.9424841,
+    "label": "AGUZZ1 2022-03-21 CNMSS"
+  },
+  {
+    "latitude": 48.89256445,
+    "longitude": 2.2358742155740754,
+    "label": "AILPA1 2022-03-28"
+  },
+  {
+    "latitude": 48.89256445,
+    "longitude": 2.2358742155740754,
+    "label": "NJSPH1 2022-04-05"
+  },
+  {
+    "latitude": 48.8494664,
+    "longitude": 2.6437587,
+    "label": "DHMCV2 2022-04-11 SEQUOIASOFT"
+  },
+  {
+    "latitude": 48.8494664,
+    "longitude": 2.6437587,
+    "label": "BOACV1 2022-04-19"
+  },
+  {
+    "latitude": 48.8494664,
+    "longitude": 2.6437587,
+    "label": "TSRCV1 2022-04-28 VISIATIV"
+  },
+  {
+    "latitude": 43.30419478101181,
+    "longitude": 3.1678874786051003,
+    "label": "AGUZZ1 2022-05-02 EDF RENOUVELABLES"
+  },
+  {
+    "latitude": 48.8494664,
+    "longitude": 2.6437587,
+    "label": "XXXCV3 2022-05-09 MINISTERE EDUCATION"
+  },
+  {
+    "latitude": 48.8494664,
+    "longitude": 2.6437587,
+    "label": "AGUCV1 2022-05-11"
+  },
+  {
+    "latitude": 48.8494664,
+    "longitude": 2.6437587,
+    "label": "BOACV1 2022-05-11 PROBTP"
+  },
+  {
+    "latitude": 48.89256445,
+    "longitude": 2.2358742155740754,
+    "label": "AGUPA2 2022-05-16"
+  },
+  {
+    "latitude": 48.8494664,
+    "longitude": 2.6437587,
+    "label": "AGUCV1 2022-05-17 GIE D'ABEILLE ASSURANCES"
+  },
+  {
+    "latitude": 48.89256445,
+    "longitude": 2.2358742155740754,
+    "label": "AGUPA1 2022-05-23"
+  },
+  {
+    "latitude": 48.8494664,
+    "longitude": 2.6437587,
+    "label": "TSRCV1 2022-05-30 SOC INFORMATIQUE"
+  },
+  {
+    "latitude": 48.89256445,
+    "longitude": 2.2358742155740754,
+    "label": "IHMPA1 2022-06-01"
+  },
+  {
+    "latitude": 44.8211396,
+    "longitude": -0.5536011,
+    "label": "FRNBO1 2022-06-08"
+  },
+  {
+    "latitude": 48.8494664,
+    "longitude": 2.6437587,
+    "label": "TJSCV1 2022-06-13"
+  },
+  {
+    "latitude": 48.8494664,
+    "longitude": 2.6437587,
+    "label": "JAOCV1 2022-06-20 GE MEDICAL SYSTEMS"
+  },
+  {
+    "latitude": 47.31278978006248,
+    "longitude": -0.0225264660712484,
+    "label": "NJSZZ1 2022-06-27 CASTEL"
+  },
+  {
+    "latitude": 48.89256445,
+    "longitude": 2.2358742155740754,
+    "label": "IHMPA1 2022-07-04"
+  }
+]
