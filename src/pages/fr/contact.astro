@@ -1,11 +1,11 @@
 ---
-import BaseLayout from '../../layouts/BaseLayout.astro';
+import BaseLayout from "../../layouts/BaseLayout.astro";
 
 const title = "Contact – JLG Consulting";
-const description = "Contactez Jean-Louis Guénégo, consultant formateur en informatique. Utilisez ses services.";
+const description =
+  "Contactez Jean-Louis Guénégo, consultant formateur en informatique. Utilisez ses services.";
 
 const publicDir = import.meta.env.BASE_URL;
-
 ---
 
 <BaseLayout {title} {description}>
@@ -19,17 +19,28 @@ const publicDir = import.meta.env.BASE_URL;
       <div class="space-y-6 text-left text-gray-700 text-md">
         <!-- Adresse -->
         <div class="flex items-start gap-3">
-          <svg class="w-6 h-6 text-blue-600 mt-1 shrink-0" fill="none" stroke="currentColor" stroke-width="2"
-            viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round"
-              d="M12 11c1.656 0 3-1.343 3-3s-1.344-3-3-3-3 1.343-3 3 1.344 3 3 3z" />
-            <path stroke-linecap="round" stroke-linejoin="round"
-              d="M19.5 11c0 7-7.5 11-7.5 11S4.5 18 4.5 11a7.5 7.5 0 0115 0z" />
+          <svg
+            class="w-6 h-6 text-blue-600 mt-1 shrink-0"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M12 11c1.656 0 3-1.343 3-3s-1.344-3-3-3-3 1.343-3 3 1.344 3 3 3z"
+            ></path>
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M19.5 11c0 7-7.5 11-7.5 11S4.5 18 4.5 11a7.5 7.5 0 0115 0z"
+            ></path>
           </svg>
           <p>
             <strong>Adresse :</strong><br />
             99 rue de Paris<br />
-            Bâtiment A, 1<sup>er</sup> étage<br/>
+            Bâtiment A, 1<sup>er</sup> étage<br />
             77200 Torcy<br />
             France
           </p>
@@ -37,27 +48,48 @@ const publicDir = import.meta.env.BASE_URL;
 
         <!-- Téléphone -->
         <div class="flex items-center gap-3">
-          <svg class="w-6 h-6 text-blue-600 shrink-0" fill="none" stroke="currentColor" stroke-width="2"
-            viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round"
-              d="M3 5a2 2 0 012-2h2.6a1 1 0 01.92.606L10 6l-2 2c1.5 3.5 4.5 6.5 8 8l2-2 2.394.479a1 1 0 01.606.921V19a2 2 0 01-2 2h-1C9.163 21 3 14.837 3 7V5z" />
+          <svg
+            class="w-6 h-6 text-blue-600 shrink-0"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3 5a2 2 0 012-2h2.6a1 1 0 01.92.606L10 6l-2 2c1.5 3.5 4.5 6.5 8 8l2-2 2.394.479a1 1 0 01.606.921V19a2 2 0 01-2 2h-1C9.163 21 3 14.837 3 7V5z"
+            ></path>
           </svg>
           <p>
             <strong>Téléphone :</strong><br />
-            <a href="tel:+33160179262" class="text-blue-600 hover:underline">+33 1 60 17 98 62</a>
+            <a href="tel:+33160179262" class="text-blue-600 hover:underline"
+              >+33 1 60 17 98 62</a
+            >
           </p>
         </div>
 
         <!-- Email -->
         <div class="flex items-center gap-3">
-          <svg class="w-6 h-6 text-blue-600 shrink-0" fill="none" stroke="currentColor" stroke-width="2"
-            viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round"
-              d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8m-18 8h18a2 2 0 002-2V6a2 2 0 00-2-2H3a2 2 0 00-2 2v8a2 2 0 002 2z" />
+          <svg
+            class="w-6 h-6 text-blue-600 shrink-0"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8m-18 8h18a2 2 0 002-2V6a2 2 0 00-2-2H3a2 2 0 00-2 2v8a2 2 0 002 2z"
+            ></path>
           </svg>
           <p>
             <strong>Email :</strong><br />
-            <a href="mailto:jlg@jlg-consulting.com" class="text-blue-600 hover:underline">jlg@jlg-consulting.com</a>
+            <a
+              href="mailto:jlg@jlg-consulting.com"
+              class="text-blue-600 hover:underline">jlg@jlg-consulting.com</a
+            >
           </p>
         </div>
       </div>
@@ -68,7 +100,7 @@ const publicDir = import.meta.env.BASE_URL;
   <section class="py-12 px-4 bg-gray-50">
     <div class="max-w-3xl mx-auto text-center">
       <img
-        src={publicDir + '/bureau.jpg'}
+        src={publicDir + "/bureau.jpg"}
         alt="Photo du bureau JLG Consulting"
         class="w-full max-w-xl mx-auto rounded-xl shadow-md"
         loading="lazy"
@@ -89,8 +121,7 @@ const publicDir = import.meta.env.BASE_URL;
         allowfullscreen=""
         loading="lazy"
         referrerpolicy="no-referrer-when-downgrade"
-        class="rounded-xl shadow"
-      ></iframe>
+        class="rounded-xl shadow"></iframe>
     </div>
   </section>
 </BaseLayout>

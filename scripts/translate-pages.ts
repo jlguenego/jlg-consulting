@@ -28,7 +28,7 @@ async function getTextToTranslate(content: string) {
 
 async function translateTexts(texts: string[]): Promise<string[]> {
   const prompt = `Translate the following French texts into English. Keep the order. Respond with one text per line.\n\n${texts.join(
-    "\n"
+    "\n",
   )}`;
   const chat = await openai.chat.completions.create({
     model: "gpt-4",
@@ -59,7 +59,7 @@ async function translateFile(filePath: string) {
     const regex = new RegExp(`>${originalTexts[i]}<`);
     translatedContent = translatedContent.replace(
       regex,
-      `>${translatedTexts[i]}<`
+      `>${translatedTexts[i]}<`,
     );
   }
 

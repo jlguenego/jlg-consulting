@@ -1,14 +1,14 @@
 ---
-import Footer from '../components/Footer.astro';
-import NavBar from '../components/NavBar.astro';
-import '../styles/global.css';
+import Footer from "../components/Footer.astro";
+import NavBar from "../components/NavBar.astro";
+import "../styles/global.css";
 import type { MenuItem } from "../types/menu";
-import { getLocaleFromPathname } from '../utils/i18n';
+import { getLocaleFromPathname } from "../utils/i18n";
 
 interface Props {
   title: string;
   menuItems: MenuItem[];
-  children: unknown; 
+  children: unknown;
   description: string;
 }
 
@@ -17,12 +17,11 @@ const locale = getLocaleFromPathname(pathname);
 const baseHref = `${import.meta.env.BASE_URL}${locale}/`;
 const publicDir = import.meta.env.BASE_URL;
 
-
-const { 
-  title = "JLG Consulting – Jean-Louis Guénégo, consultant formateur en informatique", 
-  menuItems = [], 
-  children = null, 
-  description = "Consultant formateur en informatique basé à Torcy. Accompagnement, développement web, formation, conseil. Expertise fullstack TypeScript." 
+const {
+  title = "JLG Consulting – Jean-Louis Guénégo, consultant formateur en informatique",
+  menuItems = [],
+  children = null,
+  description = "Consultant formateur en informatique basé à Torcy. Accompagnement, développement web, formation, conseil. Expertise fullstack TypeScript.",
 } = Astro.props as Props;
 ---
 
@@ -33,17 +32,17 @@ const {
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{title}</title>
     <meta name="description" content={description} />
-  
+
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
-  
+
     <!-- Open Graph pour réseaux sociaux -->
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content={publicDir + '/bureau.jpg'} />
+    <meta property="og:image" content={publicDir + "/bureau.jpg"} />
     <meta property="og:url" content="https://www.jlg-consulting.com/" />
-  
+
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={title} />
@@ -55,12 +54,20 @@ const {
       <!-- Barre latérale -->
       <aside class="w-64 bg-white shadow-md p-4 hidden md:block">
         <h2 class="text-xl font-semibold mb-4">
-          <a href="prestations" class="text-blue-600 hover:underline">Mes Prestations</a>
+          <a href="prestations" class="text-blue-600 hover:underline"
+            >Mes Prestations</a
+          >
         </h2>
         <ul class="space-y-2">
-          {menuItems.map(item => (
-            <li><a href={item.href} class="text-blue-600 hover:underline">{item.label}</a></li>
-          ))}
+          {
+            menuItems.map((item) => (
+              <li>
+                <a href={item.href} class="text-blue-600 hover:underline">
+                  {item.label}
+                </a>
+              </li>
+            ))
+          }
         </ul>
       </aside>
 
