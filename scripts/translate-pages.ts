@@ -57,14 +57,24 @@ async function processFile(filePath: string) {
 }
 
 async function main() {
-  // Supprimer le dossier /en s'il existe
-  await fs.rm(dstDir, { recursive: true, force: true });
-  await fs.mkdir(dstDir, { recursive: true });
+  const arg = process.argv[2]; // argument optionnel : chemin relatif depuis src/pages/fr
 
-  const files = await fg(["**/*.astro"], { cwd: srcDir, absolute: true });
-  for (const file of files) {
-    await processFile(file);
+  // Supprimer le dossier /en s'il existe (seulement si on traite tous les fichiers)
+  if (!arg) {
+    await fs.rm(dstDir, { recursive: true, force: true });
+    await fs.mkdir(dstDir, { recursive: true });
   }
+
+  if (arg) {
+    const singleFile = path.resolve(srcDir, arg);
+    await processFile(singleFile);
+  } else {
+    const files = await fg(["**/*.astro"], { cwd: srcDir, absolute: true });
+    for (const file of files) {
+      await processFile(file);
+    }
+  }
+
   console.log("✅ Translation complete.");
 }
 
