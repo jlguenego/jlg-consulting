@@ -6,7 +6,10 @@ const newPath = pathname.replace(`/${currentLocale}/`, `/${targetLocale}/`);
 ---
 
 <div style="margin-left: auto;">
-  <a href={newPath}>
+  <a
+    href={newPath}
+    onclick={`localStorage.setItem('locale', '${targetLocale}')`}
+  >
     {targetLocale === "fr" ? "🇫🇷 Français" : "🇬🇧 English"}
   </a>
 </div>
