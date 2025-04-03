@@ -24,6 +24,7 @@ async function translateText(text: string): Promise<string> {
 You are a professional translator.
 Translate from French to English.
 Preserve HTML and Astro syntax.
+Preserve the javascript/typescript import file paths.
 Le formatting should be preserved.
 Please give me the raw Astro output without any triple backticks or Markdown formatting
 `,
