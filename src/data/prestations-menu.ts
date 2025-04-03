@@ -19,10 +19,9 @@ export const prestationsMenuItems: MenuItem[] = [
 ];
 
 export function getLabelFromHref(href: string): string | undefined {
-  console.log("href: ", href);
-
+  const path = href.replace(/\/$/, "");
   const item = prestationsMenuItems.find(
-    (item) => import.meta.env.BASE_URL + item.href === href
+    (item) => import.meta.env.BASE_URL + item.href === path
   );
   return item?.label;
 }
