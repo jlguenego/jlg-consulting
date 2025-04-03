@@ -1,3 +1,5 @@
+// scripts/translate-pages.ts
+
 import fs from "fs/promises";
 import path from "path";
 import fg from "fast-glob";
@@ -5,78 +7,60 @@ import { OpenAI } from "openai";
 
 const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
 
-const frDir = path.resolve("src/pages/fr");
-const enDir = path.resolve("src/pages/en");
+const srcLang = "fr";
+const dstLang = "en";
+const srcDir = path.resolve("src/pages", srcLang);
+const dstDir = path.resolve("src/pages", dstLang);
 
-async function deleteAndRecreateEnDir() {
-  try {
-    await fs.rm(enDir, { recursive: true, force: true });
-    console.log("✅ Dossier /en supprimé");
-  } catch (err) {
-    console.warn("⚠️ Impossible de supprimer /en (peut-être inexistant)");
-  }
-  await fs.mkdir(enDir, { recursive: true });
-  console.log("📁 Dossier /en recréé");
-}
+async function translateText(text: string): Promise<string> {
+  const start = Date.now();
 
-async function getTextToTranslate(content: string) {
-  // Extrait tous les textes entre > et < qui ne sont pas du code ou des balises
-  const regex = />([^<>{}]+)</g;
-  const matches = [...content.matchAll(regex)];
-  return matches.map((m) => m[1].trim()).filter(Boolean);
-}
-
-async function translateTexts(texts: string[]): Promise<string[]> {
-  const prompt = `Translate the following French texts into English. Keep the order. Respond with one text per line.\n\n${texts.join(
-    "\n",
-  )}`;
-  const chat = await openai.chat.completions.create({
+  const response = await openai.chat.completions.create({
     model: "gpt-4",
-    messages: [{ role: "user", content: prompt }],
+    messages: [
+      {
+        role: "system",
+        content: `You are a professional translator. Translate from French to English. Preserve HTML and Astro syntax.`,
+      },
+      {
+        role: "user",
+        content: text,
+      },
+    ],
+    temperature: 0, // Rend la traduction déterministe
   });
-  const response = chat.choices[0].message.content || "";
-  return response.split("\n").map((line) => line.trim());
+
+  const duration = ((Date.now() - start) / 1000).toFixed(2);
+  console.log(`⏱️ Translation took ${duration}s`);
+
+  return response.choices[0].message.content ?? text;
 }
 
-async function translateFile(filePath: string) {
-  const relPath = path.relative(frDir, filePath);
-  const targetPath = path.join(enDir, relPath);
-  const targetDir = path.dirname(targetPath);
+async function processFile(filePath: string) {
+  const relativePath = path.relative(srcDir, filePath);
+  const outputPath = path.join(dstDir, relativePath);
 
-  const content = await fs.readFile(filePath, "utf-8");
-  const originalTexts = await getTextToTranslate(content);
+  const content = await fs.readFile(filePath, "utf8");
+  const translated = await translateText(content);
 
-  if (originalTexts.length === 0) {
-    await fs.mkdir(targetDir, { recursive: true });
-    await fs.writeFile(targetPath, content);
-    console.log(`✅ Copié sans changement : ${relPath}`);
-    return;
-  }
+  await fs.mkdir(path.dirname(outputPath), { recursive: true });
+  await fs.writeFile(outputPath, translated, "utf8");
 
-  const translatedTexts = await translateTexts(originalTexts);
-  let translatedContent = content;
-  for (let i = 0; i < originalTexts.length; i++) {
-    const regex = new RegExp(`>${originalTexts[i]}<`);
-    translatedContent = translatedContent.replace(
-      regex,
-      `>${translatedTexts[i]}<`,
-    );
-  }
-
-  await fs.mkdir(targetDir, { recursive: true });
-  await fs.writeFile(targetPath, translatedContent);
-  console.log(`🌍 Traduit et copié : ${relPath}`);
+  console.log(`✔ Translated: ${relativePath}`);
 }
 
 async function main() {
-  await deleteAndRecreateEnDir();
-  const files = await fg("**/*.astro", { cwd: frDir, absolute: true });
+  // Supprimer le dossier /en s'il existe
+  await fs.rm(dstDir, { recursive: true, force: true });
+  await fs.mkdir(dstDir, { recursive: true });
+
+  const files = await fg(["**/*.astro"], { cwd: srcDir, absolute: true });
   for (const file of files) {
-    await translateFile(file);
+    await processFile(file);
   }
-  console.log("✅ Traduction terminée.");
+  console.log("✅ Translation complete.");
 }
 
 main().catch((err) => {
-  console.error("❌ Erreur :", err);
+  console.error("❌ Error during translation:", err);
 });

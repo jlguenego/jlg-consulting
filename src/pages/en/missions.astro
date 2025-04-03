@@ -1,0 +1,46 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import markers from "../../data/missions.json";
+
+const title = "Mission Map – JLG Consulting";
+const description =
+  "Explore the map of various locations in France where Jean-Louis Guénégo has intervened.";
+const markersJSON = JSON.stringify(markers);
+---
+
+<BaseLayout {title} {description}>
+  <section class="py-16 px-4">
+    <div class="max-w-6xl mx-auto text-center">
+      <h1 class="text-3xl font-bold text-blue-700 mb-6">Mission Map</h1>
+      <p class="text-gray-700 mb-6">
+        Here is an interactive map showing the places where I have worked.
+      </p>
+    </div>
+    <div id="map" class="h-[70vh] w-full rounded-xl shadow"></div>
+  </section>
+  <div data-markers={markersJSON}></div>
+
+  <script type="module">
+    import * as L from "https://unpkg.com/leaflet@1.9.3/dist/leaflet-src.esm.js";
+
+    const map = L.map("map").setView([46.6, 2.2], 6);
+    L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+      maxZoom: 18,
+      attribution: "© OpenStreetMap contributors",
+    }).addTo(map);
+
+    const markers = JSON.parse(
+      document.querySelector("[data-markers]").dataset.markers,
+    );
+    markers.forEach(({ latitude, longitude, label }) => {
+      if (latitude && longitude) {
+        L.marker([latitude, longitude]).addTo(map).bindPopup(label);
+      }
+    });
+  </script>
+
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+  />
+</BaseLayout>
