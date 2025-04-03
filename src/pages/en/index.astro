@@ -1,4 +1,3 @@
-```astro
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import Testimonials from "../../components/Testimonials.astro";
@@ -18,7 +17,8 @@ const publicDir = import.meta.env.BASE_URL;
         Welcome to JLG Consulting
       </h1>
       <p class="text-lg text-gray-700 mb-8">
-        Consulting, expertise, and support in software development and digital transformation.
+        Advice, expertise and support in software development and
+        digital transformation.
       </p>
       <div class="flex justify-center gap-4 flex-col sm:flex-row">
         <a
@@ -41,10 +41,12 @@ const publicDir = import.meta.env.BASE_URL;
   <section class="py-12 px-4 bg-white">
     <div class="text-center mb-10">
       <h2 class="text-3xl font-semibold text-gray-800 mb-4">
-        What I Offer
+        What I offer
       </h2>
       <p class="text-gray-600 max-w-xl mx-auto">
-        From web application design to training on the latest JavaScript technologies, including consulting on software architecture.
+        From web application design to training on the latest
+        JavaScript technologies, including advice on software
+        architecture.
       </p>
     </div>
     <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
@@ -57,13 +59,15 @@ const publicDir = import.meta.env.BASE_URL;
       <div class="p-6 border rounded-xl shadow-sm hover:shadow transition">
         <h3 class="text-xl font-bold mb-2 text-blue-700">Training</h3>
         <p class="text-gray-600">
-          Technical training tailored for fullstack developers and IT teams.
+          Technical training tailored to fullstack developers and
+          IT teams.
         </p>
       </div>
       <div class="p-6 border rounded-xl shadow-sm hover:shadow transition">
         <h3 class="text-xl font-bold mb-2 text-blue-700">Consulting</h3>
         <p class="text-gray-600">
-          Audit, software architecture, technical support, and best practices.
+          Audit, software architecture, technical support and best
+          practices.
         </p>
       </div>
     </div>
@@ -82,15 +86,21 @@ const publicDir = import.meta.env.BASE_URL;
 
       <!-- Text -->
       <div>
-        <h1 class="text-3xl font-bold text-blue-700 mb-4">About Me</h1>
+        <h1 class="text-3xl font-bold text-blue-700 mb-4">About me</h1>
         <p class="text-gray-700 mb-4">
-          My name is <strong>Jean-Louis Guénégo</strong>. I am an IT consultant and trainer, passionate about coding, software architecture, pedagogy, and knowledge transfer.
+          My name is <strong>Jean-Louis Guénégo</strong>. I am an IT consultant
+          trainer, passionate about code, software architecture,
+          pedagogy and knowledge transfer.
         </p>
         <p class="text-gray-700 mb-4">
-          A former student of ENS de Cachan, I have accumulated over 20 years of experience in web development, modern JavaScript technologies (Node.js, Vue, React, etc.), and training technical audiences.
+          A former student of the ENS de Cachan, I have accumulated more than 20 years
+          of experience in web development, modern JavaScript
+          technologies (Node.js, Vue, React, etc.), and training for
+          technical audiences.
         </p>
         <p class="text-gray-700 mb-4">
-          My approach is centered on quality, simplicity, and efficiency. I always strive to provide understandable, scalable, and robust solutions to my clients.
+          My approach is centered on quality, simplicity and
+          efficiency. I always strive to bring understandable, scalable and robust solutions to my clients.
         </p>
       </div>
     </div>
@@ -101,13 +111,18 @@ const publicDir = import.meta.env.BASE_URL;
       <!-- Text -->
       <div>
         <h1 class="text-3xl font-bold text-blue-700 mb-4">
-          A story of {new Date().getFullYear() - 2001} years, with over 400 completed missions.
+          A story of {new Date().getFullYear() - 2001} years, with more than 400
+          missions accomplished.
         </h1>
         <p class="text-gray-700 mb-4">
-          Missions lasting from a few days to several years, recommended by my partners, I have supported around a hundred companies in various fields.
+          Missions of a few days or several years, recommended by my
+          partners, I have supported a hundred companies in various
+          fields.
         </p>
         <p class="text-gray-700 mb-4">
-          I have collaborated with companies of all sizes, from startups to large corporations, including the public sector. Each mission is a new adventure, a new challenge to tackle.
+          I have collaborated with companies of all sizes, from startups
+          to large companies, including the public sector. Each
+          mission is a new adventure, a new challenge to take up.
         </p>
       </div>
 
@@ -116,7 +131,7 @@ const publicDir = import.meta.env.BASE_URL;
         <a href="missions">
           <img
             src={publicDir + "missions.jpg"}
-            alt="Map of France showing my missions"
+            alt="Map of France of my missions"
             class="w-64 h-64 object-cover rounded-full shadow-lg border-4 border-blue-100"
           />
         </a>
@@ -128,9 +143,9 @@ const publicDir = import.meta.env.BASE_URL;
 
   <section id="contact" class="py-16 px-4 bg-white">
     <div class="max-w-3xl mx-auto text-center">
-      <h1 class="text-3xl font-bold text-blue-700 mb-6">Contact Me</h1>
+      <h1 class="text-3xl font-bold text-blue-700 mb-6">Contact me</h1>
       <p class="text-gray-700 text-lg mb-8">
-        Here is all the information to reach me or come meet me.
+        Here is all the information to reach me or come and meet me.
       </p>
 
       <div class="space-y-6 text-left text-gray-700 text-md">
@@ -155,7 +170,7 @@ const publicDir = import.meta.env.BASE_URL;
             ></path>
           </svg>
           <p>
-            <strong>Address:</strong><br />
+            <strong>Address :</strong><br />
             99 rue de Paris<br />
             77200 Torcy<br />
             Building A, 1<sup>st</sup> floor
@@ -178,7 +193,7 @@ const publicDir = import.meta.env.BASE_URL;
             ></path>
           </svg>
           <p>
-            <strong>Phone:</strong><br />
+            <strong>Phone :</strong><br />
             <a href="tel:+33160179262" class="text-blue-600 hover:underline"
               >+33 1 60 17 98 62</a
             >
@@ -201,7 +216,7 @@ const publicDir = import.meta.env.BASE_URL;
             ></path>
           </svg>
           <p>
-            <strong>Email:</strong><br />
+            <strong>Email :</strong><br />
             <a
               href="mailto:jlg@jlg-consulting.com"
               class="text-blue-600 hover:underline">jlg@jlg-consulting.com</a
@@ -212,4 +227,3 @@ const publicDir = import.meta.env.BASE_URL;
     </div>
   </section>
 </BaseLayout>
-```

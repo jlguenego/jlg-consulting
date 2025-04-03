@@ -20,7 +20,13 @@ async function translateText(text: string): Promise<string> {
     messages: [
       {
         role: "system",
-        content: `You are a professional translator. Translate from French to English. Preserve HTML and Astro syntax.`,
+        content: `
+You are a professional translator.
+Translate from French to English.
+Preserve HTML and Astro syntax.
+Le formatting should be preserved.
+Please give me the raw Astro output without any triple backticks or Markdown formatting
+`,
       },
       {
         role: "user",
