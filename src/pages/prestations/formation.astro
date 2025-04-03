@@ -1,17 +1,11 @@
 ---
 import SidebarLayout from "../../layouts/SidebarLayout.astro";
-import type { MenuItem } from "../../types/menu";
+import { prestationsMenuItems } from "../../data/prestations-menu";
 
-const menuItems: MenuItem[] = [
-  { label: "Conseil stratégique", href: "prestations/conseil-strategique" },
-  { label: "Développement logiciel", href: "prestations/developpement-logiciel" },
-  { label: "Formation", href: "prestations/formation" },
-  { label: "Accessibilité numérique", href: "prestations/accessibilite" },
-  { label: "Architecture technique", href: "prestations/architecture-technique" },
-];
+
 ---
 
-<SidebarLayout title="Formation" menuItems={menuItems} description="Formation">
+<SidebarLayout title="Formation" menuItems={prestationsMenuItems} description="Formation">
   <h1 class="text-3xl font-bold mb-4">Formation</h1>
   <p>
     Formations sur mesure en développement, architecture, IA symbolique, accessibilité…

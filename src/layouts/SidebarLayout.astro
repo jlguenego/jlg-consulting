@@ -50,7 +50,9 @@ const {
     <div class="flex-grow container mx-auto p-4">
       <!-- Barre latérale -->
       <aside class="w-64 bg-white shadow-md p-4 hidden md:block">
-        <h2 class="text-xl font-semibold mb-4">Prestations</h2>
+        <h2 class="text-xl font-semibold mb-4">
+          <a href="prestations" class="text-blue-600 hover:underline">Mes Prestations</a>
+        </h2>
         <ul class="space-y-2">
           {menuItems.map(item => (
             <li><a href={item.href} class="text-blue-600 hover:underline">{item.label}</a></li>
