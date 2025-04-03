@@ -5,13 +5,26 @@ import en from "../locales/en.ts";
 import LanguageSelector from "./LanguageSelector.astro";
 
 const t = locale === "en" ? en : fr;
+
+const publicDir = import.meta.env.BASE_URL;
 ---
 
 <nav class="bg-blue-600 text-white shadow relative z-50">
   <div
     class="container mx-auto px-4 py-3 flex justify-between items-center relative"
   >
-    <a href={`./`} class="text-xl font-bold">{t.nav.home}</a>
+    <a href={`./`} class="text-xl font-bold">
+      <img
+        src={publicDir + "/logo.svg"}
+        alt="Logo de JLG Consulting"
+        class="dark:hidden h-8 w-auto mr-2"
+      />
+      <img
+        src={publicDir + "/logo-dark.svg"}
+        alt="Logo de JLG Consulting"
+        class="hidden dark:block h-8 w-auto mr-2"
+      />
+    </a>
 
     <!-- BOUTON HAMBURGER (mobile only) -->
     <button
