@@ -27,7 +27,7 @@ async function translateText(text: string): Promise<string> {
         content: text,
       },
     ],
-    temperature: 0, // Rend la traduction déterministe
+    temperature: 0, // Traduction stable et déterministe
   });
 
   const duration = ((Date.now() - start) / 1000).toFixed(2);

@@ -40,10 +40,10 @@ const publicDir = import.meta.env.BASE_URL;
   </head>
 
   <body class="flex flex-col min-h-screen bg-white text-gray-800">
-    <NavBar />
+    <NavBar locale={locale} />
     <main class="flex-grow container mx-auto p-4">
       <slot />
     </main>
-    <Footer />
+    <Footer locale={locale} />
   </body>
 </html>

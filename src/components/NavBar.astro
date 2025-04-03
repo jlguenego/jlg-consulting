@@ -1,17 +1,32 @@
 ---
+const { locale } = Astro.props;
+import fr from "../locales/fr.ts";
+import en from "../locales/en.ts";
 import LanguageSelector from "./LanguageSelector.astro";
+
+const t = locale === "en" ? en : fr;
 ---
 
 <nav class="bg-blue-600 text-white shadow">
   <div class="container mx-auto px-4 py-3 flex justify-between items-center">
-    <a href="./" class="text-xl font-bold">JLG Consulting</a>
+    <a href={`/${locale}/`} class="text-xl font-bold">{t.nav.home}</a>
     <div>
       <ul class="flex gap-4">
-        <li><a href="prestations" class="hover:underline">Prestations</a></li>
-        <li><a href="a-propos" class="hover:underline">À propos</a></li>
-        <li><a href="references" class="hover:underline">Références</a></li>
-        <li><a href="missions" class="hover:underline">Missions</a></li>
-        <li><a href="contact" class="hover:underline">Contact</a></li>
+        <li>
+          <a href={`prestations`} class="hover:underline">{t.nav.services}</a>
+        </li>
+        <li>
+          <a href={`a-propos`} class="hover:underline">{t.nav.about}</a>
+        </li>
+        <li>
+          <a href={`references`} class="hover:underline">{t.nav.references}</a>
+        </li>
+        <li>
+          <a href={`missions`} class="hover:underline">{t.nav.missions}</a>
+        </li>
+        <li>
+          <a href={`contact`} class="hover:underline">{t.nav.contact}</a>
+        </li>
       </ul>
       <LanguageSelector />
     </div>

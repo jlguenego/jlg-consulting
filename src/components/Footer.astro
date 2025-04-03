@@ -1,5 +1,10 @@
 ---
+const { locale } = Astro.props;
+import fr from "../locales/fr.ts";
+import en from "../locales/en.ts";
 import { Icon } from "astro-icon/components";
+
+const t = locale === "en" ? en : fr;
 ---
 
 <footer class="bg-gray-900 text-white py-12 text-sm">
@@ -8,16 +13,13 @@ import { Icon } from "astro-icon/components";
   >
     <!-- À propos rapide -->
     <div>
-      <h3 class="text-lg font-semibold mb-4">JLG Consulting</h3>
-      <p class="text-gray-300">
-        Accompagnement en développement logiciel, architecture web et
-        transformation digitale.
-      </p>
+      <h3 class="text-lg font-semibold mb-4">{t.footer.aboutTitle}</h3>
+      <p class="text-gray-300">{t.footer.aboutText}</p>
     </div>
 
     <!-- Coordonnées -->
     <div>
-      <h4 class="text-md font-semibold mb-4">Coordonnées</h4>
+      <h4 class="text-md font-semibold mb-4">{t.footer.contactTitle}</h4>
       <ul class="space-y-2 text-gray-400">
         <li>
           <a href="mailto:jlg@jlg-consulting.com" class="hover:text-white"
@@ -25,14 +27,14 @@ import { Icon } from "astro-icon/components";
           >
         </li>
         <li>
-          <a href="contact" class="hover:text-white">Basé en France</a>
+          <a href="contact" class="hover:text-white">{t.footer.location}</a>
         </li>
       </ul>
     </div>
 
     <!-- Réseaux sociaux -->
     <div>
-      <h4 class="text-md font-semibold mb-4">Réseaux</h4>
+      <h4 class="text-md font-semibold mb-4">{t.footer.socialTitle}</h4>
       <ul class="space-y-2 text-gray-400">
         <li>
           <a
@@ -61,23 +63,25 @@ import { Icon } from "astro-icon/components";
 
     <!-- Liens légaux -->
     <div>
-      <h4 class="text-md font-semibold mb-4">Informations</h4>
+      <h4 class="text-md font-semibold mb-4">{t.footer.legalTitle}</h4>
       <ul class="space-y-2 text-gray-400">
         <li>
           <a href="mentions-legales" class="hover:text-white"
-            >Mentions légales</a>
+            >{t.footer.legal}</a>
         </li>
         <li>
-          <a href="accessibilite" class="hover:text-white">Accessibilité</a>
+          <a href="accessibilite" class="hover:text-white"
+            >{t.footer.accessibility}</a>
         </li>
         <li>
-          <a href="confidentialite" class="hover:text-white">Confidentialité</a>
+          <a href="confidentialite" class="hover:text-white"
+            >{t.footer.privacy}</a>
         </li>
       </ul>
     </div>
   </div>
 
   <div class="mt-12 border-t border-gray-700 pt-6 text-center text-gray-500">
-    © {new Date().getFullYear()} Jean-Louis Guénégo — Tous droits réservés.
+    © {new Date().getFullYear()} Jean-Louis Guénégo — {t.footer.rights}.
   </div>
 </footer>
