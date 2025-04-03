@@ -1,10 +1,14 @@
 ---
 import SidebarLayout from "../../layouts/SidebarLayout.astro";
-import { prestationsMenuItems } from "../../data/prestations-menu";
+import { getLabelFromHref, prestationsMenuItems } from "../../data/prestations-menu";
+
+const path = Astro.url.pathname;
+const pageTitle = getLabelFromHref(path);
+
 ---
 
 <SidebarLayout title="Formation" menuItems={prestationsMenuItems} description="Formation">
-  <h1 class="text-3xl font-bold mb-4">Design UX-UI</h1>
+  <h1 class="text-3xl font-bold mb-4">{pageTitle}</h1>
   <p>
     Formations sur mesure en développement, architecture, IA symbolique, accessibilité…
   </p>

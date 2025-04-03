@@ -17,3 +17,12 @@ export const prestationsMenuItems: MenuItem[] = [
     href: "prestations/design-ux-ui",
   },
 ];
+
+export function getLabelFromHref(href: string): string | undefined {
+  console.log("href: ", href);
+
+  const item = prestationsMenuItems.find(
+    (item) => import.meta.env.BASE_URL + item.href === href
+  );
+  return item?.label;
+}
