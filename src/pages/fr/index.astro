@@ -1,10 +1,12 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
-import Testimonials from "../components/Testimonials.astro";
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Testimonials from "../../components/Testimonials.astro";
 
 
 const title = "Accueil – JLG Consulting";
 const description = "Bienvenue sur le site de Jean-Louis Guénégo, consultant formateur en informatique. Découvrez ses services.";
+
+const publicDir = import.meta.env.BASE_URL;
 ---
 
 <BaseLayout {title} {description}>
@@ -59,7 +61,7 @@ const description = "Bienvenue sur le site de Jean-Louis Guénégo, consultant f
       <!-- Image -->
       <div class="flex justify-center">
         <img 
-          src="portrait.jpg" 
+          src={publicDir + 'portrait.jpg'}
           alt="Jean-Louis Guénégo" 
           class="w-64 h-64 object-cover rounded-full shadow-lg border-4 border-blue-100"
         />
@@ -100,7 +102,7 @@ const description = "Bienvenue sur le site de Jean-Louis Guénégo, consultant f
       <div class="flex justify-center">
         <a href="missions">
           <img 
-          src="missions.jpg" 
+          src={publicDir + 'missions.jpg'}
           alt="Carte de France de mes missions" 
           class="w-64 h-64 object-cover rounded-full shadow-lg border-4 border-blue-100"
         />

@@ -8,7 +8,8 @@
     "preview": "astro preview",
     "astro": "astro",
     "deploy": "astro build && node deploy-sftp.js",
-    "archive": "git archive --format zip -o ../output.zip HEAD"
+    "archive": "git archive --format zip -o ../output.zip HEAD",
+    "translate": "bun scripts/translate-pages.ts"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.3.0",
@@ -20,6 +21,8 @@
   "packageManager": "pnpm@10.7.1",
   "devDependencies": {
     "dotenv": "^16.4.7",
+    "fast-glob": "^3.3.3",
+    "openai": "^4.91.1",
     "ssh2-sftp-client": "^12.0.0"
   }
 }
