@@ -3,13 +3,14 @@ const { locale } = Astro.props;
 import fr from "../locales/fr.ts";
 import en from "../locales/en.ts";
 import LanguageSelector from "./LanguageSelector.astro";
+import ThemeSelector from "./ThemeSelector.astro";
 
 const t = locale === "en" ? en : fr;
 
 const publicDir = import.meta.env.BASE_URL;
 ---
 
-<nav class="bg-blue-600 text-white shadow relative z-50">
+<nav class="relative z-50">
   <div
     class="container mx-auto px-4 py-3 flex justify-between items-center relative"
   >
@@ -17,18 +18,18 @@ const publicDir = import.meta.env.BASE_URL;
       <img
         src={publicDir + "/logo.svg"}
         alt="Logo de JLG Consulting"
-        class="dark:hidden h-8 w-auto mr-2"
+        class="dark:hidden h-16 w-auto mr-2"
       />
       <img
         src={publicDir + "/logo-dark.svg"}
         alt="Logo de JLG Consulting"
-        class="hidden dark:block h-8 w-auto mr-2"
+        class="hidden dark:block h-16 w-auto mr-2"
       />
     </a>
 
     <!-- BOUTON HAMBURGER (mobile only) -->
     <button
-      class="md:hidden p-2 border border-white rounded bg-transparent hover:border-gray-300 transition"
+      class="lg:hidden p-2 border border-white rounded bg-transparent hover:border-gray-300 transition"
       aria-label="Ouvrir le menu"
       onclick="document.getElementById('menu-content').classList.toggle('hidden')"
     >
@@ -47,8 +48,8 @@ const publicDir = import.meta.env.BASE_URL;
     </button>
 
     <!-- CONTENU MENU - visible en desktop -->
-    <div class="hidden md:flex md:items-center md:gap-6">
-      <ul class="flex gap-6">
+    <div class="hidden lg:flex lg:items-center lg:gap-16">
+      <ul class="flex gap-4">
         <li>
           <a href={`prestations`} class="hover:underline">{t.nav.services}</a>
         </li>
@@ -61,20 +62,17 @@ const publicDir = import.meta.env.BASE_URL;
         </li>
         <li><a href={`contact`} class="hover:underline">{t.nav.contact}</a></li>
       </ul>
-      <LanguageSelector />
-      <button
-        onclick="toggleTheme()"
-        class="p-2 rounded bg-gray-200 dark:bg-gray-800 text-black dark:text-white"
-      >
-        🌙 / ☀️
-      </button>
+      <div class="flex gap-4 items-center">
+        <LanguageSelector />
+        <ThemeSelector />
+      </div>
     </div>
   </div>
 
   <!-- MENU MOBILE DEROULANT ABSOLU -->
   <div
     id="menu-content"
-    class="absolute top-full left-0 w-full bg-blue-600 text-white flex flex-col items-center gap-4 py-4 md:hidden hidden z-50"
+    class="absolute top-full left-0 w-full bg-green-700 text-white flex flex-col items-center gap-4 py-4 hidden z-50"
   >
     <ul class="flex flex-col gap-2 items-center">
       <li>
@@ -88,11 +86,6 @@ const publicDir = import.meta.env.BASE_URL;
       <li><a href={`contact`} class="hover:underline">{t.nav.contact}</a></li>
     </ul>
     <LanguageSelector />
-    <button
-      onclick="toggleTheme()"
-      class="p-2 rounded bg-gray-200 dark:bg-gray-800 text-black dark:text-white"
-    >
-      🌙 / ☀️
-    </button>
+    <ThemeSelector />
   </div>
 </nav>

@@ -5,11 +5,16 @@ const targetLocale = currentLocale === "fr" ? "en" : "fr";
 const newPath = pathname.replace(`/${currentLocale}/`, `/${targetLocale}/`);
 ---
 
-<div style="margin-left: auto;">
+<div>
   <a
+    class="flex items-center justify-center w-20 h-10 rounded dark:bg-gray-800 text-black dark:text-white cursor-pointer hover:bg-gray-100"
     href={newPath}
     onclick={`localStorage.setItem('locale', '${targetLocale}')`}
   >
-    {targetLocale === "fr" ? "🇫🇷 Français" : "🇬🇧 English"}
+    <span>
+      <span class={currentLocale === "fr" ? "text-xs" : ""}>EN</span>
+      <span>/</span>
+      <span class={currentLocale === "en" ? "text-xs" : ""}>FR</span>
+    </span>
   </a>
 </div>

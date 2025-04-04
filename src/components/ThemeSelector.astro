@@ -1,0 +1,20 @@
+---
+const publicDir = import.meta.env.BASE_URL;
+---
+
+<button
+  onclick="toggleTheme()"
+  class="rounded dark:bg-gray-800 text-black dark:text-white cursor-pointer hover:bg-gray-100 h-10 w-10 flex items-center justify-center"
+  aria-label="Changer de thème"
+>
+  <img
+    src={publicDir + "/moon.svg"}
+    alt="Changer de thème"
+    class="h-6 w-6 hidden dark:block"
+  />
+  <img
+    src={publicDir + "/sun.svg"}
+    alt="Changer de thème"
+    class="h-6 w-6 dark:hidden block"
+  />
+</button>
