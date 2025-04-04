@@ -7,27 +7,37 @@ import { Icon } from "astro-icon/components";
 const t = locale === "en" ? en : fr;
 ---
 
-<footer class="bg-gray-900 text-white py-12 text-sm">
+<footer
+  class="bg-gray-200 dark:bg-gray-800 text-gray-800 dark:text-gray-300 py-12 text-sm"
+>
   <div
     class="max-w-6xl mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8"
   >
     <!-- À propos rapide -->
     <div>
-      <h3 class="text-lg font-semibold mb-4">{t.footer.aboutTitle}</h3>
-      <p class="text-gray-300">{t.footer.aboutText}</p>
+      <h3 class="text-lg font-semibold mb-4 text-green-600">
+        {t.footer.aboutTitle}
+      </h3>
+      <p class="text-gray-700 dark:text-gray-400">{t.footer.aboutText}</p>
     </div>
 
     <!-- Coordonnées -->
     <div>
       <h4 class="text-md font-semibold mb-4">{t.footer.contactTitle}</h4>
-      <ul class="space-y-2 text-gray-400">
+      <ul class="space-y-2">
         <li>
-          <a href="mailto:jlg@jlg-consulting.com" class="hover:text-white"
+          <a
+            href="mailto:jlg@jlg-consulting.com"
+            class="hover:text-white dark:text-gray-400 hover:dark:text-white"
             >jlg@jlg-consulting.com</a
           >
         </li>
         <li>
-          <a href="contact" class="hover:text-white">{t.footer.location}</a>
+          <a
+            href="contact"
+            class="hover:text-white dark:text-gray-400 hover:dark:text-white"
+            >{t.footer.location}</a
+          >
         </li>
       </ul>
     </div>
@@ -35,13 +45,13 @@ const t = locale === "en" ? en : fr;
     <!-- Réseaux sociaux -->
     <div>
       <h4 class="text-md font-semibold mb-4">{t.footer.socialTitle}</h4>
-      <ul class="space-y-2 text-gray-400">
+      <ul class="space-y-2">
         <li>
           <a
             href="https://www.linkedin.com/in/guenego"
             target="_blank"
             rel="noopener noreferrer"
-            class="hover:text-white flex gap-2 items-center"
+            class="hover:text-white dark:text-gray-400 hover:dark:text-white flex gap-2 items-center"
           >
             <Icon name="linkedin" />
             <span>LinkedIn</span>
@@ -52,7 +62,7 @@ const t = locale === "en" ? en : fr;
             href="https://github.com/jlguenego"
             target="_blank"
             rel="noopener noreferrer"
-            class="hover:text-white flex gap-2 items-center"
+            class="hover:text-white dark:text-gray-400 hover:dark:text-white flex gap-2 items-center"
           >
             <Icon name="github" />
             <span>GitHub</span>
@@ -64,18 +74,27 @@ const t = locale === "en" ? en : fr;
     <!-- Liens légaux -->
     <div>
       <h4 class="text-md font-semibold mb-4">{t.footer.legalTitle}</h4>
-      <ul class="space-y-2 text-gray-400">
+      <ul class="space-y-2">
         <li>
-          <a href="mentions-legales" class="hover:text-white"
-            >{t.footer.legal}</a>
+          <a
+            href="mentions-legales"
+            class="hover:text-white dark:text-gray-400 hover:dark:text-white"
+            >{t.footer.legal}</a
+          >
         </li>
         <li>
-          <a href="accessibilite" class="hover:text-white"
-            >{t.footer.accessibility}</a>
+          <a
+            href="accessibilite"
+            class="hover:text-white dark:text-gray-400 hover:dark:text-white"
+            >{t.footer.accessibility}</a
+          >
         </li>
         <li>
-          <a href="confidentialite" class="hover:text-white"
-            >{t.footer.privacy}</a>
+          <a
+            href="confidentialite"
+            class="hover:text-white dark:text-gray-400 hover:dark:text-white"
+            >{t.footer.privacy}</a
+          >
         </li>
       </ul>
     </div>
