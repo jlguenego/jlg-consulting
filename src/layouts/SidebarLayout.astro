@@ -51,7 +51,7 @@ const {
     <script is:inline src={publicDir + "/scripts/theme.js"}></script>
   </head>
   <body class="flex flex-col min-h-screen bg-white text-gray-800">
-    <NavBar />
+    <NavBar locale={locale} />
     <div class="flex-grow container mx-auto p-4">
       <!-- Barre latérale -->
       <aside class="w-64 bg-white shadow-md p-4 hidden md:block">
@@ -78,6 +78,6 @@ const {
         <slot />
       </main>
     </div>
-    <Footer />
+    <Footer locale={locale} />
   </body>
 </html>
