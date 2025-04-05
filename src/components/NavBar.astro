@@ -31,7 +31,7 @@ const publicDir = import.meta.env.BASE_URL;
     <button
       class="lg:hidden p-2 border border-white rounded bg-transparent hover:border-gray-300 transition"
       aria-label="Ouvrir le menu"
-      onclick="document.getElementById('menu-content').classList.toggle('hidden')"
+      onclick="document.getElementById('menu-content').classList.toggle('hidden'); document.getElementById('menu-content').classList.toggle('flex');"
     >
       <svg
         class="w-6 h-6 text-black"
@@ -72,18 +72,44 @@ const publicDir = import.meta.env.BASE_URL;
   <!-- MENU MOBILE DEROULANT ABSOLU -->
   <div
     id="menu-content"
-    class="absolute top-full left-0 w-full bg-green-700 text-white flex flex-col items-center gap-4 py-4 hidden z-50"
+    class="absolute top-full left-0 w-full bg-green-700 text-white flex-col items-center gap-4 py-4 hidden z-50"
   >
-    <ul class="flex flex-col gap-2 items-center">
+    <ul class="flex flex-col items-center justify-around">
       <li>
-        <a href={`prestations`} class="hover:underline">{t.nav.services}</a>
+        <a
+          href={`prestations`}
+          class="py-4 flex items-center justify-center hover:underline"
+          >{t.nav.services}</a
+        >
       </li>
-      <li><a href={`a-propos`} class="hover:underline">{t.nav.about}</a></li>
       <li>
-        <a href={`references`} class="hover:underline">{t.nav.references}</a>
+        <a
+          href={`a-propos`}
+          class="py-4 flex items-center justify-center hover:underline"
+          >{t.nav.about}</a
+        >
       </li>
-      <li><a href={`missions`} class="hover:underline">{t.nav.missions}</a></li>
-      <li><a href={`contact`} class="hover:underline">{t.nav.contact}</a></li>
+      <li>
+        <a
+          href={`references`}
+          class="py-4 flex items-center justify-center hover:underline"
+          >{t.nav.references}</a
+        >
+      </li>
+      <li>
+        <a
+          href={`missions`}
+          class="py-4 flex items-center justify-center hover:underline"
+          >{t.nav.missions}</a
+        >
+      </li>
+      <li>
+        <a
+          href={`contact`}
+          class="py-4 flex items-center justify-center hover:underline"
+          >{t.nav.contact}</a
+        >
+      </li>
     </ul>
     <LanguageSelector />
     <ThemeSelector />

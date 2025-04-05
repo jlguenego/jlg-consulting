@@ -13,10 +13,10 @@ const locale = getLocaleFromPathname(pathname);
   <HtmlHead />
 
   <body
-    class="transition-colors duration-500 flex flex-col min-h-screen bg-white text-gray-800 ibm-plex-serif-regular dark:bg-gray-900 dark:text-gray-200"
+    class="relative transition-colors duration-500 flex flex-col min-h-screen bg-white text-gray-800 ibm-plex-serif-regular dark:bg-gray-900 dark:text-gray-200"
   >
     <NavBar locale={locale} />
-    <main class="flex-grow container mx-auto">
+    <main class="relative z-0 flex-grow container mx-auto">
       <slot />
     </main>
     <Footer locale={locale} />
