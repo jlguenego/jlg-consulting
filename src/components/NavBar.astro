@@ -29,12 +29,12 @@ const publicDir = import.meta.env.BASE_URL;
 
     <!-- BOUTON HAMBURGER (mobile only) -->
     <button
-      class="lg:hidden p-2 border border-white rounded bg-transparent hover:border-gray-300 transition"
+      class="lg:hidden p-2 border-0 rounded bg-transparent hover:border-gray-300 transition"
       aria-label="Ouvrir le menu"
       onclick="document.getElementById('menu-content').classList.toggle('hidden'); document.getElementById('menu-content').classList.toggle('flex');"
     >
       <svg
-        class="w-6 h-6 text-black"
+        class="w-6 h-6"
         fill="none"
         stroke="currentColor"
         stroke-width="2"
@@ -72,7 +72,7 @@ const publicDir = import.meta.env.BASE_URL;
   <!-- MENU MOBILE DEROULANT ABSOLU -->
   <div
     id="menu-content"
-    class="absolute top-full left-0 w-full bg-green-700 text-white flex-col items-center gap-4 py-4 hidden z-50"
+    class="absolute top-full left-0 w-full bg-green-700 text-white flex-col items-center gap-4 py-4 hidden z-50 dark:bg-gray-900"
   >
     <ul class="flex flex-col items-center justify-around">
       <li>
