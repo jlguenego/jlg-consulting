@@ -47,71 +47,50 @@ const publicDir = import.meta.env.BASE_URL;
       </svg>
     </button>
 
+    <!-- MENU MOBILE DEROULANT ABSOLU -->
+    <div
+      id="menu-content"
+      class="absolute top-full left-0 w-full bg-green-700 text-white flex-col items-center gap-4 py-4 hidden z-50 dark:bg-gray-900 lg:hidden"
+    >
+      <ul class="flex flex-col items-center justify-around">
+        {
+          Object.entries(t.nav).map(([key, value]) => {
+            return (
+              <li>
+                <a
+                  href={`./${key}`}
+                  class="py-4 flex items-center justify-center hover:underline"
+                >
+                  {value}
+                </a>
+              </li>
+            );
+          })
+        }
+      </ul>
+      <LanguageSelector />
+      <ThemeSelector />
+    </div>
+
     <!-- CONTENU MENU - visible en desktop -->
     <div class="hidden lg:flex lg:items-center lg:gap-16">
       <ul class="flex gap-4">
-        <li>
-          <a href={`prestations`} class="hover:underline">{t.nav.services}</a>
-        </li>
-        <li><a href={`a-propos`} class="hover:underline">{t.nav.about}</a></li>
-        <li>
-          <a href={`references`} class="hover:underline">{t.nav.references}</a>
-        </li>
-        <li>
-          <a href={`missions`} class="hover:underline">{t.nav.missions}</a>
-        </li>
-        <li><a href={`contact`} class="hover:underline">{t.nav.contact}</a></li>
+        {
+          Object.entries(t.nav).map(([key, value]) => {
+            return (
+              <li>
+                <a href={`./${key}`} class="hover:underline">
+                  {value}
+                </a>
+              </li>
+            );
+          })
+        }
       </ul>
       <div class="flex gap-4 items-center">
         <LanguageSelector />
         <ThemeSelector />
       </div>
     </div>
-  </div>
-
-  <!-- MENU MOBILE DEROULANT ABSOLU -->
-  <div
-    id="menu-content"
-    class="absolute top-full left-0 w-full bg-green-700 text-white flex-col items-center gap-4 py-4 hidden z-50 dark:bg-gray-900"
-  >
-    <ul class="flex flex-col items-center justify-around">
-      <li>
-        <a
-          href={`prestations`}
-          class="py-4 flex items-center justify-center hover:underline"
-          >{t.nav.services}</a
-        >
-      </li>
-      <li>
-        <a
-          href={`a-propos`}
-          class="py-4 flex items-center justify-center hover:underline"
-          >{t.nav.about}</a
-        >
-      </li>
-      <li>
-        <a
-          href={`references`}
-          class="py-4 flex items-center justify-center hover:underline"
-          >{t.nav.references}</a
-        >
-      </li>
-      <li>
-        <a
-          href={`missions`}
-          class="py-4 flex items-center justify-center hover:underline"
-          >{t.nav.missions}</a
-        >
-      </li>
-      <li>
-        <a
-          href={`contact`}
-          class="py-4 flex items-center justify-center hover:underline"
-          >{t.nav.contact}</a
-        >
-      </li>
-    </ul>
-    <LanguageSelector />
-    <ThemeSelector />
   </div>
 </nav>

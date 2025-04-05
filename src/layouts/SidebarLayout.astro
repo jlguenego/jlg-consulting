@@ -35,7 +35,10 @@ const { menuItems = [] } = Astro.props as Props;
           {
             menuItems.map((item) => (
               <li>
-                <a href={item.href} class="text-green-700 hover:underline">
+                <a
+                  href={"services/" + item.href}
+                  class="text-green-700 hover:underline"
+                >
                   {item.label}
                 </a>
               </li>

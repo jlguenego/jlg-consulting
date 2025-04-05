@@ -1,6 +1,5 @@
 export default {
   nav: {
-    home: "JLG Consulting",
     services: "Services",
     about: "About",
     references: "References",

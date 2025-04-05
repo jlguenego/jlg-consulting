@@ -18,7 +18,7 @@ const markersJSON = JSON.stringify(markers);
     </div>
     <div id="map" class="h-[70vh] w-full rounded-xl shadow"></div>
   </section>
-  <div data-markers={markersJSON}></div>
+  <div data-markers={markersJSON} class="relative z-0"></div>
 
   <script type="module">
     import * as L from "https://unpkg.com/leaflet@1.9.3/dist/leaflet-src.esm.js";
