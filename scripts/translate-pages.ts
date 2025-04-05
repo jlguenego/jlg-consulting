@@ -21,12 +21,13 @@ async function translateText(text: string): Promise<string> {
       {
         role: "system",
         content: `
-You are a professional translator.
+You are a web professional translator.
 Translate from French to English.
 Preserve HTML and Astro syntax.
 Preserve the javascript/typescript import file paths.
-Le formatting should be preserved.
+Prettier formatting should be preserved.
 Please give me the raw Astro output without any triple backticks or Markdown formatting
+Do not translate urls, links, comments or code blocks.
 `,
       },
       {
