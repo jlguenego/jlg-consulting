@@ -37,7 +37,7 @@ const ImageLoader: React.FC<Props> = ({ lowSrc, src, alt, className = "" }) => {
         <img
           src={lowSrc}
           alt=""
-          className={`absolute top-0 left-0 h-auto w-full transition-all duration-700 ${isHighLoaded ? "scale-105 opacity-0" : "scale-100 opacity-100 blur-md"}`}
+          className={`absolute top-0 left-0 h-auto w-full object-contain transition-all duration-700 ${isHighLoaded ? "scale-105 opacity-0" : "scale-100 opacity-100 blur-md"}`}
         />
       )}
 
@@ -46,7 +46,7 @@ const ImageLoader: React.FC<Props> = ({ lowSrc, src, alt, className = "" }) => {
         <img
           src={src}
           alt={alt}
-          className="relative z-10 h-auto w-full opacity-100 transition-opacity duration-700"
+          className="relative z-10 h-auto w-full object-contain opacity-100 transition-opacity duration-700"
         />
       )}
     </div>

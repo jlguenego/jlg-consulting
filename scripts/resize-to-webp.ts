@@ -6,7 +6,7 @@ import { fileURLToPath } from "url";
 // Répertoire racine du projet à scanner
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
-const projectRoot = path.join(__dirname, "../src"); // ou ajuster selon ton besoin
+const projectRoot = path.join(__dirname, "../src/pages/fr"); // ou ajuster selon ton besoin
 const srcImageDir = "./public";
 const destImageDir = "./public/low-res";
 
