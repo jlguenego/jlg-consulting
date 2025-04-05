@@ -2,6 +2,7 @@
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import Testimonials from "../../components/Testimonials.astro";
 import Card from "../../components/Card.astro";
+import ImageLoader from "../../components/ImageLoader.tsx";
 
 const title = "Accueil – JLG Consulting";
 const description =
@@ -42,10 +43,12 @@ const publicDir = import.meta.env.BASE_URL;
         </div>
       </div>
 
-      <img
+      <ImageLoader
+        client:load
+        lowSrc={publicDir + "/low-res/hero.png"}
         src={publicDir + "/hero.png"}
-        alt="Jean-Louis Guénégo"
-        class="w-md inset-0 object-cover"
+        alt="Exemple de photo"
+        className="size-96"
       />
     </div>
   </section>
@@ -78,11 +81,16 @@ const publicDir = import.meta.env.BASE_URL;
     <section id="a-propos" class="py-16 px-4">
       <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-8 items-center">
         <!-- Image -->
-        <a class="flex justify-center" href="a-propos">
-          <img
-            src={publicDir + "jlg.png"}
-            alt="Jean-Louis Guénégo"
-            class="w-64 h-64 object-cover rounded-full border-4 border-green-100 dark:brightness-50"
+        <a
+          class="w-64 h-64 object-cover rounded-full border-4 border-green-100 dark:brightness-50 overflow-hidden"
+          href="a-propos"
+        >
+          <ImageLoader
+            client:load
+            lowSrc={publicDir + "/low-res/jlg.jpg"}
+            src={publicDir + "/jlg.jpg"}
+            alt="Moi en style cartoon"
+            className="size-64"
           />
         </a>
 
@@ -133,11 +141,16 @@ const publicDir = import.meta.env.BASE_URL;
 
         <!-- Image -->
         <div class="flex justify-center">
-          <a href="missions">
-            <img
-              src={publicDir + "carte.png"}
+          <a
+            href="missions"
+            class="w-64 h-64 object-cover rounded-full overflow-hidden border-4 border-green-100 dark:brightness-50"
+          >
+            <ImageLoader
+              client:load
+              lowSrc={publicDir + "/low-res/carte.png"}
+              src={publicDir + "/carte.png"}
               alt="Carte de France de mes missions"
-              class="w-64 h-64 object-cover rounded-full border-4 border-green-100 dark:brightness-50"
+              className="size-96"
             />
           </a>
         </div>
@@ -232,11 +245,16 @@ const publicDir = import.meta.env.BASE_URL;
               </p>
             </div>
           </div>
-          <a href="contact">
-            <img
+          <a
+            href="contact"
+            class="mt-8 w-full max-w-96 mx-auto rounded-lg dark:brightness-50 overflow-hidden"
+          >
+            <ImageLoader
+              client:load
+              lowSrc={publicDir + "/low-res/bureaux.jpg"}
               src={publicDir + "/bureaux.jpg"}
               alt="Photo de mon bureau stylisé"
-              class="mt-8 w-full max-w-96 mx-auto rounded-lg dark:brightness-50"
+              className="h-64"
             />
           </a>
         </div>

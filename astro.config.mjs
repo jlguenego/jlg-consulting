@@ -4,6 +4,8 @@ import sitemap from "@astrojs/sitemap";
 import tailwindcss from "@tailwindcss/vite";
 import icon from "astro-icon";
 
+import react from "@astrojs/react";
+
 // https://astro.build/config
 export default defineConfig({
   vite: {
@@ -11,5 +13,5 @@ export default defineConfig({
   },
   site: "https://www.jlg-consulting.com",
   base: "/nouveau-site/",
-  integrations: [sitemap(), icon()],
+  integrations: [sitemap(), icon(), react()],
 });
