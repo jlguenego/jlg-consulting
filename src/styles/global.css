@@ -2,6 +2,17 @@
 
 @custom-variant dark (&:where(.dark, .dark *));
 
+/* No scrollbars */
+html {
+  scrollbar-gutter: stable both-edges;
+  *::-webkit-scrollbar {
+    display: none;
+  }
+
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
 .ibm-plex-serif-thin {
   font-family: "IBM Plex Serif", serif;
   font-weight: 100;

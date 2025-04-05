@@ -12,9 +12,13 @@ const newPath = pathname.replace(`/${currentLocale}/`, `/${targetLocale}/`);
     onclick={`localStorage.setItem('locale', '${targetLocale}')`}
   >
     <span>
-      <span class={currentLocale === "fr" ? "text-xs" : ""}>EN</span>
+      <span class={currentLocale === "fr" ? "text-gray-500 text-xs" : ""}
+        >EN</span
+      >
       <span>/</span>
-      <span class={currentLocale === "en" ? "text-xs" : ""}>FR</span>
+      <span class={currentLocale === "en" ? "text-gray-500 text-xs" : ""}
+        >FR</span
+      >
     </span>
   </a>
 </div>
