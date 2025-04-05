@@ -1,5 +1,4 @@
 ---
-import Footer from "../components/Footer.astro";
 import HtmlHead from "../components/HtmlHead.astro";
 import NavBar from "../components/NavBar.astro";
 import "../styles/global.css";
@@ -19,6 +18,5 @@ const locale = getLocaleFromPathname(pathname);
     <main class="relative z-0 flex flex-col flex-grow item-center">
       <slot />
     </main>
-    <Footer locale={locale} />
   </body>
 </html>

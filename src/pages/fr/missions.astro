@@ -1,6 +1,6 @@
 ---
-import BaseLayout from "../../layouts/BaseLayout.astro";
 import markers from "../../data/missions.json";
+import NoFooterLayout from "../../layouts/NoFooterLayout.astro";
 
 const title = "Carte des missions – JLG Consulting";
 const description =
@@ -8,15 +8,17 @@ const description =
 const markersJSON = JSON.stringify(markers);
 ---
 
-<BaseLayout {title} {description}>
-  <section class="py-16 px-4">
-    <div class="max-w-6xl mx-auto text-center">
-      <h1 class="text-3xl font-bold text-green-700 mb-6">Carte des missions</h1>
-      <p class="text-gray-700 mb-6">
+<NoFooterLayout {title} {description}>
+  <section class="w-screen">
+    <div class="text-center">
+      <h1 class="text-3xl font-bold text-green-700 mt-[-1rem]">
+        Carte des missions
+      </h1>
+      <p class="text-gray-700 mb-1">
         Voici une carte interactive montrant les endroits où j’ai travaillé.
       </p>
     </div>
-    <div id="map" class="h-[70vh] w-full rounded-xl shadow"></div>
+    <div id="map" class="h-[80vh] w-full"></div>
   </section>
   <div data-markers={markersJSON} class="relative z-0"></div>
 
@@ -43,4 +45,4 @@ const markersJSON = JSON.stringify(markers);
     rel="stylesheet"
     href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
   />
-</BaseLayout>
+</NoFooterLayout>
