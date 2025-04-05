@@ -3,14 +3,16 @@
   "type": "module",
   "version": "0.0.1",
   "scripts": {
-    "dev": "astro dev",
+    "dev": "astro dev --host",
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
     "deploy": "astro build && node deploy-sftp.js",
     "archive": "git archive --format zip -o ../output.zip HEAD",
     "translate": "bun scripts/translate-pages.ts",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "resize": "bun scripts/resize-to-webp.ts",
+    "convert": "bun scripts/convert-to-webp.ts"
   },
   "dependencies": {
     "@astrojs/react": "4.2.3",
@@ -32,6 +34,7 @@
     "prettier": "^3.5.3",
     "prettier-plugin-astro": "^0.14.1",
     "prettier-plugin-tailwindcss": "^0.6.11",
+    "sharp": "^0.34.0",
     "ssh2-sftp-client": "^12.0.0"
   }
 }
