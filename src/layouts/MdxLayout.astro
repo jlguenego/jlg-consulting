@@ -1,0 +1,26 @@
+---
+import Footer from "../components/Footer.astro";
+import HtmlHead from "../components/HtmlHead.astro";
+import NavBar from "../components/NavBar.astro";
+import "../styles/global.css";
+import { getLocaleFromPathname } from "../utils/i18n";
+
+const pathname = Astro.url.pathname;
+const locale = getLocaleFromPathname(pathname);
+---
+
+<html lang="fr">
+  <HtmlHead />
+
+  <body
+    class="font-serif relative transition-colors duration-500 flex flex-col min-h-screen bg-white text-gray-800 dark:bg-gray-900 dark:text-gray-200"
+  >
+    <NavBar locale={locale} />
+    <main
+      class="relative z-0 flex flex-col flex-grow item-center container mx-auto mb-8"
+    >
+      <slot />
+    </main>
+    <Footer locale={locale} />
+  </body>
+</html>
