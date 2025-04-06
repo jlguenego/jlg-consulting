@@ -15,5 +15,5 @@ export default defineConfig({
   },
   site: "https://www.jlg-consulting.com",
   base: "/nouveau-site/",
-  integrations: [sitemap(), icon(), react(), mdx()],
+  integrations: [mdx(), sitemap(), icon(), react()],
 });
