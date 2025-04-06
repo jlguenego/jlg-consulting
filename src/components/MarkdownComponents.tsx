@@ -20,5 +20,27 @@ export default {
   hr: (props: any) => <hr className="my-4 border-b" {...props} />,
   ul: (props: any) => <ul className="mb-4" {...props} />,
   li: (props: any) => <li className="my-2 ml-8 list-disc" {...props} />,
-  // Ajoute d'autres composants si besoin (p, a, ul, li, etc.)
+
+  // 🟢 Composants personnalisés pour les tableaux
+  table: (props: any) => (
+    <div className="my-8 overflow-x-auto">
+      <table
+        className="w-full border border-gray-300 text-left text-sm text-gray-700"
+        {...props}
+      />
+    </div>
+  ),
+  thead: (props: any) => (
+    <thead className="bg-green-700 font-semibold text-white" {...props} />
+  ),
+  tbody: (props: any) => <tbody {...props} />,
+  tr: (props: any) => (
+    <tr className="border-t border-gray-300 even:bg-gray-100" {...props} />
+  ),
+  th: (props: any) => (
+    <th className="border border-gray-300 px-4 py-2" {...props} />
+  ),
+  td: (props: any) => (
+    <td className="border border-gray-300 px-4 py-2 align-top" {...props} />
+  ),
 };
