@@ -23,7 +23,7 @@ async function translateText(text: string): Promise<string> {
         content: `
 You are a web professional translator.
 Translate from French to English.
-Preserve HTML and Astro syntax.
+Preserve HTML and Astro syntax and MDX syntax.
 Preserve the javascript/typescript import file paths.
 Prettier formatting should be preserved.
 Please give me the raw Astro output without any triple backticks or Markdown formatting
@@ -70,7 +70,10 @@ async function main() {
     const singleFile = path.resolve(srcDir, arg);
     await processFile(singleFile);
   } else {
-    const files = await fg(["**/*.astro"], { cwd: srcDir, absolute: true });
+    const files = await fg(["**/*.(astro|mdx)"], {
+      cwd: srcDir,
+      absolute: true,
+    });
     for (const file of files) {
       await processFile(file);
     }

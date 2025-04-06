@@ -8,7 +8,7 @@ const publicDir = import.meta.env.BASE_URL;
 ---
 
 <BaseLayout {title} {description}>
-  <section class="py-16 px-4 bg-white">
+  <section class="py-16 px-4">
     <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-8 items-center">
       <!-- Image -->
       <div class="flex justify-center">
@@ -21,23 +21,21 @@ const publicDir = import.meta.env.BASE_URL;
 
       <!-- Text -->
       <div>
-        <h1 class="font-heading text-3xl font-bold text-green-700 mb-4">
-          About me
-        </h1>
-        <p class="text-gray-700 mb-4">
+        <h1 class="text-3xl font-bold text-green-700 mb-4">About me</h1>
+        <p class="text-gray-700 dark:text-gray-300 mb-4">
           My name is <strong>Jean-Louis Guénégo</strong>. I am an IT consultant
-          and trainer, passionate about coding, software architecture, pedagogy
-          and knowledge transfer.
+          and trainer, passionate about coding, software architecture,
+          pedagogy and knowledge transfer.
         </p>
-        <p class="text-gray-700 mb-4">
-          A former student of ENS Cachan, I have accumulated over 20 years of
-          experience in web development, modern JavaScript technologies
+        <p class="text-gray-700 dark:text-gray-300 mb-4">
+          A former student of ENS Cachan, I have accumulated over 20 years
+          of experience in web development, modern JavaScript technologies
           (Node.js, Vue, React, etc.), and training for technical audiences.
         </p>
-        <p class="text-gray-700 mb-4">
-          My approach is focused on quality, simplicity and efficiency. I always
-          strive to provide understandable, scalable and robust solutions to my
-          clients.
+        <p class="text-gray-700 dark:text-gray-300 mb-4">
+          My approach is focused on quality, simplicity and
+          efficiency. I always strive to provide understandable, scalable and robust solutions
+          to my clients.
         </p>
       </div>
     </div>

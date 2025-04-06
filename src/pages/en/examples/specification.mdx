@@ -1,0 +1,123 @@
+---
+title: "JLG Consulting Website Specification"
+description: "Technical and functional specification document for the showcase site jlg-consulting.com"
+layout: ../../../layouts/MdxLayout.astro
+---
+
+import c from "../../../components/MarkdownComponents";
+export const components = c;
+
+# 📄 Specification of the _JLG Consulting_ website
+
+## 🧭 Website Objective
+
+The **jlg-consulting.com** website is the showcase site for **Jean-Louis Guénégo**, a computer consultant and trainer. Its purpose is to:
+
+- Present Jean-Louis Guénégo's expertise.
+- Highlight his services to three types of clients: **businesses**, **communities** and **startups**.
+- Reassure the **CIOs** and **HR** of large companies as well as SMEs.
+- Make people want to contact him and work with him.
+
+## 🏗️ General Architecture
+
+- **Main Framework: Astro**
+- **Front-end only** (no backend)
+- **Deployment on GitHub Pages with GitHub Actions**
+- **No database**
+- All data is static or generated at build (e.g., translation)
+
+## 🧩 Technical Stack and Dependencies
+
+| Library / Tool                  | Role                                                                                         |
+| ---------------------------------- | -------------------------------------------------------------------------------------------- |
+| `astro`                            | Static, lightweight, fast framework.                                                           |
+| `@astrojs/react`                   | Integration of React components in Astro.                                                  |
+| `react`, `react-dom`               | Dynamic components, used in particular for interactive modules.                      |
+| `tailwindcss`, `@tailwindcss/vite` | Utility CSS framework, used for modern, responsive and personalized styling. |
+| `astro-icon`                       | Easy management of SVG icons.                                                               |
+| `@astrojs/sitemap`                 | Automatic sitemap generation for SEO.                                               |
+| `openai`                           | Used to **automatically translate** `/fr` pages to `/en` at build time.          |
+| `sharp`                            | Image optimization (size, format) on the fly or at build.                             |
+| `ssh2-sftp-client`                 | Deployment via SFTP at OVH, with `deploy-sftp.js`.                                        |
+| `dotenv`                           | Management of environment variables, especially for the OpenAI key.                         |
+| `prettier` and its plugins          | Automatic code formatting (`.astro`, `tailwindcss`, etc.).                               |
+
+## 🌍 Internationalization
+
+- The user writes the pages in French in `/fr`.
+- An **automatic generation script** produces the equivalent pages in `/en`.
+- **Translation is provided by the OpenAI API** at build time.
+- The site structure is duplicated, allowing for simple routing between `/fr` and `/en`.
+
+## 🎨 Design
+
+- Minimalist, clear and professional design.
+- Use of **Tailwind CSS 4.x**.
+- Main color: `green-700` from Tailwind, instead of blue.
+- The site is **fully responsive**, with a mobile-first ergonomics.
+- The `.mdx` titles are centered and colored (`text-green-700`).
+- Lists have margins and a neat presentation.
+
+## 🗂️ Contents
+
+- **Home**
+- **Services** (via a centralized `menuItems` list shared between pages)
+- **About / Bio**
+- **Contact**
+- **Legal Notice**
+- Optimized images (WebP)
+- SVG icons via `astro-icon`
+
+## ⚙️ Internal Features
+
+- **Reuse of React components** for future dynamic features.
+- **Centralized variables** (`menuItems`) for easy maintenance.
+- **Tailwind configuration shared with `.mdx`.**
+- **Smart build system for generating translated pages**.
+
+## 🌐 SEO
+
+- Sitemap automatically generated via `@astrojs/sitemap`.
+- `meta` tags adapted per page.
+- `hreflang` present for FR/EN alternation.
+- Clean URLs (`/fr/services`, `/en/services`, etc.)
+- Use of SVG icons and optimized images (Sharp + WebP)
+
+## 🚀 Performance
+
+- Static site: fast loading, excellent Lighthouse score.
+- **No superfluous JavaScript**.
+- **Use of Astro Islands**: only the dynamic React parts are hydrated.
+- Tailwind + purge CSS: ultra-light style sheets.
+- Images optimized with Sharp.
+
+## ♿ Accessibility
+
+- Respected HTML semantics (`main`, `nav`, `header`, `footer`, etc.).
+- Colors comply with WCAG AA contrast.
+- Keyboard navigation ensured.
+- Readable text, adaptable font sizes.
+
+## 🔐 Security
+
+- No personal data collected on the client side.
+- No form with submission.
+- Secure deployment via SFTP with private key.
+- Sensitive variables (.env) not committed.
+
+## 📦 Deployment
+
+- **GitHub Pages** via **GitHub Actions**.
+- `deploy-sftp.js` script for FTP sending at **OVH**.
+- Maintenance of the current OVH structure: site + hidden FTP folders.
+- Manual or automated deployment possible.
+
+## 📘 Possible Roadmap (not yet in place)
+
+| Future Feature             | Status         |
+| --------------------------------- | -------------- |
+| Simple admin interface (markdown) | Not planned      |
+| Internal search engine       | To be discussed     |
+| Contact form             | To be discussed     |
+| Consultation statistics      | Not planned      |
+| Printable PDF version of pages  | Idea to explore |

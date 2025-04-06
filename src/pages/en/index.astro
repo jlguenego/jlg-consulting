@@ -18,7 +18,9 @@ const publicDir = import.meta.env.BASE_URL;
       class="flex gap-2 items-center justify-around w-full max-w-5xl flex-wrap"
     >
       <div class="w-96 max-w-4xl mx-auto px-4 grow">
-        <h1 class="text-4xl md:text-6xl font-bold mb-4 text-center">
+        <h1
+          class="font-heading text-4xl md:text-6xl font-bold mb-4 text-center"
+        >
           Welcome to <span class="text-nowrap text-green-500"
             >JLG Consulting</span
           >
@@ -47,7 +49,7 @@ const publicDir = import.meta.env.BASE_URL;
         client:load
         lowSrc={publicDir + "/low-res/hero.webp"}
         src={publicDir + "/hero.webp"}
-        alt="Sample photo"
+        alt="Example photo"
         className="size-96"
       />
     </div>
@@ -56,10 +58,12 @@ const publicDir = import.meta.env.BASE_URL;
   <!-- SERVICES PREVIEW -->
   <section class="py-12 px-4">
     <div class="text-center mb-10">
-      <h2 class="text-3xl font-semibold mb-4">What I offer</h2>
+      <h2 class="font-heading text-3xl font-semibold mb-4">
+        What I offer
+      </h2>
       <p class="text-gray-600 dark:text-gray-400 max-w-xl mx-auto">
         From web application design to training on the latest
-        JavaScript technologies, including advice on software
+        JavaScript technologies, through advice on software
         architecture.
       </p>
     </div>
@@ -68,7 +72,7 @@ const publicDir = import.meta.env.BASE_URL;
         Custom web applications in TypeScript, Node.js, Vue, or React.
       </Card>
       <Card title="Training" href="services/training">
-        Technical training tailored to fullstack developers and IT
+        Technical training adapted to fullstack developers and IT
         teams.
       </Card>
       <Card title="Consulting" href="services/strategic-consulting">
@@ -82,7 +86,7 @@ const publicDir = import.meta.env.BASE_URL;
       <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-8 items-center">
         <!-- Image -->
         <a
-          class="w-64 h-64 object-cover rounded-full border-4 border-green-100 dark:brightness-50 overflow-hidden"
+          class="w-64 h-64 object-cover rounded-full border-4 border-green-100 dark:brightness-50 overflow-hidden hover:brightness-90"
           href="about"
         >
           <ImageLoader
@@ -96,18 +100,19 @@ const publicDir = import.meta.env.BASE_URL;
 
         <!-- Text -->
         <div>
-          <h1 class="text-3xl font-bold text-green-700 mb-4">
+          <h1 class="font-heading text-3xl font-bold text-green-700 mb-4">
             About me
           </h1>
           <p class="mb-4">
             My name is <strong>Jean-Louis Guénégo</strong>. I am an IT consultant
-            and trainer, passionate about code, software architecture,
-            pedagogy and knowledge transfer.
+            trainer, passionate about code, software architecture,
+            pedagogy and knowledge transmission.
           </p>
           <p class="mb-4">
-            A former student of the ENS de Cachan, I have accumulated over 20 years
-            of experience in web development, modern JavaScript technologies
-            (Node.js, Vue, React, etc.), and training for technical audiences.
+            A former student of the ENS de Cachan, I have accumulated more than 20 years
+            of experience in web development, modern JavaScript
+            technologies (Node.js, Vue, React, etc.), and training for
+            technical audiences.
           </p>
           <p class="mb-4">
             My approach is centered on quality, simplicity and
@@ -121,13 +126,13 @@ const publicDir = import.meta.env.BASE_URL;
       <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-8 items-center">
         <!-- Text -->
         <div>
-          <h1 class="text-3xl font-bold text-green-700 mb-4">
-            A story of {new Date().getFullYear() - 2001} years, with over 400
+          <h1 class="font-heading text-3xl font-bold text-green-700 mb-4">
+            A story of {new Date().getFullYear() - 2001} years, with more than 400
             missions accomplished.
           </h1>
           <p class="mb-4">
             Missions of a few days or several years, recommended by
-            my partners, I have supported a hundred companies in various
+            my partners, I have accompanied a hundred companies in various
             fields.
           </p>
           <p class="mb-4">
@@ -141,7 +146,7 @@ const publicDir = import.meta.env.BASE_URL;
         <div class="flex justify-center">
           <a
             href="missions"
-            class="w-64 h-64 object-cover rounded-full overflow-hidden border-4 border-green-100 dark:brightness-50"
+            class="w-64 h-64 object-cover rounded-full overflow-hidden border-4 border-green-100 dark:brightness-50 hover:brightness-90"
           >
             <ImageLoader
               client:load
@@ -157,9 +162,43 @@ const publicDir = import.meta.env.BASE_URL;
 
     <Testimonials />
 
+    <section class="py-12 px-4 md:px-8 max-w-4xl mx-auto">
+      <h2 class="font-heading text-green-700 text-3xl font-bold mb-4">
+        How I conceive a project
+      </h2>
+      <p class="mb-4 text-lg">
+        The best way to understand my way of working is to see it
+        in action.
+      </p>
+      <p class="mb-4">
+        This website — which you are currently browsing — is a good example.
+        I designed it like a real client project, with method, intention and
+        requirement. For this, I rely on my development skills,
+        but also on thinking tools like ChatGPT, which
+        assists me in structuring content and challenging my ideas.
+      </p>
+      <p class="mb-4">
+        Each decision is thought out according to the visitors: their profile,
+        their expectations, their need to be reassured. I proceed by iterations, testing
+        ideas, always keeping the end user in mind.
+      </p>
+      <p class="mb-6">
+        Want to see how I go about it concretely? I have documented my
+        approach step by step.
+      </p>
+      <a
+        href="method"
+        class="inline-block bg-green-700 hover:bg-green-800 text-white font-semibold py-2 px-4 rounded transition"
+      >
+        Discover my method
+      </a>
+    </section>
+
     <section id="contact" class="py-16 px-4">
       <div class="max-w-3xl mx-auto text-center">
-        <h1 class="text-3xl font-bold text-green-700 mb-6">Contact me</h1>
+        <h1 class="font-heading text-3xl font-bold text-green-700 mb-6">
+          Contact me
+        </h1>
         <p class="text-lg mb-8">
           Here is all the information to reach me or come and meet me.
         </p>
@@ -245,7 +284,7 @@ const publicDir = import.meta.env.BASE_URL;
           </div>
           <a
             href="contact"
-            class="mt-8 w-full max-w-96 mx-auto rounded-lg dark:brightness-50 overflow-hidden"
+            class="mt-8 w-full max-w-96 mx-auto rounded-lg dark:brightness-50 overflow-hidden hover:brightness-90"
           >
             <ImageLoader
               client:load
