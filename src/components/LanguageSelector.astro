@@ -7,18 +7,14 @@ const newPath = pathname.replace(`/${currentLocale}/`, `/${targetLocale}/`);
 
 <div>
   <a
-    class="flex items-center justify-center w-20 h-10 rounded dark:bg-gray-900 dark:hover:bg-gray-800 text-black dark:text-white cursor-pointer hover:bg-gray-100"
+    class="flex items-center justify-center w-20 h-10 rounded dark:bg-gray-900 dark:hover:bg-gray-800 cursor-pointer hover:bg-green-600 lg:hover:bg-gray-100"
     href={newPath}
     onclick={`localStorage.setItem('locale', '${targetLocale}')`}
   >
     <span>
-      <span class={currentLocale === "fr" ? "text-gray-500 text-xs" : ""}
-        >EN</span
-      >
+      <span class={currentLocale === "fr" ? "opacity-50 text-xs" : ""}>EN</span>
       <span>/</span>
-      <span class={currentLocale === "en" ? "text-gray-500 text-xs" : ""}
-        >FR</span
-      >
+      <span class={currentLocale === "en" ? "opacity-50 text-xs" : ""}>FR</span>
     </span>
   </a>
 </div>
