@@ -13,6 +13,7 @@
     ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
     "Courier New", monospace;
   /* ... */
+  --font-heading: "Rubik", sans-serif;
 }
 
 /* No scrollbars */
@@ -24,10 +25,4 @@ html {
 
   -ms-overflow-style: none;
   scrollbar-width: none;
-}
-
-.ibm-plex-serif-thin-italic {
-  font-family: "IBM Plex Serif", serif;
-  font-weight: 100;
-  font-style: italic;
 }
