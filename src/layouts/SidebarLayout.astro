@@ -25,11 +25,11 @@ const { menuItems = [] } = Astro.props as Props;
     class="font-serif relative transition-colors duration-500 flex flex-col min-h-screen bg-white text-gray-800 dark:bg-gray-900 dark:text-gray-200"
   >
     <NavBar locale={locale} />
-    <div class="flex-grow container mx-auto p-4">
+    <div
+      class="flex-grow container mx-auto md:p-4 flex flex-col-reverse md:flex-row"
+    >
       <!-- Barre latérale -->
-      <aside
-        class="w-64 bg-white dark:bg-gray-900 shadow-md p-4 hidden md:block"
-      >
+      <aside class="w-64 bg-white dark:bg-gray-900 md:shadow-md p-4 block">
         <h2 class="font-heading text-xl font-semibold mb-4">
           <a href="prestations" class="text-green-700 hover:underline"
             >Mes Prestations</a
