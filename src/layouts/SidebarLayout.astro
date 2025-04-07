@@ -16,7 +16,7 @@ const pathname = Astro.url.pathname;
 const locale = getLocaleFromPathname(pathname);
 ---
 
-<html lang="fr">
+<html lang={locale}>
   <HtmlHead />
   <body
     class="font-serif relative transition-colors duration-500 flex flex-col min-h-screen bg-white text-gray-800 dark:bg-gray-900 dark:text-gray-200"

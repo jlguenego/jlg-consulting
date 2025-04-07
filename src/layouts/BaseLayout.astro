@@ -9,7 +9,7 @@ const pathname = Astro.url.pathname;
 const locale = getLocaleFromPathname(pathname);
 ---
 
-<html lang="fr">
+<html lang={locale}>
   <HtmlHead />
 
   <body
