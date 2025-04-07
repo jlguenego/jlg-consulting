@@ -1,13 +1,60 @@
 ---
-import { prestationsMenuItems } from "../../../data/prestations-menu";
 import SidebarLayout from "../../../layouts/SidebarLayout.astro";
 ---
 
 <SidebarLayout
-  title="Training"
-  menuItems={prestationsMenuItems}
-  description="Training"
+  title="Our services"
+  description="Comprehensive support, from strategy to implementation"
 >
-  <h1 class="font-heading text-3xl font-bold mb-4">Services</h1>
-  <p>Here we present an introduction.</p>
+  <h1 class="font-heading text-3xl font-bold mb-4">
+    Our services to transform your digital projects
+  </h1>
+  <p class="mb-4">
+    At <strong>JLG Consulting</strong>, we support businesses, communities and startups at every stage of their digital projects.
+    Our goal: to help you design, develop and evolve high-value solutions that are accessible, robust and tailored to your challenges.
+  </p>
+  <h2 class="text-2xl font-bold mt-8 mb-2">360° expertise</h2>
+  <p class="mb-4">
+    We intervene both upstream and downstream of projects, with a cross-cutting approach combining strategy, design, development, accessibility
+    and training.
+  </p>
+  <p>Discover our main services:</p>
+  <ul class="list-disc list-inside mt-2 space-y-1">
+    <li>
+      <a href="services/conseil-strategique" class="text-green-700 underline">
+        Strategic consulting
+      </a> – To clarify your objectives and lay the foundations for a solid project.
+    </li>
+    <li>
+      <a href="services/design-ux-ui" class="text-green-700 underline">
+        UX/UI Design
+      </a> – To design useful, usable and engaging interfaces.
+    </li>
+    <li>
+      <a
+        href="services/developpement-logiciel"
+        class="text-green-700 underline"
+      >
+        Software development
+      </a> – To build custom, robust and maintainable solutions.
+    </li>
+    <li>
+      <a
+        href="services/architecture-technique"
+        class="text-green-700 underline"
+      >
+        Technical architecture
+      </a> – To ensure the scalability, performance and security of your systems.
+    </li>
+    <li>
+      <a href="services/accessibilite" class="text-green-700 underline">
+        Digital accessibility
+      </a> – To make your tools inclusive and compliant with standards.
+    </li>
+    <li>
+      <a href="services/formation" class="text-green-700 underline">
+        Training
+      </a> – To enhance your teams' skills on key digital topics.
+    </li>
+  </ul>
 </SidebarLayout>

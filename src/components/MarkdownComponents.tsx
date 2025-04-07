@@ -7,7 +7,7 @@ export default {
   ),
   h1: (props: any) => (
     <h1
-      className="font-heading my-8 text-center text-3xl font-bold text-green-700"
+      className="font-heading mb-8 text-center text-3xl font-bold text-green-700"
       {...props}
     />
   ),

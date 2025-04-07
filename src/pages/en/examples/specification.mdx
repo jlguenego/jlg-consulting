@@ -1,13 +1,13 @@
 ---
 title: "JLG Consulting Website Specification"
-description: "Technical and functional specification document for the showcase site jlg-consulting.com"
+description: "Technical and functional specification document for the showcase website jlg-consulting.com"
 layout: ../../../layouts/MdxLayout.astro
 ---
 
 import c from "../../../components/MarkdownComponents";
 export const components = c;
 
-# 📄 Specification of the _JLG Consulting_ website
+# 📄 Specification for _JLG Consulting_ Website
 
 ## 🧭 Website Objective
 
@@ -16,7 +16,7 @@ The **jlg-consulting.com** website is the showcase site for **Jean-Louis Guéné
 - Present Jean-Louis Guénégo's expertise.
 - Highlight his services to three types of clients: **businesses**, **communities** and **startups**.
 - Reassure the **CIOs** and **HR** of large companies as well as SMEs.
-- Make people want to contact him and work with him.
+- Encourage people to contact him and work with him.
 
 ## 🏗️ General Architecture
 
@@ -36,7 +36,7 @@ The **jlg-consulting.com** website is the showcase site for **Jean-Louis Guéné
 | `tailwindcss`, `@tailwindcss/vite` | Utility CSS framework, used for modern, responsive and personalized styling. |
 | `astro-icon`                       | Easy management of SVG icons.                                                               |
 | `@astrojs/sitemap`                 | Automatic sitemap generation for SEO.                                               |
-| `openai`                           | Used to **automatically translate** `/fr` pages to `/en` at build time.          |
+| `openai`                           | Used to **automatically translate** `/fr` pages to `/en` during build.          |
 | `sharp`                            | Image optimization (size, format) on the fly or at build.                             |
 | `ssh2-sftp-client`                 | Deployment via SFTP at OVH, with `deploy-sftp.js`.                                        |
 | `dotenv`                           | Management of environment variables, especially for the OpenAI key.                         |
@@ -46,14 +46,14 @@ The **jlg-consulting.com** website is the showcase site for **Jean-Louis Guéné
 
 - The user writes the pages in French in `/fr`.
 - An **automatic generation script** produces the equivalent pages in `/en`.
-- **Translation is provided by the OpenAI API** at build time.
-- The site structure is duplicated, allowing for simple routing between `/fr` and `/en`.
+- The **translation is provided by the OpenAI API** at build time.
+- The site structure is duplicated, allowing simple routing between `/fr` and `/en`.
 
 ## 🎨 Design
 
 - Minimalist, clear and professional design.
 - Use of **Tailwind CSS 4.x**.
-- Main color: `green-700` from Tailwind, instead of blue.
+- Main color: Tailwind's `green-700`, instead of blue.
 - The site is **fully responsive**, with a mobile-first ergonomics.
 - The `.mdx` titles are centered and colored (`text-green-700`).
 - Lists have margins and a neat presentation.
@@ -118,6 +118,6 @@ The **jlg-consulting.com** website is the showcase site for **Jean-Louis Guéné
 | --------------------------------- | -------------- |
 | Simple admin interface (markdown) | Not planned      |
 | Internal search engine       | To be discussed     |
-| Contact form             | To be discussed     |
+| Contact form                | To be discussed     |
 | Consultation statistics      | Not planned      |
 | Printable PDF version of pages  | Idea to explore |
