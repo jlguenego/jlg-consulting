@@ -1,4 +1,5 @@
 onlyBuiltDependencies:
   - cpu-features
+  - esbuild
   - sharp
   - ssh2
