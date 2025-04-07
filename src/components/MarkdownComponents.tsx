@@ -10,13 +10,13 @@ export default {
   ),
   h2: (props: any) => (
     <h2
-      className="font-heading mb-4 text-2xl font-semibold text-green-700"
+      className="font-heading my-4 text-2xl font-semibold text-green-700"
       {...props}
     />
   ),
   h3: (props: any) => (
     <h3
-      className="font-heading mb-4 text-xl font-medium text-green-700"
+      className="font-heading my-4 text-xl font-medium text-green-700"
       {...props}
     />
   ),

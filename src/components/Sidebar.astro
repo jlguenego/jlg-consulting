@@ -1,0 +1,33 @@
+---
+import en from "../locales/en";
+import fr from "../locales/fr";
+import type { MenuItem } from "../types/menu";
+import { getLocaleFromPathname } from "../utils/i18n";
+
+const pathname = Astro.url.pathname;
+const locale = getLocaleFromPathname(pathname);
+const localeFile = locale === "fr" ? fr : en;
+const menuItems: MenuItem[] = localeFile.sidebar;
+---
+
+<aside class="w-64 bg-white dark:bg-gray-900 md:shadow-md p-4 block">
+  <h2 class="font-heading text-xl font-semibold mb-4">
+    <a href="services" class="text-green-700 hover:underline">
+      Mes Prestations
+    </a>
+  </h2>
+  <ul class="space-y-2">
+    {
+      menuItems.map((item) => (
+        <li>
+          <a
+            href={"services/" + item.href}
+            class="text-green-700 hover:underline"
+          >
+            {item.label}
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+</aside>

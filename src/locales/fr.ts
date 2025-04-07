@@ -19,4 +19,21 @@ export default {
     privacy: "Confidentialité",
     rights: "Tous droits réservés",
   },
+  sidebar: [
+    { label: "Conseil stratégique", href: "conseil-strategique" },
+    {
+      label: "Design UX/UI",
+      href: "design-ux-ui",
+    },
+    {
+      label: "Développement logiciel",
+      href: "developpement-logiciel",
+    },
+    {
+      label: "Architecture technique",
+      href: "architecture-technique",
+    },
+    { label: "Accessibilité numérique", href: "accessibilite" },
+    { label: "Formation", href: "formation" },
+  ],
 };
