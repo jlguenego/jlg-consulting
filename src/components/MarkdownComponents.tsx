@@ -1,4 +1,7 @@
 export default {
+  a: (props: any) => (
+    <a className="text-green-700 underline hover:text-green-900" {...props} />
+  ),
   h1: (props: any) => (
     <h1
       className="font-heading my-8 text-center text-3xl font-bold text-green-700"

@@ -4,19 +4,19 @@ import { getLocaleFromPathname } from "../utils/i18n";
 export const prestationsMenuItems: MenuItem[] = [
   { label: "Conseil stratégique", href: "conseil-strategique" },
   {
+    label: "Design UX/UI",
+    href: "design-ux-ui",
+  },
+  {
     label: "Développement logiciel",
     href: "developpement-logiciel",
   },
-  { label: "Formation", href: "formation" },
-  { label: "Accessibilité numérique", href: "accessibilite" },
   {
     label: "Architecture technique",
     href: "architecture-technique",
   },
-  {
-    label: "Design UX/UI",
-    href: "design-ux-ui",
-  },
+  { label: "Accessibilité numérique", href: "accessibilite" },
+  { label: "Formation", href: "formation" },
 ];
 
 export function getLabelFromHref(href: string): string | undefined {
