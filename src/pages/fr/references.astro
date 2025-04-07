@@ -5,6 +5,8 @@ const title = "Références – JLG Consulting";
 const description =
   "Découvrez les entreprises et organisations pour lesquelles Jean-Louis Guénégo est intervenu en tant que consultant ou formateur.";
 const publicDir = import.meta.env.BASE_URL;
+
+const logoList = ["capgemini.png", "orange.png"];
 ---
 
 <BaseLayout {title} {description}>
@@ -21,46 +23,17 @@ const publicDir = import.meta.env.BASE_URL;
       <div
         class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8 items-center"
       >
-        <img
-          src={publicDir + "/capgemini.png"}
-          alt="Entreprise 1"
-          class="h-16 mx-auto grayscale hover:grayscale-0 transition"
-        />
-        <img
-          src={publicDir + "/capgemini.png"}
-          alt="Entreprise 2"
-          class="h-16 mx-auto grayscale hover:grayscale-0 transition"
-        />
-        <img
-          src={publicDir + "/capgemini.png"}
-          alt="Entreprise 3"
-          class="h-16 mx-auto grayscale hover:grayscale-0 transition"
-        />
-        <img
-          src={publicDir + "/capgemini.png"}
-          alt="Entreprise 4"
-          class="h-16 mx-auto grayscale hover:grayscale-0 transition"
-        />
-        <img
-          src={publicDir + "/capgemini.png"}
-          alt="Entreprise 5"
-          class="h-16 mx-auto grayscale hover:grayscale-0 transition"
-        />
-        <img
-          src={publicDir + "/capgemini.png"}
-          alt="Entreprise 6"
-          class="h-16 mx-auto grayscale hover:grayscale-0 transition"
-        />
-        <img
-          src={publicDir + "/capgemini.png"}
-          alt="Entreprise 7"
-          class="h-16 mx-auto grayscale hover:grayscale-0 transition"
-        />
-        <img
-          src={publicDir + "/capgemini.png"}
-          alt="Entreprise 8"
-          class="h-16 mx-auto grayscale hover:grayscale-0 transition"
-        />
+        {
+          logoList.map((logo) => {
+            return (
+              <img
+                src={publicDir + "/logos/" + logo}
+                alt={logo.replace(/\.(png|jpg)/, "")}
+                class="h-16 mx-auto grayscale hover:grayscale-0 transition"
+              />
+            );
+          })
+        }
       </div>
     </div>
   </section>

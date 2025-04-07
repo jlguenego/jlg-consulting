@@ -22,3 +22,7 @@ pnpm-debug.log*
 
 # jetbrains setting folder
 .idea/
+
+# JLG Specific directories
+# Put here the logos of all the companies referenced in the site
+public/logos/
