@@ -20,20 +20,20 @@ export default {
     rights: "Tous droits réservés",
   },
   sidebar: [
-    { label: "Conseil stratégique", href: "conseil-strategique" },
+    { label: "Conseil stratégique", href: "strategic-consulting" },
     {
       label: "Design UX/UI",
       href: "design-ux-ui",
     },
     {
       label: "Développement logiciel",
-      href: "developpement-logiciel",
+      href: "software-development",
     },
     {
       label: "Architecture technique",
-      href: "architecture-technique",
+      href: "technical-architecture",
     },
-    { label: "Accessibilité numérique", href: "accessibilite" },
-    { label: "Formation", href: "formation" },
+    { label: "Accessibilité numérique", href: "accessibility" },
+    { label: "Formation", href: "training" },
   ],
 };
