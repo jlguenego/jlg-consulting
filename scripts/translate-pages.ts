@@ -16,7 +16,7 @@ async function translateText(text: string): Promise<string> {
   const start = Date.now();
 
   const response = await openai.chat.completions.create({
-    model: "gpt-4",
+    model: "gpt-4o-mini",
     messages: [
       {
         role: "system",

@@ -26,7 +26,7 @@ const publicDir = import.meta.env.BASE_URL;
           >
         </h1>
         <p class="text-lg mb-8 dark:text-gray-300">
-          Advice, expertise and support in software development and
+          Consulting, expertise, and support in software development and
           digital transformation.
         </p>
         <div class="flex justify-center gap-4 flex-col sm:flex-row">
@@ -59,30 +59,27 @@ const publicDir = import.meta.env.BASE_URL;
   <section class="py-12 px-4">
     <div class="text-center mb-10">
       <h2 class="font-heading text-3xl font-semibold mb-4">
-        What I offer
+        What I Offer
       </h2>
       <p class="text-gray-600 dark:text-gray-400 max-w-xl mx-auto">
-        From web application design to training on the latest
-        JavaScript technologies, through advice on software
-        architecture.
+        From web application design to training on the latest JavaScript
+        technologies, including consulting on software architecture.
       </p>
     </div>
     <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-      <Card title="Development" href="services/software-development">
+      <Card title="Development" href="services/developpement-logiciel">
         Custom web applications in TypeScript, Node.js, Vue, or React.
       </Card>
-      <Card title="Training" href="services/training">
-        Technical training adapted to fullstack developers and IT
-        teams.
+      <Card title="Training" href="services/formation">
+        Technical training tailored for fullstack developers and IT teams.
       </Card>
-      <Card title="Consulting" href="services/strategic-advice">
-        Audit, software architecture, technical support and best
-        practices.
+      <Card title="Consulting" href="services/conseil-strategique">
+        Audit, software architecture, technical support, and best practices.
       </Card>
     </div>
 
-    <!-- About me -->
-    <section id="about" class="py-16 px-4">
+    <!-- About Me -->
+    <section id="a-propos" class="py-16 px-4">
       <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-8 items-center">
         <!-- Image -->
         <a
@@ -101,20 +98,22 @@ const publicDir = import.meta.env.BASE_URL;
         <!-- Text -->
         <div>
           <h1 class="font-heading text-3xl font-bold text-green-700 mb-4">
-            About me
+            About Me
           </h1>
           <p class="mb-4">
             My name is <strong>Jean-Louis Guénégo</strong>. I am an IT consultant
-            trainer, passionate about code, software architecture, pedagogy and knowledge transfer.
+            and trainer, passionate about code, software architecture,
+            pedagogy, and knowledge transfer.
           </p>
           <p class="mb-4">
-            A former student of the ENS de Cachan, I have accumulated more than 20 years
+            A former student of ENS de Cachan, I have accumulated over 20 years
             of experience in web development, modern JavaScript technologies
             (Node.js, Vue, React, etc.), and training for technical audiences.
           </p>
           <p class="mb-4">
-            My approach is centered on quality, simplicity and
-            efficiency. I always strive to bring understandable, scalable and robust solutions to my clients.
+            My approach is centered on quality, simplicity, and
+            efficiency. I always strive to provide understandable, scalable,
+            and robust solutions to my clients.
           </p>
         </div>
       </div>
@@ -125,18 +124,18 @@ const publicDir = import.meta.env.BASE_URL;
         <!-- Text -->
         <div>
           <h1 class="font-heading text-3xl font-bold text-green-700 mb-4">
-            A story of {new Date().getFullYear() - 2001} years, with more than 400
-            missions accomplished.
+            A story of {new Date().getFullYear() - 2001} years, with over 400
+            missions completed.
           </h1>
           <p class="mb-4">
-            Missions of a few days or several years, recommended by
-            my partners, I have accompanied a hundred companies in various
+            Missions lasting from a few days to several years, recommended by
+            my partners, I have supported around a hundred companies in various
             fields.
           </p>
           <p class="mb-4">
             I have collaborated with companies of all sizes, from startups
-            to large companies, including the public sector. Each
-            mission is a new adventure, a new challenge to take up.
+            to large corporations, including the public sector. Each
+            mission is a new adventure, a new challenge to tackle.
           </p>
         </div>
 
@@ -148,8 +147,8 @@ const publicDir = import.meta.env.BASE_URL;
           >
             <ImageLoader
               client:load
-              lowSrc={publicDir + "/low-res/map.webp"}
-              src={publicDir + "/map.webp"}
+              lowSrc={publicDir + "/low-res/carte.webp"}
+              src={publicDir + "/carte.webp"}
               alt="Map of France of my missions"
               className="size-96"
             />
@@ -162,26 +161,25 @@ const publicDir = import.meta.env.BASE_URL;
 
     <section class="py-12 px-4 md:px-8 max-w-4xl mx-auto">
       <h2 class="font-heading text-green-700 text-3xl font-bold mb-4">
-        How I conceive a project
+        How I Design a Project
       </h2>
       <p class="mb-4 text-lg">
-        The best way to understand my way of working is to see it
-        in action.
+        The best way to understand my working method is to see it in action.
       </p>
       <p class="mb-4">
-        This website — which you are currently browsing — is a good example.
-        I designed it like a real client project, with method, intention and
-        requirement. For this, I rely on my development skills,
-        but also on thinking tools like ChatGPT, which
-        assists me in structuring content and challenging my ideas.
+        This website — which you are currently viewing — is a good example.
+        I designed it as a real client project, with method, intention, and
+        rigor. For this, I rely on my development skills, but also on
+        tools that aid reflection like ChatGPT, which helps me structure
+        content and challenge my ideas.
       </p>
       <p class="mb-4">
-        Each decision is thought out according to visitors: their profile,
-        their expectations, their need to be reassured. I proceed by iterations, testing
-        ideas, always keeping the end user in mind.
+        Every decision is made with the visitors in mind: their profile,
+        their expectations, their need for reassurance. I proceed in iterations,
+        testing ideas, always keeping the end user in mind.
       </p>
       <p class="mb-6">
-        Want to see how I go about it concretely? I have documented my
+        Want to see how I do it concretely? I have documented my
         approach step by step.
       </p>
       <a
@@ -195,10 +193,10 @@ const publicDir = import.meta.env.BASE_URL;
     <section id="contact" class="py-16 px-4">
       <div class="max-w-3xl mx-auto text-center">
         <h1 class="font-heading text-3xl font-bold text-green-700 mb-6">
-          Contact me
+          Contact Me
         </h1>
         <p class="text-lg mb-8">
-          Here is all the information to reach me or come and meet me.
+          Here is all the information to reach me or come meet me.
         </p>
 
         <div class="flex justify-center items-center gap-8 flex-wrap">
@@ -224,7 +222,7 @@ const publicDir = import.meta.env.BASE_URL;
                 ></path>
               </svg>
               <p>
-                <strong>Address :</strong><br />
+                <strong>Address:</strong><br />
                 99 rue de Paris<br />
                 77200 Torcy<br />
                 Building A, 1<sup>st</sup> floor
@@ -247,7 +245,7 @@ const publicDir = import.meta.env.BASE_URL;
                 ></path>
               </svg>
               <p>
-                <strong>Phone :</strong><br />
+                <strong>Phone:</strong><br />
                 <a
                   href="tel:+33160179262"
                   class="text-green-700 hover:underline">+33 1 60 17 98 62</a
@@ -271,7 +269,7 @@ const publicDir = import.meta.env.BASE_URL;
                 ></path>
               </svg>
               <p>
-                <strong>Email :</strong><br />
+                <strong>Email:</strong><br />
                 <a
                   href="mailto:jlg@jlg-consulting.com"
                   class="text-green-700 hover:underline"
@@ -286,9 +284,9 @@ const publicDir = import.meta.env.BASE_URL;
           >
             <ImageLoader
               client:load
-              lowSrc={publicDir + "/low-res/offices.webp"}
-              src={publicDir + "/offices.webp"}
-              alt="Photo of my stylized office"
+              lowSrc={publicDir + "/low-res/bureaux.webp"}
+              src={publicDir + "/bureaux.webp"}
+              alt="Stylized photo of my office"
               className="h-64"
             />
           </a>

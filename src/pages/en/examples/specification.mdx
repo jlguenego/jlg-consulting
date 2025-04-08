@@ -1,22 +1,22 @@
 ---
-title: "JLG Consulting Website Specification"
-description: "Technical and functional specification document for the showcase website jlg-consulting.com"
+title: "Site Specification JLG Consulting"
+description: "Technical and functional specification document for the showcase site jlg-consulting.com"
 layout: ../../../layouts/MdxLayout.astro
 ---
 
 import c from "../../../components/MarkdownComponents";
 export const components = c;
 
-# 📄 Specification for _JLG Consulting_ Website
+# 📄 Specification of the _JLG Consulting_ Site
 
-## 🧭 Website Objective
+## 🧭 Site Objective
 
-The **jlg-consulting.com** website is the showcase site for **Jean-Louis Guénégo**, a computer consultant and trainer. Its purpose is to:
+The site **jlg-consulting.com** is the showcase site of **Jean-Louis Guénégo**, IT consultant-trainer. Its purpose is to:
 
 - Present Jean-Louis Guénégo's expertise.
-- Highlight his services to three types of clients: **businesses**, **communities** and **startups**.
+- Highlight his services to three types of clients: **companies**, **local authorities**, and **startups**.
 - Reassure the **CIOs** and **HR** of large companies as well as SMEs.
-- Encourage people to contact him and work with him.
+- Encourage potential clients to contact him and work with him.
 
 ## 🏗️ General Architecture
 
@@ -24,100 +24,100 @@ The **jlg-consulting.com** website is the showcase site for **Jean-Louis Guéné
 - **Front-end only** (no backend)
 - **Deployment on GitHub Pages with GitHub Actions**
 - **No database**
-- All data is static or generated at build (e.g., translation)
+- All data is static or generated at build time (e.g., translation)
 
 ## 🧩 Technical Stack and Dependencies
 
-| Library / Tool                  | Role                                                                                         |
+| Library / Tool                     | Role                                                                                         |
 | ---------------------------------- | -------------------------------------------------------------------------------------------- |
-| `astro`                            | Static, lightweight, fast framework.                                                           |
-| `@astrojs/react`                   | Integration of React components in Astro.                                                  |
-| `react`, `react-dom`               | Dynamic components, used in particular for interactive modules.                      |
-| `tailwindcss`, `@tailwindcss/vite` | Utility CSS framework, used for modern, responsive and personalized styling. |
-| `astro-icon`                       | Easy management of SVG icons.                                                               |
-| `@astrojs/sitemap`                 | Automatic sitemap generation for SEO.                                               |
-| `openai`                           | Used to **automatically translate** `/fr` pages to `/en` during build.          |
-| `sharp`                            | Image optimization (size, format) on the fly or at build.                             |
-| `ssh2-sftp-client`                 | Deployment via SFTP at OVH, with `deploy-sftp.js`.                                        |
+| `astro`                            | Static, lightweight, fast framework.                                                         |
+| `@astrojs/react`                   | Integration of React components into Astro.                                                  |
+| `react`, `react-dom`               | Dynamic components, used especially for interactive modules.                                 |
+| `tailwindcss`, `@tailwindcss/vite` | Utility CSS framework, used for modern, responsive, and customized styling.                 |
+| `astro-icon`                       | Easy management of SVG icons.                                                                |
+| `@astrojs/sitemap`                 | Automatic sitemap generation for SEO.                                                        |
+| `openai`                           | Used to **automatically translate** the `/fr` pages to `/en` during the build.              |
+| `sharp`                            | Image optimization (size, format) on-the-fly or at build time.                             |
+| `ssh2-sftp-client`                 | Deployment via SFTP to OVH, with `deploy-sftp.js`.                                         |
 | `dotenv`                           | Management of environment variables, especially for the OpenAI key.                         |
-| `prettier` and its plugins          | Automatic code formatting (`.astro`, `tailwindcss`, etc.).                               |
+| `prettier` and its plugins         | Automatic code formatting (`.astro`, `tailwindcss`, etc.).                                  |
 
 ## 🌍 Internationalization
 
-- The user writes the pages in French in `/fr`.
-- An **automatic generation script** produces the equivalent pages in `/en`.
-- The **translation is provided by the OpenAI API** at build time.
-- The site structure is duplicated, allowing simple routing between `/fr` and `/en`.
+- Users write pages in French in `/fr`.
+- An **automatic generation script** produces equivalent pages in `/en`.
+- **Translation is provided by the OpenAI API** at build time.
+- The site structure is duplicated, allowing for simple routing between `/fr` and `/en`.
 
 ## 🎨 Design
 
-- Minimalist, clear and professional design.
+- Minimalist, clear, and professional design.
 - Use of **Tailwind CSS 4.x**.
-- Main color: Tailwind's `green-700`, instead of blue.
-- The site is **fully responsive**, with a mobile-first ergonomics.
+- Main color: `green-700` from Tailwind, instead of blue.
+- The site is **fully responsive**, with a mobile-first ergonomic design.
 - The `.mdx` titles are centered and colored (`text-green-700`).
 - Lists have margins and a neat presentation.
 
-## 🗂️ Contents
+## 🗂️ Content
 
 - **Home**
-- **Services** (via a centralized `menuItems` list shared between pages)
+- **Services** (via a centralized list `menuItems` shared between pages)
 - **About / Bio**
 - **Contact**
-- **Legal Notice**
+- **Legal Notices**
 - Optimized images (WebP)
 - SVG icons via `astro-icon`
 
 ## ⚙️ Internal Features
 
 - **Reuse of React components** for future dynamic features.
-- **Centralized variables** (`menuItems`) for easy maintenance.
-- **Tailwind configuration shared with `.mdx`.**
-- **Smart build system for generating translated pages**.
+- **Centralized variables** (`menuItems`) for easier maintenance.
+- **Shared Tailwind configuration with `.mdx`.**
+- **Intelligent build system for generating translated pages**.
 
 ## 🌐 SEO
 
 - Sitemap automatically generated via `@astrojs/sitemap`.
-- `meta` tags adapted per page.
+- `meta` tags tailored for each page.
 - `hreflang` present for FR/EN alternation.
-- Clean URLs (`/fr/services`, `/en/services`, etc.)
+- Clean URLs (`/fr/prestations`, `/en/services`, etc.)
 - Use of SVG icons and optimized images (Sharp + WebP)
 
 ## 🚀 Performance
 
 - Static site: fast loading, excellent Lighthouse score.
-- **No superfluous JavaScript**.
+- **No unnecessary JavaScript**.
 - **Use of Astro Islands**: only the dynamic React parts are hydrated.
-- Tailwind + purge CSS: ultra-light style sheets.
+- Tailwind + CSS purge: ultra-light stylesheets.
 - Images optimized with Sharp.
 
 ## ♿ Accessibility
 
-- Respected HTML semantics (`main`, `nav`, `header`, `footer`, etc.).
-- Colors comply with WCAG AA contrast.
+- HTML semantics respected (`main`, `nav`, `header`, `footer`, etc.).
+- Colors compliant with WCAG AA contrast.
 - Keyboard navigation ensured.
 - Readable text, adaptable font sizes.
 
 ## 🔐 Security
 
 - No personal data collected on the client side.
-- No form with submission.
+- No form submissions.
 - Secure deployment via SFTP with private key.
 - Sensitive variables (.env) not committed.
 
 ## 📦 Deployment
 
 - **GitHub Pages** via **GitHub Actions**.
-- `deploy-sftp.js` script for FTP sending at **OVH**.
+- `deploy-sftp.js` script for FTP upload to **OVH**.
 - Maintenance of the current OVH structure: site + hidden FTP folders.
 - Manual or automated deployment possible.
 
 ## 📘 Possible Roadmap (not yet in place)
 
-| Future Feature             | Status         |
-| --------------------------------- | -------------- |
-| Simple admin interface (markdown) | Not planned      |
-| Internal search engine       | To be discussed     |
-| Contact form                | To be discussed     |
-| Consultation statistics      | Not planned      |
-| Printable PDF version of pages  | Idea to explore |
+| Future Feature                     | Status         |
+| ---------------------------------- | -------------- |
+| Simple admin interface (markdown)  | Not planned    |
+| Internal search engine             | To be discussed |
+| Contact form                       | To be discussed |
+| Consultation statistics            | Not planned    |
+| Printable PDF version of pages     | Idea to explore |
