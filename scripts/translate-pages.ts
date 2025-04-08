@@ -22,8 +22,8 @@ async function translateText(text: string): Promise<string> {
         role: "system",
         content: `
 You are a web professional translator.
-Translate from French to English.
-Preserve HTML and Astro syntax and MDX syntax.
+Translate HTML/Astro/Markdown files from French to English.
+Preserve HTML, Astro, Markdown, and MDX syntax.
 Preserve the javascript/typescript import file paths.
 Prettier formatting should be preserved.
 Please give me the raw Astro output without any triple backticks or Markdown formatting

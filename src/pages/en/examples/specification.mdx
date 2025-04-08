@@ -1,5 +1,5 @@
 ---
-title: "Site Specification JLG Consulting"
+title: "JLG Consulting Site Specification"
 description: "Technical and functional specification document for the showcase site jlg-consulting.com"
 layout: ../../../layouts/MdxLayout.astro
 ---
@@ -7,7 +7,7 @@ layout: ../../../layouts/MdxLayout.astro
 import c from "../../../components/MarkdownComponents";
 export const components = c;
 
-# 📄 Specification of the _JLG Consulting_ Site
+# 📄 JLG Consulting Site _Specification_
 
 ## 🧭 Site Objective
 
@@ -15,7 +15,7 @@ The site **jlg-consulting.com** is the showcase site of **Jean-Louis Guénégo**
 
 - Present Jean-Louis Guénégo's expertise.
 - Highlight his services to three types of clients: **companies**, **local authorities**, and **startups**.
-- Reassure the **CIOs** and **HR** of large companies as well as SMEs.
+- Reassure **CIOs** and **HR** of large companies as well as SMEs.
 - Encourage potential clients to contact him and work with him.
 
 ## 🏗️ General Architecture
@@ -34,9 +34,9 @@ The site **jlg-consulting.com** is the showcase site of **Jean-Louis Guénégo**
 | `@astrojs/react`                   | Integration of React components into Astro.                                                  |
 | `react`, `react-dom`               | Dynamic components, used especially for interactive modules.                                 |
 | `tailwindcss`, `@tailwindcss/vite` | Utility CSS framework, used for modern, responsive, and customized styling.                 |
-| `astro-icon`                       | Easy management of SVG icons.                                                                |
+| `astro-icon`                       | Easy management of SVG icons.                                                                 |
 | `@astrojs/sitemap`                 | Automatic sitemap generation for SEO.                                                        |
-| `openai`                           | Used to **automatically translate** the `/fr` pages to `/en` during the build.              |
+| `openai`                           | Used to **automatically translate** pages from `/fr` to `/en` during the build.            |
 | `sharp`                            | Image optimization (size, format) on-the-fly or at build time.                             |
 | `ssh2-sftp-client`                 | Deployment via SFTP to OVH, with `deploy-sftp.js`.                                         |
 | `dotenv`                           | Management of environment variables, especially for the OpenAI key.                         |
@@ -64,7 +64,7 @@ The site **jlg-consulting.com** is the showcase site of **Jean-Louis Guénégo**
 - **Services** (via a centralized list `menuItems` shared between pages)
 - **About / Bio**
 - **Contact**
-- **Legal notices**
+- **Legal Notices**
 - Optimized images (WebP)
 - SVG icons via `astro-icon`
 
@@ -78,7 +78,7 @@ The site **jlg-consulting.com** is the showcase site of **Jean-Louis Guénégo**
 ## 🌐 SEO
 
 - Sitemap automatically generated via `@astrojs/sitemap`.
-- `meta` tags tailored for each page.
+- Appropriate `meta` tags per page.
 - `hreflang` present for FR/EN alternation.
 - Clean URLs (`/fr/prestations`, `/en/services`, etc.)
 - Use of SVG icons and optimized images (Sharp + WebP)
@@ -102,7 +102,7 @@ The site **jlg-consulting.com** is the showcase site of **Jean-Louis Guénégo**
 
 - No personal data collected on the client side.
 - No form submissions.
-- Secure deployment via SFTP with private key.
+- Secure deployment via SFTP with a private key.
 - Sensitive variables (.env) not committed.
 
 ## 📦 Deployment
