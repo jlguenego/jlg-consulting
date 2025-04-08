@@ -23,14 +23,14 @@ const logoPath = publicDir + "logos/";
       </p>
 
       <div
-        class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8 items-center"
+        class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-1 items-center"
       >
         {
           logoList.map((logo) => (
             <img
               src={logoPath + logo}
               alt={logo.replace(/\.(png|jpe?g|svg)/i, "")}
-              class="h-16 mx-auto grayscale hover:grayscale-0 transition"
+              class="w-30 mx-auto transition"
             />
           ))
         }
