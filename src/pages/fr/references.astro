@@ -1,4 +1,5 @@
 ---
+import ImageLoader from "../../components/ImageLoader";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import { getLogoList } from "../../lib/getLogoList";
 
@@ -27,10 +28,12 @@ const logoPath = publicDir + "logos/";
       >
         {
           logoList.map((logo) => (
-            <img
-              src={logoPath + logo}
-              alt={logo.replace(/\.(png|jpe?g|svg)/i, "")}
-              class="w-30 mx-auto transition"
+            <ImageLoader
+              client:load
+              lowSrc={logoPath + logo.smallImg}
+              src={logoPath + logo.img}
+              alt={logo.img.replace(/\.(png|jpe?g|svg)/i, "")}
+              className="w-30 mx-auto hover:scale-105 transition-transform duration-300"
             />
           ))
         }
