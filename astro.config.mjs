@@ -14,6 +14,6 @@ export default defineConfig({
     plugins: [tailwindcss()],
   },
   site: "https://www.jlg-consulting.com",
-  base: "/nouveau-site/",
+  base: "/",
   integrations: [mdx(), sitemap(), icon(), react()],
 });

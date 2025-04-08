@@ -10,7 +10,7 @@ const projectRoot = path.join(__dirname, "../src/pages/fr"); // ou ajuster selon
 const srcImageDir = "./public";
 const destImageDir = "./public/low-res";
 
-// Pattern regex pour matcher lowSrc={publicDir + "/low-res/nom.png"}
+// Pattern regex pour matcher lowSrc={publicDir + "low-res/nom.png"}
 const lowSrcRegex =
   /lowSrc=\{publicDir \+ "\/low-res\/([^"]+\.(png|jpg|jpeg|svg|webp))"\}/g;
 
