@@ -14,10 +14,15 @@ interface Props {
 
 const pathname = Astro.url.pathname;
 const locale = getLocaleFromPathname(pathname);
+
+const { title, description } = Astro.props || {
+  title: "Default Title",
+  description: "Default Description",
+};
 ---
 
 <html lang={locale}>
-  <HtmlHead />
+  <HtmlHead {title} {description} />
   <body
     class="font-serif relative transition-colors duration-500 flex flex-col min-h-screen bg-white text-gray-800 dark:bg-gray-900 dark:text-gray-200"
   >
