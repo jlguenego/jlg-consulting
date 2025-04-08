@@ -1,12 +1,14 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getLogoList } from "../../lib/getLogoList";
 
 const title = "Références – JLG Consulting";
 const description =
   "Découvrez les entreprises et organisations pour lesquelles Jean-Louis Guénégo est intervenu en tant que consultant ou formateur.";
-const publicDir = import.meta.env.BASE_URL;
 
-const logoList = ["capgemini.png", "orange.png"];
+const logoList = getLogoList();
+const publicDir = import.meta.env.BASE_URL;
+const logoPath = publicDir + "logos/";
 ---
 
 <BaseLayout {title} {description}>
@@ -24,15 +26,13 @@ const logoList = ["capgemini.png", "orange.png"];
         class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8 items-center"
       >
         {
-          logoList.map((logo) => {
-            return (
-              <img
-                src={publicDir + "/logos/" + logo}
-                alt={logo.replace(/\.(png|jpg)/, "")}
-                class="h-16 mx-auto grayscale hover:grayscale-0 transition"
-              />
-            );
-          })
+          logoList.map((logo) => (
+            <img
+              src={logoPath + logo}
+              alt={logo.replace(/\.(png|jpe?g|svg)/i, "")}
+              class="h-16 mx-auto grayscale hover:grayscale-0 transition"
+            />
+          ))
         }
       </div>
     </div>
