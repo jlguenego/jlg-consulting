@@ -43,13 +43,10 @@ const publicDir = import.meta.env.BASE_URL;
           </a>
         </div>
       </div>
-
-      <ImageLoader
-        client:load
-        lowSrc={publicDir + "low-res/hero.webp"}
+      <img
         src={publicDir + "hero.webp"}
         alt="Exemple de photo"
-        className="size-96"
+        class="size-96"
       />
     </div>
   </section>
