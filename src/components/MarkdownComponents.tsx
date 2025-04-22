@@ -1,25 +1,25 @@
 export default {
   a: (props: any) => (
-    <a className="text-green-700 underline hover:text-green-900" {...props} />
+    <a className="text-primary-700 underline hover:text-primary-900" {...props} />
   ),
   blockquote: (props: any) => (
     <blockquote className="my-4 text-black italic dark:text-white" {...props} />
   ),
   h1: (props: any) => (
     <h1
-      className="font-heading mb-8 text-center text-3xl font-bold text-green-700"
+      className="font-heading mb-8 text-center text-3xl font-bold text-primary-700"
       {...props}
     />
   ),
   h2: (props: any) => (
     <h2
-      className="font-heading my-4 text-2xl font-semibold text-green-700"
+      className="font-heading my-4 text-2xl font-semibold text-primary-700"
       {...props}
     />
   ),
   h3: (props: any) => (
     <h3
-      className="font-heading my-4 text-xl font-medium text-green-700"
+      className="font-heading my-4 text-xl font-medium text-primary-700"
       {...props}
     />
   ),
@@ -37,7 +37,7 @@ export default {
     </div>
   ),
   thead: (props: any) => (
-    <thead className="bg-green-700 font-semibold text-white" {...props} />
+    <thead className="bg-primary-700 font-semibold text-white" {...props} />
   ),
   tbody: (props: any) => <tbody {...props} />,
   tr: (props: any) => (
