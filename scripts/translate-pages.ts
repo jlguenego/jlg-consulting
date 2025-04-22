@@ -28,6 +28,7 @@ Preserve the javascript/typescript import file paths.
 Prettier formatting should be preserved.
 Please give me the raw Astro output without any triple backticks or Markdown formatting
 Do not translate urls, links, comments or code blocks.
+Do not translate <name>.webp
 `,
       },
       {

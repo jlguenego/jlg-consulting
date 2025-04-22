@@ -25,8 +25,8 @@ const publicDir = import.meta.env.BASE_URL;
           <span class="text-nowrap text-primary-500"> JLG Consulting </span>
         </h1>
         <p class="text-lg mb-8 dark:text-gray-300 text-center">
-          Consulting, expertise, and support in software development and digital
-          transformation.
+          Consulting, expertise, and support in software development and
+          digital transformation.
         </p>
         <div class="flex justify-center gap-4 flex-col sm:flex-row">
           <a
@@ -43,35 +43,40 @@ const publicDir = import.meta.env.BASE_URL;
           </a>
         </div>
       </div>
-
-      <img src={publicDir + "hero.webp"} alt="Example photo" class="size-96" />
+      <img
+        src={publicDir + "hero.webp"}
+        alt="Example photo"
+        class="size-96"
+      />
     </div>
   </section>
 
   <!-- SERVICES PREVIEW -->
   <section class="py-12 px-4">
     <div class="text-center mb-10">
-      <h2 class="font-heading text-3xl font-semibold mb-4">What I Offer</h2>
+      <h2 class="font-heading text-3xl font-semibold mb-4">
+        What I Offer
+      </h2>
       <p class="text-gray-600 dark:text-gray-400 max-w-xl mx-auto">
         From web application design to training on the latest JavaScript
         technologies, including consulting on software architecture.
       </p>
     </div>
     <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-      <Card title="Development" href="services/software-development">
+      <Card title="Development" href="services/developpement-logiciel">
         Custom web applications in TypeScript, Node.js, Vue, or React.
       </Card>
-      <Card title="Training" href="services/training">
+      <Card title="Training" href="services/formation">
         Technical training tailored for fullstack developers and IT teams.
       </Card>
-      <Card title="Consulting" href="services/strategic-consulting">
+      <Card title="Consulting" href="services/conseil-strategique">
         Audit, software architecture, technical support, and best practices.
       </Card>
     </div>
   </section>
 
   <!-- About Me -->
-  <section id="about" class="py-16 px-4">
+  <section id="a-propos" class="py-16 px-4">
     <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-8 items-center">
       <!-- Image -->
       <a
@@ -94,12 +99,12 @@ const publicDir = import.meta.env.BASE_URL;
         </h1>
         <p class="mb-4">
           My name is <strong>Jean-Louis Guénégo</strong>. I am an IT consultant
-          and trainer, passionate about coding, software architecture, pedagogy,
-          and knowledge transfer.
+          and trainer, passionate about coding, software architecture,
+          pedagogy, and knowledge transfer.
         </p>
         <p class="mb-4">
-          A former student of ENS de Cachan, I have accumulated over 20 years of
-          experience in web development, modern JavaScript technologies
+          A former student of ENS de Cachan, I have accumulated over 20 years
+          of experience in web development, modern JavaScript technologies
           (Node.js, Vue, React, etc.), and training technical audiences.
         </p>
         <p class="mb-4">
@@ -116,8 +121,8 @@ const publicDir = import.meta.env.BASE_URL;
       <!-- Text -->
       <div>
         <h1 class="font-heading text-3xl font-bold text-primary-700 mb-4">
-          A story of {new Date().getFullYear() - 2001} years, with over 400 missions
-          completed.
+          A story of {new Date().getFullYear() - 2001} years, with over 400
+          completed missions.
         </h1>
         <p class="mb-4">
           Missions lasting from a few days to several years, recommended by my
@@ -126,8 +131,8 @@ const publicDir = import.meta.env.BASE_URL;
         </p>
         <p class="mb-4">
           I have collaborated with companies of all sizes, from startups to
-          large corporations, including the public sector. Each mission is a new
-          adventure, a new challenge to tackle.
+          large corporations, including the public sector. Each mission is a
+          new adventure, a new challenge to tackle.
         </p>
       </div>
 
@@ -139,8 +144,8 @@ const publicDir = import.meta.env.BASE_URL;
         >
           <ImageLoader
             client:load
-            lowSrc={publicDir + "low-res/map.webp"}
-            src={publicDir + "map.webp"}
+            lowSrc={publicDir + "low-res/carte.webp"}
+            src={publicDir + "carte.webp"}
             alt="Map of France of my missions"
             className="size-96"
           />
@@ -160,19 +165,19 @@ const publicDir = import.meta.env.BASE_URL;
     </p>
     <p class="mb-4">
       This website — which you are currently viewing — is a good example. I
-      designed it as a real client project, with method, intention, and rigor.
-      For this, I rely on my development skills, but also on reflective tools
-      like ChatGPT, which assists me in structuring content and challenging my
-      ideas.
+      designed it as a real client project, with method, intention, and
+      requirements. For this, I rely on my development skills, but also on
+      tools that assist in reflection like ChatGPT, which helps me structure
+      the content and challenge my ideas.
     </p>
     <p class="mb-4">
       Every decision is made with the visitors in mind: their profile, their
-      expectations, their need for reassurance. I proceed in iterations, testing
+      expectations, their need for reassurance. I proceed iteratively, testing
       ideas, always keeping the end user in mind.
     </p>
     <p class="mb-6">
-      Want to see how I do it concretely? I have documented my approach step by
-      step.
+      Want to see how I do it concretely? I have documented my approach step
+      by step.
     </p>
     <a
       href="method"
@@ -274,8 +279,8 @@ const publicDir = import.meta.env.BASE_URL;
         >
           <ImageLoader
             client:load
-            lowSrc={publicDir + "low-res/offices.webp"}
-            src={publicDir + "offices.webp"}
+            lowSrc={publicDir + "low-res/bureaux.webp"}
+            src={publicDir + "bureaux.webp"}
             alt="Stylized photo of my office"
             className="max-w-96"
           />

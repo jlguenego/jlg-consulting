@@ -7,15 +7,15 @@ layout: ../../../layouts/MdxLayout.astro
 import c from "../../../components/MarkdownComponents";
 export const components = c;
 
-# 📄 JLG Consulting Site _Specification_
+# 📄 JLG Consulting _Site Specification_
 
 ## 🧭 Site Objective
 
 The site **jlg-consulting.com** is the showcase site of **Jean-Louis Guénégo**, IT consultant-trainer. Its purpose is to:
 
 - Present Jean-Louis Guénégo's expertise.
-- Highlight his services to three types of clients: **companies**, **local authorities**, and **startups**.
-- Reassure **CIOs** and **HR** of large companies as well as SMEs.
+- Highlight his services to three types of clients: **businesses**, **local authorities**, and **startups**.
+- Reassure the **CIOs** and **HR** of large companies as well as SMEs.
 - Encourage potential clients to contact him and work with him.
 
 ## 🏗️ General Architecture
@@ -34,13 +34,13 @@ The site **jlg-consulting.com** is the showcase site of **Jean-Louis Guénégo**
 | `@astrojs/react`                   | Integration of React components into Astro.                                                  |
 | `react`, `react-dom`               | Dynamic components, used especially for interactive modules.                                 |
 | `tailwindcss`, `@tailwindcss/vite` | Utility CSS framework, used for modern, responsive, and customized styling.                 |
-| `astro-icon`                       | Easy management of SVG icons.                                                                 |
+| `astro-icon`                       | Easy management of SVG icons.                                                                |
 | `@astrojs/sitemap`                 | Automatic sitemap generation for SEO.                                                        |
 | `openai`                           | Used to **automatically translate** pages from `/fr` to `/en` during the build.            |
-| `sharp`                            | Image optimization (size, format) on-the-fly or at build time.                             |
+| `sharp`                            | Image optimization (size, format) on the fly or at build time.                              |
 | `ssh2-sftp-client`                 | Deployment via SFTP to OVH, with `deploy-sftp.js`.                                         |
 | `dotenv`                           | Management of environment variables, especially for the OpenAI key.                         |
-| `prettier` and its plugins         | Automatic code formatting (`.astro`, `tailwindcss`, etc.).                                  |
+| `prettier` and its plugins         | Automatic code formatting (`.astro`, `tailwindcss`, etc.).                                   |
 
 ## 🌍 Internationalization
 
