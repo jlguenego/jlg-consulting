@@ -85,4 +85,4 @@ function getAdventStart(year) {
 }
 
 // document.documentElement.classList.add(getLiturgicalColor(new Date()));
-document.documentElement.classList.add("green");
+document.documentElement.classList.add("red");

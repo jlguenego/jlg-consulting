@@ -121,4 +121,15 @@ html {
     --color-primary-900: var(--color-amber-900);
     --color-primary-950: var(--color-amber-950);
   }
+
+  &.white {
+    .monochrome {
+      filter: grayscale(100%);
+    }
+  }
+  &.red {
+    .monochrome {
+      filter: hue-rotate(240deg);
+    }
+  }
 }
