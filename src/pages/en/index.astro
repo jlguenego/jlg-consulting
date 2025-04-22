@@ -43,10 +43,11 @@ const publicDir = import.meta.env.BASE_URL;
           </a>
         </div>
       </div>
+
       <img
         src={publicDir + "hero.webp"}
         alt="Example photo"
-        class="size-96"
+        class="size-96 monochrome"
       />
     </div>
   </section>
@@ -88,7 +89,7 @@ const publicDir = import.meta.env.BASE_URL;
           lowSrc={publicDir + "low-res/jlg.webp"}
           src={publicDir + "jlg.webp"}
           alt="Me in cartoon style"
-          className="size-64"
+          className="size-64 monochrome"
         />
       </a>
 
@@ -122,7 +123,7 @@ const publicDir = import.meta.env.BASE_URL;
       <div>
         <h1 class="font-heading text-3xl font-bold text-primary-700 mb-4">
           A story of {new Date().getFullYear() - 2001} years, with over 400
-          completed missions.
+          missions completed.
         </h1>
         <p class="mb-4">
           Missions lasting from a few days to several years, recommended by my
@@ -147,7 +148,7 @@ const publicDir = import.meta.env.BASE_URL;
             lowSrc={publicDir + "low-res/carte.webp"}
             src={publicDir + "carte.webp"}
             alt="Map of France of my missions"
-            className="size-96"
+            className="size-96 monochrome"
           />
         </a>
       </div>
@@ -166,9 +167,9 @@ const publicDir = import.meta.env.BASE_URL;
     <p class="mb-4">
       This website — which you are currently viewing — is a good example. I
       designed it as a real client project, with method, intention, and
-      requirements. For this, I rely on my development skills, but also on
-      tools that assist in reflection like ChatGPT, which helps me structure
-      the content and challenge my ideas.
+      rigor. For this, I rely on my development skills, but also on
+      reflective tools like ChatGPT, which assists me in structuring content
+      and challenging my ideas.
     </p>
     <p class="mb-4">
       Every decision is made with the visitors in mind: their profile, their
@@ -243,8 +244,9 @@ const publicDir = import.meta.env.BASE_URL;
             </svg>
             <p>
               <strong>Phone:</strong><br />
-              <a href="tel:+33160179262" class="text-primary-700 hover:underline"
-                >+33 1 60 17 98 62</a
+              <a
+                href="tel:+33160179262"
+                class="text-primary-700 hover:underline">+33 1 60 17 98 62</a
               >
             </p>
           </div>
@@ -268,7 +270,8 @@ const publicDir = import.meta.env.BASE_URL;
               <strong>Email:</strong><br />
               <a
                 href="mailto:jlg@jlg-consulting.com"
-                class="text-primary-700 hover:underline">jlg@jlg-consulting.com</a
+                class="text-primary-700 hover:underline"
+                >jlg@jlg-consulting.com</a
               >
             </p>
           </div>
@@ -282,7 +285,7 @@ const publicDir = import.meta.env.BASE_URL;
             lowSrc={publicDir + "low-res/bureaux.webp"}
             src={publicDir + "bureaux.webp"}
             alt="Stylized photo of my office"
-            className="max-w-96"
+            className="max-w-96 monochrome"
           />
         </a>
       </div>
