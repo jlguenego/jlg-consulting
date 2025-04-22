@@ -50,6 +50,10 @@ html {
     --color-primary-800: var(--color-green-800);
     --color-primary-900: var(--color-green-900);
     --color-primary-950: var(--color-green-950);
+
+    .monochrome {
+      filter: none;
+    }
   }
 
   &.purple {
@@ -64,9 +68,14 @@ html {
     --color-primary-800: var(--color-purple-800);
     --color-primary-900: var(--color-purple-900);
     --color-primary-950: var(--color-purple-950);
+
+    .monochrome {
+      filter: hue-rotate(180deg);
+    }
   }
 
-  &.white {
+  &.white,
+  &.black {
     --color-primary-50: var(--color-gray-50);
     --color-primary-100: var(--color-gray-100);
     --color-primary-200: var(--color-gray-200);
@@ -78,6 +87,10 @@ html {
     --color-primary-800: var(--color-gray-800);
     --color-primary-900: var(--color-gray-900);
     --color-primary-950: var(--color-gray-950);
+
+    .monochrome {
+      filter: grayscale(100%);
+    }
   }
 
   &.red {
@@ -92,20 +105,10 @@ html {
     --color-primary-800: var(--color-red-800);
     --color-primary-900: var(--color-red-900);
     --color-primary-950: var(--color-red-950);
-  }
 
-  &.red {
-    --color-primary-50: var(--color-red-50);
-    --color-primary-100: var(--color-red-100);
-    --color-primary-200: var(--color-red-200);
-    --color-primary-300: var(--color-red-300);
-    --color-primary-400: var(--color-red-400);
-    --color-primary-500: var(--color-red-500);
-    --color-primary-600: var(--color-red-600);
-    --color-primary-700: var(--color-red-700);
-    --color-primary-800: var(--color-red-800);
-    --color-primary-900: var(--color-red-900);
-    --color-primary-950: var(--color-red-950);
+    .monochrome {
+      filter: hue-rotate(240deg);
+    }
   }
 
   &.gold {
@@ -120,16 +123,9 @@ html {
     --color-primary-800: var(--color-amber-800);
     --color-primary-900: var(--color-amber-900);
     --color-primary-950: var(--color-amber-950);
-  }
 
-  &.white {
     .monochrome {
-      filter: grayscale(100%);
-    }
-  }
-  &.red {
-    .monochrome {
-      filter: hue-rotate(240deg);
+      filter: hue-rotate(300deg);
     }
   }
 }

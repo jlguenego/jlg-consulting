@@ -84,5 +84,4 @@ function getAdventStart(year) {
   return fourthSunday;
 }
 
-// document.documentElement.classList.add(getLiturgicalColor(new Date()));
-document.documentElement.classList.add("red");
+document.documentElement.classList.add(getLiturgicalColor(new Date()));
